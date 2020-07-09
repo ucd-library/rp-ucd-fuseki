@@ -31,5 +31,9 @@
    .
 
 [] rdf:type ucd:Kafka ;
-  ucd:kafkaHost "kafka" ;
-  .
+  ucd:kafkaEnabled "{{KAFKA_ENABLED}}" ;
+  ucd:kafkaHost "{{KAFKA_HOST}}" ;
+  ucd:kafkaPort "{{KAFKA_PORT}}" ;
+  ucd:kafkaTopic {{KAFKA_TOPIC}}
+  {{KAFKA_USERNAME}}
+  {{KAFKA_PASSWORD}}
