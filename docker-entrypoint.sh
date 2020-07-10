@@ -16,7 +16,7 @@ if [[ -z "$KAFKA_HOST" ]]; then
   export KAFKA_HOST=kafka
 fi
 if [[ -z "$KAFKA_PORT" ]]; then
-  export KAFKA_PORT=3030
+  export KAFKA_PORT=9092
 fi
 
 if [[ -z "$KAFKA_TOPIC" ]]; then
