@@ -1,11 +1,23 @@
 FROM ucdlib/jena-fuseki-eb:jena-3.15.0
 
-RUN mv /docker-entrypoint.sh /docker-entrypoint-org.sh
+RUN set -eux && \
+    apt-get update && \
+    apt-get install -y util-linux rsync perl && \
+    rm -rf /var/lib/apt/lists/*
+
+
+RUN mkdir -p $FUSEKI_HOME/extra
+COPY ./lib/jena-kafka-connector-0.0.2-SNAPSHOT.jar $FUSEKI_HOME/extra/
+COPY ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
+COPY ./jetty.xml /$FUSEKI_HOME
+COPY ./config.ttl.tpl $FUSEKI_HOME/
+COPY ./fz /usr/local/bin/fz
+RUN chmod 755 /usr/local/bin/fz
+
+#RUN mv /docker-entrypoint.sh /docker-entrypoint-org.sh
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
-RUN mkdir -p $FUSEKI_BASE/extra
-COPY ./lib/jena-kafka-connector-0.0.2-SNAPSHOT.jar $FUSEKI_BASE/extra/
-COPY ./lib/kafka-clients-2.5.0.jar $FUSEKI_BASE/extra/
-COPY ./config.ttl.tpl $FUSEKI_BASE/
-
-CMD ["/docker-entrypoint.sh", "/jena-fuseki/fuseki-server"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
+#CMD ["ls","/fuseki","/usr/local/bin","/staging"]
+#CMD ["/jena-fuseki/fuseki-server"]
+CMD ["/jena-fuseki/fuseki-server","--jetty-config=/fuseki/jetty.xml"]
