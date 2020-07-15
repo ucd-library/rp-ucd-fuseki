@@ -25,15 +25,16 @@
 
    # Add any custom classes you want to load.
    # Must have a "public static void init()" method.
-   ja:loadClass "edu.ucdavis.library.FusekiKafkaConnector" ;   
+   ja:loadClass "edu.ucdavis.library.FusekiKafkaConnector"
 
    # End triples.
    .
 
 [] rdf:type ucd:Kafka ;
   ucd:kafkaEnabled "{{KAFKA_ENABLED}}" ;
-  ucd:kafkaHost "{{KAFKA_HOST}}" ;
-  ucd:kafkaPort "{{KAFKA_PORT}}" ;
-  ucd:kafkaTopic {{KAFKA_TOPIC}}
   {{KAFKA_USERNAME}}
   {{KAFKA_PASSWORD}}
+  ucd:kafkaTopic "{{KAFKA_TOPIC}}" ;
+  ucd:kafkaHost "{{KAFKA_HOST}}" ;
+  ucd:kafkaPort "{{KAFKA_PORT}}" 
+  .

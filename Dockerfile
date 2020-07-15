@@ -1,5 +1,7 @@
 FROM ucdlib/jena-fuseki-eb:jena-3.15.0
 
+RUN apt-get update && apt-get install -y wait-for-it
+
 RUN mv /docker-entrypoint.sh /docker-entrypoint-org.sh
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
