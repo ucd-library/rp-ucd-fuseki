@@ -79,6 +79,9 @@ fi
 
 [[ -n $FUSEKI_DBS ]] && fz db $FUSEKI_DBS
 
-#wait-for-it ${KAFKA_HOST}:${KAFKA_PORT}
+if [[ $KAFKA_ENABLED == "true" ]]; then
+  echo "waiting for kafka: ${KAFKA_HOST}:${KAFKA_PORT}"
+  wait-for-it -t 0 ${KAFKA_HOST}:${KAFKA_PORT}
+fi
 # Run the CMD
 exec "$@"

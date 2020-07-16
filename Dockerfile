@@ -5,7 +5,6 @@ RUN set -eux && \
     apt-get install -y util-linux rsync perl wait-for-it && \
     rm -rf /var/lib/apt/lists/*
 
-
 RUN mkdir -p $FUSEKI_HOME/extra
 COPY ./lib/jena-kafka-connector-0.0.3-SNAPSHOT.jar $FUSEKI_HOME/extra/
 COPY ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
