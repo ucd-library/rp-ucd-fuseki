@@ -52,7 +52,7 @@ declare -A G=(
   [tar_keep]='tar --keep-newer-files -z'
   [rsync_overwrite]='rsync -r'
   [tar_overwrite]='tar -z'
-  [fuseki]=${FUSEKI_HOME:-"/fuseki"}
+  [fuseki]=${FUSEKI_BASE:-"/fuseki"}
 );
 
 : <<='cut'
@@ -101,7 +101,7 @@ function main() {
 
 function main.init() {
   local opts
-  opts=`getopt -o hn --long rsync:,tar:,overwrite,keep,help,noop -n 'fz' -- "$@"`
+  opts=`getopt -o hnv --long verbose,:rsync:,tar:,overwrite,keep,help,noop -n 'fz' -- "$@"`
   [ $? != 0 ] && exit 1
 
     eval set -- "$opts"
@@ -112,6 +112,7 @@ function main.init() {
         --tar ) G[tar]=$2; shift 2;;
         --keep ) G[overwrite]="keep"; shift ;;
         --overwrite ) G[overwrite]="overwrite"; shift ;;
+        -v | --verbose) G[noop]=verbose; shift;;
         -n | --noop) G[noop]=log; shift;;
         -h | --help ) exec pod2text $0;;
 	      -- ) shift; break;;
@@ -131,7 +132,7 @@ function main.cmd() {
   done
 
   case $cmd in
-	  add-all)
+	  db.tgz | db.dir | db)
 	    $cmd "$@";
 	    ;;
 	  tdb2.graphs | tdb2.updates) # Updates to databases
@@ -188,6 +189,16 @@ function err() {
     (>&2 echo err: $@)
   fi
   exit $n;
+}
+
+function is_url() {
+  pattern='^(([[:alnum:]]+)://)?(([[:alnum:]]+)(:([[:alnum:]]+))?@)?([^:^@]+)(:([[:digit:]]+))?/(.*)/.*$'
+  if [[ "$1" =~ $pattern ]]; then
+    return 0
+  else
+    return 1
+  fi
+
 }
 
 function urlencode() {
@@ -285,32 +296,53 @@ function db.tgz() {
     esac
   done
 
+  local cat
   for f in "$@"; do
-    log ${G[curl]} '|' ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+    if [[ -f $f ]]; then
+      cat=cat
+    elif ($(is_url $f)); then
+      cat=${G[curl]}
+    else
+      cat=""
+    fi
+    if [[ -n $cat ]]; then
+      case ${G[noop]} in
+      log)
+        log ${cat} $f '|' ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+        ;;
+      verbose)
+        log ${cat} $f '|' ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+        ${cat} $f | ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+        ;;
+      *)
+        ${cat} $f | ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+        ;;
+      esac
+    fi
   done
 }
 
 function db.dir() {
-  local $db=shift;
+  local db=$1
 
-  ${G[rsync]} $db/configuration ${G[fuseki]}
-  ${G[rsync]} $db/database ${G[fuseki]}
+  [[ -d $db/configuration ]] && op ${G[rsync]} $db/configuration ${G[fuseki]}
+  [[ -d $db/databases ]] && op ${G[rsync]} $db/databases ${G[fuseki]}
 
   # If there are multiple configuration files this will not work for sure
-  local config=${G[fuseki]}/$(ls -1 $db/configuration | head -1)
+  local desc=${G[fuseki]}/configuration/$(ls -1 $db/configuration | head -1)
 
     # Add Graph data
-  tdb2.load --desc=$desc $(find $db -mindepth 1 -maxdepth 1 -type d)
-  tdb2.update --desc=$desc $(find $db -type f -name \*.sqarql-update)
+  [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $db/graph/*
+  tdb2.updates --desc=$desc $(find $db -type f -name \*.sqarql-update)
 
 }
 
 function db() {
   for i in "$@"; do
-    if [[ -f $i ]]; then
-      db.tgz $i
-    else
+    if [[ -d $i ]]; then
       db.dir $i
+    else
+      db.tgz $i
     fi
   done
 }
