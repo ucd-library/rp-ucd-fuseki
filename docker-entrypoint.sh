@@ -44,6 +44,9 @@ for f in $FUSEKI_BASE/*.tpl; do
   echo "$content" > $f
 done
 
-wait-for-it ${KAFKA_HOST}:${KAFKA_PORT}
+if [[ $KAFKA_ENABLED == "true" ]]; then
+  echo "waiting for kafka: ${KAFKA_HOST}:${KAFKA_PORT}"
+  wait-for-it -t 0 ${KAFKA_HOST}:${KAFKA_PORT}
+fi
 
 exec /docker-entrypoint-org.sh "$@"
