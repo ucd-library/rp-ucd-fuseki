@@ -1,0 +1,403 @@
+#!/usr/bin/env bash
+
+: <<=cut
+=pod
+
+=encoding utf8
+
+=head1  NAME
+
+fuseki-db-init - Fuseki initializations
+
+=head1 SYNOPSIS
+
+  fuseki-db-init [-h|--help] <command> [<args>]
+
+  where <command> is one of add-all
+
+fuseki-db-init is a script to help initialize a fuseki database.
+
+=head1 GLOBAL OPTIONS
+
+=over 4
+
+=item B<--tar=I<tar command>>
+
+=item B<--rsync=I<rsync command>>
+
+=item B<--keep>
+
+Use C<tar> and C<rsync> commands, if not specified explicitly, that keep
+modified files.
+
+=item B<--overwrite>
+
+Use C<tar> and C<rsync> commands, if not specified explicitly, that
+overwrite modified files.
+
+=item B<-h|--help>
+
+Shows the manpage for the program. The help pages are embedded in the
+script and require the functions, C<pod2usage> and C<pod2text> to work
+properly.
+
+=back
+
+=cut
+# Global Options
+declare -A G=(
+  [noop]=''
+  [curl]='curl'
+  [overwrite]='keep'
+  [rsync_keep]='rsync --update -r'
+  [tar_keep]='tar --keep-newer-files -z'
+  [rsync_overwrite]='rsync -r'
+  [tar_overwrite]='tar -z'
+  [fuseki]=${FUSEKI_BASE:-"/fuseki"}
+);
+
+: <<='cut'
+=pod
+
+=head1 COMMANDS
+
+currently the following commands can be used:
+
+C<fuseki-db-init [[options]] defaults> will shows all the default values for the
+commands to be used in processing.
+
+C<fuseki-db-init [[options]] tdb2.graphs --desc=description_file graphdirs > will
+use the passed directory basenames, as graph names (adding C<http://>
+prefix and an C</> suffix).  Any C<.ttl> or C<.n3> files will be loaded
+into that graph.  You need to specify an assembler file.
+
+C<fuseki-db-init [[options]] tdb2.updates --desc=description_file update_files > will
+use tdb2.updater to perform all the updates on the passed C<--desc>
+assembler file.
+
+C<fuseki-db-init [[options]] db.tgz tar-files > will extract the C<configuration> and
+C<databases> directories from any passed tar file.
+
+C<fuseki-db-init [[options]] db.dir dirs ... > will add all databases found in the
+passed directories.  This will add all directories as graph files and any
+files matching C<*.sparql-update> will be passed to the tdb2.loader.
+
+C<fuseki-db-init [[options]] db dirs_or_tarfiles> will add all databases found in the
+passed directories or tarfiles.
+
+=cut
+
+function main() {
+  local opts=()
+  while true; do
+	  case $1 in
+	    -*) opts+=($1); shift ;;
+	    -- ) shift; break;;
+	    *) break;
+	  esac
+  done
+  main.init "${opts[@]}"
+  main.cmd "$@"
+}
+
+function main.init() {
+  local opts
+  opts=`getopt -o hnv --long verbose,:rsync:,tar:,overwrite,keep,help,noop -n 'fuseki-db-init' -- "$@"`
+  [ $? != 0 ] && exit 1
+
+    eval set -- "$opts"
+
+    while true; do
+	    case $1 in
+        --rsync ) G[rsync]=$2; shift 2;;
+        --tar ) G[tar]=$2; shift 2;;
+        --keep ) G[overwrite]="keep"; shift ;;
+        --overwrite ) G[overwrite]="overwrite"; shift ;;
+        -v | --verbose) G[noop]=verbose; shift;;
+        -n | --noop) G[noop]=log; shift;;
+        -h | --help ) exec pod2text $0;;
+	      -- ) shift; break;;
+	      *) break;
+      esac
+    done
+}
+
+function main.cmd() {
+  local cmd=$1;
+  shift;
+
+  for v in rsync tar; do
+    if [[ -z ${G[$v]} ]]; then
+      G[$v]=${G["${v}_${G[overwrite]}"]}
+    fi
+  done
+
+  case $cmd in
+	  db.tgz | db.dir | db)
+	    $cmd "$@";
+	    ;;
+	  tdb2.graphs | tdb2.updates) # Updates to databases
+	    $cmd "$@";
+	    ;;
+    defaults ) # informational requests
+      declare -p G
+      ;;
+	  *)
+	    exec pod2usage $0
+	    ;;
+  esac
+}
+
+function op() {
+  case ${G[noop]} in
+    log)
+      log $@;
+      ;;
+    verbose)
+      log $@;
+      $@;
+      ;;
+    *)
+      $@
+      ;;
+  esac
+}
+
+function log() {
+  (>&2 echo LOG: $@)
+}
+
+function err() {
+  local opts
+  opts=`getopt -o qn: --long quiet,num: -n 'err' -- "$@"`
+  [ $? != 0 ] && exit 1
+
+  eval set -- "$opts"
+
+  local n=1
+  local q=''
+
+  while true; do
+	  case $1 in
+      -q | --quiet ) q=1; shift;;
+      -n | --num ) n=$2; shift 2;;
+	    -- ) shift; break;;
+	    *) break;
+    esac
+  done
+
+  if [[ -z $q ]] ; then
+    (>&2 echo err: $@)
+  fi
+  exit $n;
+}
+
+function is_url() {
+  pattern='^(([[:alnum:]]+)://)?(([[:alnum:]]+)(:([[:alnum:]]+))?@)?([^:^@]+)(:([[:digit:]]+))?/(.*)/.*$'
+  if [[ "$1" =~ $pattern ]]; then
+    return 0
+  else
+    return 1
+  fi
+
+}
+
+function urlencode() {
+    # urlencode <string>
+    old_lc_collate=$LC_COLLATE
+    LC_COLLATE=C
+
+    local length="${#1}"
+    for (( i = 0; i < length; i++ )); do
+        local c="${1:i:1}"
+        case $c in
+            [a-zA-Z0-9.~_-]) printf "$c" ;;
+            *) printf '%%%02X' "'$c" ;;
+        esac
+    done
+
+    LC_COLLATE=$old_lc_collate
+}
+
+function urldecode() {
+    # urldecode <string>
+
+    local url_encoded="${1//+/ }"
+    printf '%b' "${url_encoded//%/\\x}"
+}
+
+function tdb2.graphs() {
+  local opts
+  opts=`getopt -o c --long desc: -n 'fuseki-db-init load_graph' -- "$@"`
+  [ $? != 0 ] && exit 1
+
+  eval set -- "$opts"
+
+  local desc
+  while true; do
+	  case $1 in
+      -c | --desc ) desc="$2"; shift 2;;
+	    -- ) shift; break;;
+	    *) break;
+    esac
+  done
+
+  if [[ -z $desc ]]; then
+    err "tdb2.graphs --desc not specified"
+  fi
+
+  for g in "$@"; do
+    graph="http://$(urldecode $(basename $g))/"
+    for f in $(find $g -type f -name \*.ttl -o -name \*.n3); do
+        op tdb2.tdbloader --graph="$graph" --desc=$desc $f
+    done
+  done
+
+}
+
+function tdb2.updates() {
+  local opts
+  opts=`getopt -o c --long desc: -n 'fuseki-db-init tdb2.updates' -- "$@"`
+  [ $? != 0 ] && exit 1
+
+  eval set -- "$opts"
+
+  local desc
+  while true; do
+	  case $1 in
+      -c | --desc ) desc="$2"; shift 2;;
+	    -- ) shift; break;;
+	    *) break;
+    esac
+  done
+
+  if [[ -z $desc ]]; then
+    err "tdb2.updates --desc not specified"
+  fi
+
+  for f in "$@"; do
+    op tdb2.tdbupdate --desc=$desc --update=$f
+  done
+
+}
+
+function db.tgz() {
+  local opts
+  opts=$(getopt -o t --long tar: -n 'fuseki-db-init db.tgz' -- "$@")
+  [ $? != 0 ] && exit 1
+
+  eval set -- "$opts"
+
+  local tar=${G[tar]}
+  while true; do
+	  case $1 in
+      -c | --tar ) tar="$2"; shift 2;;
+	    -- ) shift; break;;
+	    *) break;
+    esac
+  done
+
+  local cat
+  for f in "$@"; do
+    if [[ -f $f ]]; then
+      cat=cat
+    elif ($(is_url $f)); then
+      cat=${G[curl]}
+    else
+      cat=""
+    fi
+    if [[ -n $cat ]]; then
+      case ${G[noop]} in
+      log)
+        log ${cat} $f '|' ${tar} --extract --directory=${G[fuseki]} configuration databases
+        ;;
+      verbose)
+        log ${cat} $f '|' ${tar} --extract --directory=${G[fuseki]} configuration databases
+        ${cat} $f | ${tar} --extract --directory=${G[fuseki]} configuration databases
+        ;;
+      *)
+        ${cat} $f | ${tar} --extract --directory=${G[fuseki]} configuration databases
+        ;;
+      esac
+    fi
+  done
+}
+
+function db.dir() {
+  local db=$1
+
+  [[ -d $db/configuration ]] && op ${G[rsync]} $db/configuration ${G[fuseki]}
+  [[ -d $db/databases ]] && op ${G[rsync]} $db/databases ${G[fuseki]}
+
+  # If there are multiple configuration files this will not work for sure
+  local desc=${G[fuseki]}/configuration/$(ls -1 $db/configuration | head -1)
+
+    # Add Graph data
+  [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $(find $db/graph -mindepth 1 -maxdepth 1 -type d)
+  tdb2.updates --desc=$desc $(find $db -type f -name *.sparql-update)
+
+}
+
+function db() {
+  for i in "$@"; do
+    if [[ -d $i ]]; then
+      db.dir $i
+    else
+      db.tgz $i
+    fi
+  done
+}
+
+function no-locks() {
+  find ${G[fuseki]}/databases -name \*.lock | xargs rm
+}
+
+
+main "$@"
+
+exit 0;
+
+: <<=cut
+
+=head1 DESCRIPTION
+
+There are three methods of specifing databases to be initialized.
+Filenames that are compressed tar files will have the C<configuration> and
+C<databases> directories directly untarred into the C<--base>. Use
+C<fuseki_db_init defaults> to see the base location.  By default, the tar
+command will not overwrite newer files.  This can be modified by using
+C<--overwrite>.
+
+URLS can also be included, and they are expected to point to compressed tar
+files as well.
+
+If the filename points to a directory, then first the C<configuration> and
+C<databases> directories will be synced to C<--base>, then graphs in the
+C<graph> directory will be added using C<tdb2.tdbloader>.  The directory
+name is the graph, (with C<http://> added as a prefix and C</> added as a
+suffix.  Other characters can be urlencoded in the directory name, and will
+be decoded on insertion) and any C<.n3> or C<.ttl> files will be loaded
+into that graph.  The first configuration file found is used as the
+assembler file, C<--desc> for the loader.  Next, any files with extension
+C<sparql-update> will be used to update the database, using
+C<tdb2.tdbupdate>.
+
+An example directory tree is shown below:
+
+=begin text
+
+  ├── configuration
+  │   └── material_science.ttl
+  ├── databases
+  │   └── material_science
+  │       └── vivo.owl
+  ├── graph
+  │   ├── can_insert_data_with_update_too.sparql-update
+  │   ├── iam.ucdavis.edu
+  │   │   └── experts.ttl
+  │   └── oapolicy.universityofcalifornia.edu
+  │       └── additions.n3
+  └── vivo.sparql-update
+
+=end text
+=cut
