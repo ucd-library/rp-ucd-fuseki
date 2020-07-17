@@ -64,6 +64,31 @@ files matching C<*.sparql-update> will be passed to the tdb2.loader.
 C<fuseki-db-init [[options]] db dirs_or_tarfiles> will add all databases found in the
 passed directories or tarfiles.
 
+=head1 DESCRIPTION
+
+There are three methods of specifing databases to be initialized.
+Filenames that are compressed tar files will have the C<configuration> and
+C<databases> directories directly untarred into the C<--base>. Use
+C<fuseki_db_init defaults> to see the base location.  By default, the tar
+command will not overwrite newer files.  This can be modified by using
+C<--overwrite>.
+
+URLS can also be included, and they are expected to point to compressed tar
+files as well.
+
+If the filename points to a directory, then first the C<configuration> and
+C<databases> directories will be synced to C<--base>, then graphs in the
+C<graph> directory will be added using C<tdb2.tdbloader>.  The directory
+name is the graph, (with C<http://> added as a prefix and C</> added as a
+suffix.  Other characters can be urlencoded in the directory name, and will
+be decoded on insertion) and any C<.n3> or C<.ttl> files will be loaded
+into that graph.  The first configuration file found is used as the
+assembler file, C<--desc> for the loader.  Next, any files with extension
+C<sparql-update> will be used to update the database, using
+C<tdb2.tdbupdate>.
+
+An example directory tree is shown below:
+
 =begin text
 
   ├── configuration

@@ -358,6 +358,7 @@ main "$@"
 exit 0;
 
 : <<=cut
+
 =head1 DESCRIPTION
 
 There are three methods of specifing databases to be initialized.
