@@ -3,17 +3,19 @@
 : <<=cut
 =pod
 
+=encoding utf8
+
 =head1  NAME
 
-fz - Fuseki utility function
+fuseki-db-init - Fuseki initializations
 
 =head1 SYNOPSIS
 
-  fz [-h|--help] <command> [<args>]
+  fuseki-db-init [-h|--help] <command> [<args>]
 
   where <command> is one of add-all
 
-fz is a script to help initialize a fuseki database.
+fuseki-db-init is a script to help initialize a fuseki database.
 
 =head1 GLOBAL OPTIONS
 
@@ -32,7 +34,6 @@ modified files.
 
 Use C<tar> and C<rsync> commands, if not specified explicitly, that
 overwrite modified files.
-
 
 =item B<-h|--help>
 
@@ -62,26 +63,26 @@ declare -A G=(
 
 currently the following commands can be used:
 
-C<fz [[options]] defaults> will shows all the default values for the
+C<fuseki-db-init [[options]] defaults> will shows all the default values for the
 commands to be used in processing.
 
-C<fz [[options]] tdb2.graphs --desc=description_file graphdirs > will
+C<fuseki-db-init [[options]] tdb2.graphs --desc=description_file graphdirs > will
 use the passed directory basenames, as graph names (adding C<http://>
 prefix and an C</> suffix).  Any C<.ttl> or C<.n3> files will be loaded
 into that graph.  You need to specify an assembler file.
 
-C<fz [[options]] tdb2.updates --desc=description_file update_files > will
+C<fuseki-db-init [[options]] tdb2.updates --desc=description_file update_files > will
 use tdb2.updater to perform all the updates on the passed C<--desc>
 assembler file.
 
-C<fz [[options]] db.tgz tar-files > will extract the C<configuration> and
+C<fuseki-db-init [[options]] db.tgz tar-files > will extract the C<configuration> and
 C<databases> directories from any passed tar file.
 
-C<fz [[options]] db.dir dirs ... > will add all databases found in the
+C<fuseki-db-init [[options]] db.dir dirs ... > will add all databases found in the
 passed directories.  This will add all directories as graph files and any
 files matching C<*.sparql-update> will be passed to the tdb2.loader.
 
-C<fz [[options]] db dirs_or_tarfiles> will add all databases found in the
+C<fuseki-db-init [[options]] db dirs_or_tarfiles> will add all databases found in the
 passed directories or tarfiles.
 
 =cut
@@ -101,7 +102,7 @@ function main() {
 
 function main.init() {
   local opts
-  opts=`getopt -o hnv --long verbose,:rsync:,tar:,overwrite,keep,help,noop -n 'fz' -- "$@"`
+  opts=`getopt -o hnv --long verbose,:rsync:,tar:,overwrite,keep,help,noop -n 'fuseki-db-init' -- "$@"`
   [ $? != 0 ] && exit 1
 
     eval set -- "$opts"
@@ -227,7 +228,7 @@ function urldecode() {
 
 function tdb2.graphs() {
   local opts
-  opts=`getopt -o c --long desc: -n 'fz load_graph' -- "$@"`
+  opts=`getopt -o c --long desc: -n 'fuseki-db-init load_graph' -- "$@"`
   [ $? != 0 ] && exit 1
 
   eval set -- "$opts"
@@ -256,7 +257,7 @@ function tdb2.graphs() {
 
 function tdb2.updates() {
   local opts
-  opts=`getopt -o c --long desc: -n 'fz load_graph' -- "$@"`
+  opts=`getopt -o c --long desc: -n 'fuseki-db-init tdb2.updates' -- "$@"`
   [ $? != 0 ] && exit 1
 
   eval set -- "$opts"
@@ -275,14 +276,14 @@ function tdb2.updates() {
   fi
 
   for f in "$@"; do
-    op tdb2.tdbupdate --desc=$desc $f
+    op tdb2.tdbupdate --desc=$desc --update=$f
   done
 
 }
 
 function db.tgz() {
   local opts
-  opts=$(getopt -o t --long tar: -n 'fz tgz' -- "$@")
+  opts=$(getopt -o t --long tar: -n 'fuseki-db-init db.tgz' -- "$@")
   [ $? != 0 ] && exit 1
 
   eval set -- "$opts"
@@ -308,14 +309,14 @@ function db.tgz() {
     if [[ -n $cat ]]; then
       case ${G[noop]} in
       log)
-        log ${cat} $f '|' ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+        log ${cat} $f '|' ${tar} --extract --directory=${G[fuseki]} configuration databases
         ;;
       verbose)
-        log ${cat} $f '|' ${tar} -z --extract --directory=${G[fuseki]} configuration databases
-        ${cat} $f | ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+        log ${cat} $f '|' ${tar} --extract --directory=${G[fuseki]} configuration databases
+        ${cat} $f | ${tar} --extract --directory=${G[fuseki]} configuration databases
         ;;
       *)
-        ${cat} $f | ${tar} -z --extract --directory=${G[fuseki]} configuration databases
+        ${cat} $f | ${tar} --extract --directory=${G[fuseki]} configuration databases
         ;;
       esac
     fi
@@ -332,8 +333,8 @@ function db.dir() {
   local desc=${G[fuseki]}/configuration/$(ls -1 $db/configuration | head -1)
 
     # Add Graph data
-  [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $db/graph/*
-  tdb2.updates --desc=$desc $(find $db -type f -name \*.sqarql-update)
+  [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $(find $db/graph -mindepth 1 -maxdepth 1 -type d)
+  tdb2.updates --desc=$desc $(find $db -type f -name *.sparql-update)
 
 }
 
@@ -355,3 +356,47 @@ function no-locks() {
 main "$@"
 
 exit 0;
+
+: <<=cut
+=head1 DESCRIPTION
+
+There are three methods of specifing databases to be initialized.
+Filenames that are compressed tar files will have the C<configuration> and
+C<databases> directories directly untarred into the C<--base>. Use
+C<fuseki_db_init defaults> to see the base location.  By default, the tar
+command will not overwrite newer files.  This can be modified by using
+C<--overwrite>.
+
+URLS can also be included, and they are expected to point to compressed tar
+files as well.
+
+If the filename points to a directory, then first the C<configuration> and
+C<databases> directories will be synced to C<--base>, then graphs in the
+C<graph> directory will be added using C<tdb2.tdbloader>.  The directory
+name is the graph, (with C<http://> added as a prefix and C</> added as a
+suffix.  Other characters can be urlencoded in the directory name, and will
+be decoded on insertion) and any C<.n3> or C<.ttl> files will be loaded
+into that graph.  The first configuration file found is used as the
+assembler file, C<--desc> for the loader.  Next, any files with extension
+C<sparql-update> will be used to update the database, using
+C<tdb2.tdbupdate>.
+
+An example directory tree is shown below:
+
+=begin text
+
+  ├── configuration
+  │   └── material_science.ttl
+  ├── databases
+  │   └── material_science
+  │       └── vivo.owl
+  ├── graph
+  │   ├── can_insert_data_with_update_too.sparql-update
+  │   ├── iam.ucdavis.edu
+  │   │   └── experts.ttl
+  │   └── oapolicy.universityofcalifornia.edu
+  │       └── additions.n3
+  └── vivo.sparql-update
+
+=end text
+=cut

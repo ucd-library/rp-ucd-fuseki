@@ -34,13 +34,13 @@ else
   KAFKA_PASSWORD="ucd:kafkaPassword \"${KAFKA_PASSWORD}\" ;"
 fi
 
+# Server Conifiguration
 for f in $FUSEKI_HOME/*.tpl; do
-
   content=$(cat $f)
   for var in $(compgen -e); do
     content=$(echo "$content" | sed "s|{{$var}}|${!var}|g")
   done
-  f=$(echo ${f%.*})
+  f=$FUSEKI_BASE/$(basename $f .tpl)
   echo "$content" > $f
 done
 
@@ -49,12 +49,16 @@ done
 #
 set -e
 
+# We need to verify that any extra jars are in the base.
+# Even if the FUSEKI_BASE is a volume
 cp -a $FUSEKI_HOME/extra $FUSEKI_BASE
 
-if [ ! -f "$FUSEKI_BASE/jetty.xml" ]; then
-  cp "$FUSEKI_HOME/jetty.xml" $FUSEKI_BASE
+# This allows for local adjustments to the jetty-configuration
+if [ ! -f "$FUSEKI_BASE/jetty-config.xml" ]; then
+  cp "$FUSEKI_HOME/jetty-config.xml" $FUSEKI_BASE
 fi
 
+# Update the shiro.ini on initialaation only
 if [ ! -f "$FUSEKI_BASE/shiro.ini" ] ; then
   # First time
   echo "###################################"
@@ -71,13 +75,13 @@ if [ ! -f "$FUSEKI_BASE/shiro.ini" ] ; then
   echo "###################################"
 fi
 
-
-# $ADMIN_PASSWORD can always override
+# However, $ADMIN_PASSWORD can always override
 if [ -n "$ADMIN_PASSWORD" ] ; then
   sed -i "s/^admin=.*/admin=$ADMIN_PASSWORD/" "$FUSEKI_BASE/shiro.ini"
 fi
 
-[[ -n $FUSEKI_DBS ]] && fz db $FUSEKI_DBS
+# If we have specified any Databases to initialize, then do that here.
+[[ -n ${FUSEKI_DB_INIT} ]] && fuseki-db-init ${FUSEKI_DB_INIT_ARGS} db ${FUSEKI_DB_INIT}
 
 if [[ $KAFKA_ENABLED == "true" ]]; then
   echo "waiting for kafka: ${KAFKA_HOST}:${KAFKA_PORT}"
