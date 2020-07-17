@@ -89,7 +89,6 @@ C<tdb2.tdbupdate>.
 
 An example directory tree is shown below:
 
-=begin text
 
   ├── configuration
   │   └── material_science.ttl
@@ -104,5 +103,4 @@ An example directory tree is shown below:
   │       └── additions.n3
   └── vivo.sparql-update
 
-=end text
 =cut
