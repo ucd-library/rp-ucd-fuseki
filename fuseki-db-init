@@ -248,8 +248,8 @@ function tdb2.graphs() {
 
   for g in "$@"; do
     graph="http://$(urldecode $(basename $g))/"
-    for f in $(find $g -type f -name \*.ttl -o -name \*.n3); do
-        op tdb2.tdbloader --graph="$graph" --desc=$desc $f
+    for f in $(find $g -type f -name \*.ttl -o -name \*.n3 -o -name \*.gz ); do
+        op tdb2.tdbloader --graph="$graph" --loader=parallel --desc=$desc $f
     done
   done
 
@@ -333,7 +333,7 @@ function db.dir() {
   local desc=${G[fuseki]}/configuration/$(ls -1 $db/configuration | head -1)
 
     # Add Graph data
-  [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $(find $db/graph -mindepth 1 -maxdepth 1 -type d)
+  [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $(find $db/graph -mindepth 1 -type d)
   tdb2.updates --desc=$desc $(find $db -type f -name *.sparql-update)
 
 }
