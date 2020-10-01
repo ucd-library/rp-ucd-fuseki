@@ -8,8 +8,9 @@ RUN set -eux && \
 RUN mkdir -p $FUSEKI_HOME/extra
 COPY ./lib/jena-kafka-connector-0.0.3-SNAPSHOT.jar ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
 
-COPY ./jetty-config.xml $FUSEKI_HOME
+COPY ./jetty-config.xml $FUSEKI_HOME/
 COPY ./config.ttl.tpl $FUSEKI_HOME/
+COPY ./tdb.cfg.tpl $FUSEKI_HOME/
 
 # fuseki-db-init is our local bash script to initialize databases
 COPY ./fuseki-db-init /usr/local/bin/fuseki-db-init
