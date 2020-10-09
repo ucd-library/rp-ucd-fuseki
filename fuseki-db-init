@@ -68,8 +68,8 @@ commands to be used in processing.
 
 C<fuseki-db-init [[options]] tdb2.graphs --desc=description_file graphdirs > will
 use the passed directory basenames, as graph names (adding C<http://>
-prefix and an C</> suffix).  Any C<.ttl> or C<.n3> files will be loaded
-into that graph.  You need to specify an assembler file.
+prefix and an C</> suffix).  Any C<.ttl>,C<.jsonld> or C<.n3> files will be loaded
+into that graph.  Any file may be gzipped. You need to specify an assembler file.
 
 C<fuseki-db-init [[options]] tdb2.updates --desc=description_file update_files > will
 use tdb2.updater to perform all the updates on the passed C<--desc>
@@ -248,7 +248,7 @@ function tdb2.graphs() {
 
   for g in "$@"; do
     graph="http://$(urldecode $(basename $g))/"
-    for f in $(find $g -type f -name \*.ttl -o -name \*.n3 -o -name \*.gz ); do
+    for f in $(find $g -type f -name \*.ttl -o -name \*.n3 -o -name \*.jsonld -o -name \*.n3.gz -o -name \*.jsonld.gz -o -name \*.ttl.gz ); do
         op tdb2.tdbloader --graph="$graph" --loader=parallel --desc=$desc $f
     done
   done
