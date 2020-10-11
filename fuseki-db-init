@@ -326,16 +326,18 @@ function db.tgz() {
 function db.dir() {
   local db=$1
 
-  [[ -d $db/configuration ]] && op ${G[rsync]} $db/configuration ${G[fuseki]}
-  [[ -d $db/databases ]] && op ${G[rsync]} $db/databases ${G[fuseki]}
-
   # If there are multiple configuration files this will not work for sure
   local desc=${G[fuseki]}/configuration/$(ls -1 $db/configuration | head -1)
 
-    # Add Graph data
-  [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $(find $db/graph -mindepth 1 -type d)
-  tdb2.updates --desc=$desc $(find $db -type f -name *.sparql-update)
+  if [[ ( ! -e $desc ) || ( ${G[overwrite]} == "overwrite" ) ]]; then
 
+    [[ -d $db/configuration ]] && op ${G[rsync]} $db/configuration ${G[fuseki]}
+    [[ -d $db/databases ]] && op ${G[rsync]} $db/databases ${G[fuseki]}
+
+    # Add Graph data
+    [[ -d $db/graph ]] && tdb2.graphs --desc=$desc $(find $db/graph -mindepth 1 -type d)
+    tdb2.updates --desc=$desc $(find $db -type f -name *.sparql-update)
+  fi
 }
 
 function db() {
