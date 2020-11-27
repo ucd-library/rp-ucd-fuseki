@@ -21,7 +21,10 @@
    # See javadoc for ARQ.queryTimeout for details.
    # This can also be set on a per dataset basis in the dataset assembler.
    #
-   ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "5000,60000" ] ;
+   ja:context [
+     ja:cxtName "arq:queryTimeout" ;
+     ja:cxtValue "${FUSEKI_TIMEOUT_FIRST:-30000},${FUSEKI_TIMEOUT_REST:-120000}"
+   ] ;
 
    # Add any custom classes you want to load.
    # Must have a "public static void init()" method.
@@ -31,10 +34,8 @@
    .
 
 [] rdf:type ucd:Kafka ;
-  ucd:kafkaEnabled "{{KAFKA_ENABLED}}" ;
-  {{KAFKA_USERNAME}}
-  {{KAFKA_PASSWORD}}
-  ucd:kafkaTopic "{{KAFKA_TOPIC}}" ;
-  ucd:kafkaHost "{{KAFKA_HOST}}" ;
-  ucd:kafkaPort "{{KAFKA_PORT}}"
+  ucd:kafkaEnabled "${KAFKA_ENABLED:-FALSE}" ;
+  ucd:kafkaTopic "${KAFKA_TOPIC:-fuseki-rdf-patch}" ;
+  ucd:kafkaHost "${KAFKA_HOST:-kafka}" ;
+  ucd:kafkaPort "${KAFKA_PORT:-3030}"
   .
