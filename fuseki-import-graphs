@@ -1,0 +1,55 @@
+#! /bin/bash
+
+# Reads the directories passed on the commmand line, and imports
+
+if ! opts=$(getopt -o c: --long clone: -n fuseki-import-graphs -- "$@"); then
+  echo "Bad Command Options." >&2 ; exit 1 ; fi
+
+eval set -- "$opts"
+
+while true; do
+	case $1 in
+    -c | --clone) clone="$2"; shift 2;;
+	  *) shift; break;
+  esac
+done
+
+auth=admin:${FUSEKI_PASSWORD}
+load=http://fuseki:3030/experts_private/data
+
+graphs=(
+  iam.ucdavis.edu
+  oapolicy.universityofcalifornia.edu
+  experts.ucdavis.edu%2Fiam
+  experts.ucdavis.edu%2Foap
+)
+
+import_dir=/fuseki/import
+
+if [[ -n $clone ]]; then
+  [[ -d ${import_dir} ]] || mkdir ${import_dir}
+  clone_dir=$(mktemp -d --tmpdir=$import_dir)
+  echo "fuseki-import-graphs - git clone $clone $clone_dir"
+  git clone $clone $clone_dir;
+
+  # Add to list of diretories
+  set -- "$@" $clone_dir
+fi
+
+names="${graphs[@]/#/ -o -name }"
+names=${names#*-o}
+
+for root in "$@"; do
+  for dir in $(find $root -type d $names); do
+    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
+      graph=$(basename $(dirname $fn))
+      echo "fuseki-import-graphs - import $graph"
+      curl --user "${auth}" -F "file=@$fn" "${load}?graph=$(printf 'http://%b/' ${graph//%/\\x})"
+    done
+  done
+done
+
+if [[ -d $clone_dir ]]; then
+  echo "fuseki-import-graphs - rm $clone_dir"
+  rm -rf $clone_dir
+fi

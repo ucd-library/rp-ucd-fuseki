@@ -34,7 +34,7 @@
    .
 
 [] rdf:type ucd:Kafka ;
-  ucd:kafkaEnabled "${KAFKA_ENABLED:-FALSE}" ;
+  ucd:kafkaEnabled "${KAFKA_ENABLED:-TRUE}" ;
   ucd:kafkaTopic "${KAFKA_TOPIC:-fuseki-rdf-patch}" ;
   ucd:kafkaHost "${KAFKA_HOST:-kafka}" ;
   ucd:kafkaPort "${KAFKA_PORT:-3030}"

@@ -14,7 +14,6 @@ function expandVarsStrict(){
   done
 }
 
-
 if [ -f "/fuseki/databases/vivo/tdb.lock" ] ; then
   echo "WARNING: fuseki lock file found.  removing."
   rm /fuseki/databases/vivo/tdb.lock
@@ -49,6 +48,9 @@ else
   KAFKA_PASSWORD="ucd:kafkaPassword \"${KAFKA_PASSWORD}\" ;"
 fi
 
+# Used to use ADMIN_PASSWORD
+: <<< ${FUSEKI_PASSWORD:=$ADMIN_PASSWORD}
+
 # Server Configuration -- Don't overwrite
 for f in $(cd $FUSEKI_HOME; find databases -type f); do
   n=$(dirname $f)/$(basename $f .tmpl)
@@ -58,29 +60,16 @@ for f in $(cd $FUSEKI_HOME; find databases -type f); do
   fi
 done
 
+# Since these are affected by configuration parameters, redo on every startup
 for f in $(cd $FUSEKI_HOME; find . -name \*.tmpl); do
   n=$(dirname $f)/$(basename $f .tmpl)
-  if [[ ! -f $FUSEKI_BASE/$n ]] ; then
-    mkdir -p $(dirname ${FUSEKI_BASE}/$n)
-    expandVarsStrict < ${FUSEKI_HOME}/$f > ${FUSEKI_BASE}/$n
-  fi
-  if [[ "$(basename $n)" = "shiro.ini" && -z "$ADMIN_PASSWORD" ]]; then
+  mkdir -p $(dirname ${FUSEKI_BASE}/$n)
+  expandVarsStrict < ${FUSEKI_HOME}/$f > ${FUSEKI_BASE}/$n
+
+  if [[ "$(basename $n)" = "shiro.ini" && -z "$FUSEKI_PASSWORD" ]]; then
     grep 'admin=' ${FUSEKI_BASE}/$n;
   fi
 done
-
-function experts_preload() {
-  for loc in public private; do
-    if [[ -d /experts-preload/$loc ]]; then
-      for d in $(find /experts-preload/$loc -mindepth 1 -type d); do
-        graph="http://$(urldecode $(basename $d))/"
-        for f in $(find $d -type f -name \*.ttl -o -name \*.ttl.gz -o -name \*.n3 -o -name \*.n3.gz ); do
-          tdb2.tdbloader --graph="$graph" --loader=parallel --loc=${FUSEKI_BASE}/databases/experts/$loc $f
-        done
-      done
-    fi
-  done
-}
 
 if [[ $KAFKA_ENABLED == "true" ]]; then
   echo "waiting for kafka: ${KAFKA_HOST}:${KAFKA_PORT}"
