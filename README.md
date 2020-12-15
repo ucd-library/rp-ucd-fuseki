@@ -3,102 +3,136 @@ UC Davis Library RP Fuseki instance with the fuseki-kafka-connector
 
 # Env Params
 
+## fuseki
+
+The following parameters (and their defaults) affect the actual instance:
+
+- `${FUSEKI_PASSWORD:-$(pwgen -s 15)}` - Fuseki ADMIN password, if not set will
+  echo the password to the log file
+- `${FUSEKI_TIMEOUT_FIRST:-30000}` - Fuseki timeout on queries for first response
+- `${FUSEKI_TIMEOUT_REST:-120000}` - Fuseki timeout on queries for all responses
+
+The following parameters (set in .env) are common parameters used in the
+docker-compose initialization file:
+
+- `${FUSEKI_VERSION:-1.1.0}` - fuseki version to use
+- `${FUSEKI_PORT:-3004}` - External Port assignment
+
+
 ## Kafka
 
 Defaults shown
 
-  - KAFKA_ENABLED=true
-    - Set to false to disable kafka connection
-  - KAFKA_HOST=kafka
-  - KAFKA_PORT=3030
-  - KAFKA_TOPIC=fuseki-rdf-patch
-  - KAFKA_USERNAME
-  - KAFKA_PASSWORD
-
-## Fuseki
-
-  - ADMIN_PASSWORD
-    - random admin password set in not provided, see console on startup
-
-  - FUSEKI_DB_INIT
-    - This is a spaced separated list of databases to
-      initialize.  See initialization, below
-
-  - FUSEKI_DB_INIT_ARGS
-    - Arguments to pass to fuseki_db_init on initialization.
+- `${KAFKA_ENABLED:-TRUE}` = Set to false to disable kafka
+- `${KAFKA_TOPIC:-fuseki-rdf-patch}`
+- `${KAFKA_HOST:-kafka}`
+- `${KAFKA_PORT:-3030}`
+- `${KAFKA_USERNAME}`
+- `${KAFKA_PASSWORD}`
 
 
 # Fuseki Initialization
 
-## fuseki_db_init
+By default, `rp-ucd-fuseki` sets up a public and private set of databases.  The
+public database default `experts` is the only database that is needed in the
+Aggie Experts deployment.  Even without initialization, the experts system
+should at least come up, albiet with no data.
 
-This docker file includes the tdb2.tdbloader and tdb2.tdbupdate commands
-for initializing databases.  Also included is a script file
-`fuseki_db_init` that is use primarily on the startup, but can also be
-used interactively in the docker command.  A typical methodology would be
-to mount directory to this docker container for initialization.
+The quickest method for testing the system is to directly import public graphs
+into the system.  Using fuseki's `/data` import http endpoint will also trigger
+the kafka stream reader, and should automatically update the Aggie Experts
+search indices as well.
 
-``` yaml
-services:
-  fuseki:
-    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-latest}
-    environment:
-      - FUSEKI_DB_INIT=/staging/material_science /staging/matsci_vivo.tgz
-      - FUSEKI_DB_INIT_ARGS=-v
-    volumes:
-      - fuseki-data:/fuseki
-      - ./research-profiles/examples:/staging
-    ports:
-      - ${FUSEKI_EXTERNAL_PORT:-3030}:3030
-```
-
-In the example above, the /staging directory includes a mount point, and
-then the `FUSEKI_DB_INIT` environment variable specifies some databases to
-initialize.  This is a spaced separated list. Compressed tar files will
-have the *configuration* and *databases* directories directly untarred into
-the $FUSEKI_BASE.  By default, the tar command will not overwrite newer
-files.  This can be modified by using `FUSEKI_DB_INIT_ARGS=--overwrite`.
-URLS can also be included, and they are expected to point to compressed tar
-files as well. Remember, any URLS in `FUSEKI_DB_INIT` will be fetched on
-container startup, and that can take a long time for big URLS.  In that
-case it may be better to cache locally.
-
-If `FUSEKI_DB_INIT` points to a directory, then first the *configuration*
-and *databases* directories will be synced to `$FUSEKI_BASE`, then graphs
-in the *graph* directory will be added using `tdb2.tdbloader`.  The
-directory name is the graph, (with `http://` added as a prefix and `/`
-added as a suffix.  Other characters can be urlencoded in the directory
-name, and will be decoded on insertion) and any `.n3` or `.ttl` files will
-be loaded into that graph.  The first configuration file is used as the
-assembler file for the loader.  Next, any files with extension
-`sparql-update` will be used to update the database, using `tdb2.tdbupdate`.
-
-An example directory tree is shown below:
+There are some standard graphs that are used in the Aggie experts.
+`iam.ucdavis.edu` and `oapolicy.universityofcalifornia.edu` are public graphs,
+the others are private.
 
 ``` text
-├── configuration
-│   └── material_science.ttl
-├── databases
-│   └── material_science
+├── iam.ucdavis.edu
+│   └── *.ttl.gz    # These data are VIVO contructed IAM data
+├── oapolicy.universityofcalifornia.edu
+│   └── *.ttl.gz    # These data are VIVO constructed publication data
 │       └── vivo.owl
-├── graph
-│   ├── can_insert_data_with_update_too.sparql-update
-│   ├── iam.ucdavis.edu
-│   │   └── experts.ttl
-│   └── oapolicy.universityofcalifornia.edu
-│       └── additions.n3
-└── vivo.sparql-update
+├── experts.ucdavis.edu%2Foap
+│   └── *.ttl.gz    # This is the raw JSON data from the CDL publication system.
+└── experts.ucdavis.edu%2Fiam
+    └── *.ttl.gz    # This is raw JSON data from the UCD IAM system.
+
 ```
 
-If you want to use `fuseki_db_init` more interactively, you can, for
-example execute a bash shell for the container.
+## Local initialization
+
+After the system is started, if the fuseki port is exposed to your local host,
+you can directly add data from outside the docker instance.  The advantage of
+this is that you don't need to get the test data into your docker instance, the
+disadvantage is that your mileage may vary on the import script.
+
+The preferred way to load data is via the data url for the `experts-private`
+database.  Adding to this database will also add to the public `experts` database.
+
 
 ``` bash
-docker-compose exec fuseki bash
+auth=admin:${FUSEKI_PASSWORD}
+load=http://localhost:${FUSEKI_HOST_PORT:-3004}/experts_private/data
+for f in $(find iam.ucdavis.edu oapolicy.universityofcalifornia.edu -type f -name \*.ttl -o -name \*.ttl.gz ); do
+  g=$(basename $(dirname $f))
+  curl --user "${auth}" -F "file=@$f" "${load}?graph=$(printf 'http://%b/' ${g//%/\\x})"
+done
 ```
-There are more commands in `fuseki_db_init` try `--help` for more information.
 
-## Server initialization.
+## Docker initialization
+
+Alternatively, you can use a script in the docker instance to import the data.
+The advantage here is that the scripts should work, it's not required to expose
+the fuseki port, and the required variables will be set in the environment.  The
+disadvantage is that you need to make the data available to the docker
+instance.  Below is an example yml file, that shows a local mount into the container.
+
+```yaml
+version: '3.5'
+
+services:
+  fuseki:
+    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-1.1.0}
+#    command: tail -f /dev/null
+    environment:
+      - JVM_ARGS=${JVM_ARGS:- -Xmx4g}
+      - FUSEKI_PASSWORD=${FUSEKI_PASSWORD:-quinnisgreat}
+      - KAFKA_ENABLED=${KAFKA_ENABLED:-false}
+    volumes:
+      - fuseki-data:/fuseki
+      - ~/experts-data/experts:/fuseki/import
+    ports:
+      - ${FUSEKI_HOST_PORT:-7030}:3030
+
+volumes:
+  fuseki-data:
+    driver: local
+```
+
+With this setup, you can initial graphs with:
+
+``` bash
+docker-compose exec fuseki fuseki-import-graphs /fuseki/import
+```
+
+In order to utilize the KAFKA stream monitoring, `fuseki-import-graphs`
+requires the fuseki server to be running.
+
+## Github Initializaton
+
+Finally, `fuseki-import-graphs` can also clone data from a git repository.  The
+data is cloned into a directory of `/fuseki/import/` which *should* be a docker
+volume, and not affect the instance.  For example, the library's gitlab instance
+requires a token for access to private data.  After setting up that token, you
+can have the script pull data from that repository.  You can add clone flags as
+well. The example below shows a typical use for this:
+
+``` bash
+docker-compose exec fuseki fuseki-import-graphs --clone="https://quinn:${GITLAB_PUSH_TOKEN}@gitlab.dams.library.ucdavis.edu/experts/experts-data.git --single-branch --branch=experts"
+```
+
+# Special Server initializations
 
 By default, the server is launched like `/jena-fuseki/fuseki-server
 --jetty-config=/jena-fuseki/jetty-config.xml`  You can modify this in the
@@ -107,3 +141,16 @@ docker compose command, for example to use another configuration file try:
 ``` yaml
    command: ["/jena-fuseki/fuseki-server", "--jetty-config=/foo/jetty-config.xml"]
 ```
+
+In addition, occasionally, you may wish to start the service without starting
+the fuseki server.  You may want to investigate the underlying tdb2 databases,
+or the configuration files for example.  In that case you can start the service
+with something like:
+
+``` yaml
+   command: tail -f /dev/null
+```
+
+Then you can execute commands (like a bash interactive script) in the server.
+Not that even if you have started the server, you can always execute commands to
+the instance.
