@@ -1,0 +1,39 @@
+#! /usr/bin/env yml-docker-compose.sh
+# This Example yml can start and external FUSKEKI instance
+
+# I use this to manage the test
+# alias fdc="docker-compose -p fuseki-test -f $(pwd)/test.yml"
+
+# Then `fdc up -d` for example.
+
+# This compose file should have reasonable defaults, but
+# updates to .env (eg FUSEKI_VERSION=foo) will update the startup
+
+# An .env file is *NOT* required however.
+# A complete .env file might look like:
+#ADMIN_PASSWORD=testing
+#JVM_ARGS=-Xmx4g
+#FUSEKI_HOST_PORT=6030
+#FUSEKI_VERSION=1.1.2
+#KAFKA_ENABLED=false
+
+# The ENDPOINT Associated w/ the default is
+#FUSEKI_ENDPOINT=http://admin:testing@fuseki:3030/
+
+version: '3.5'
+
+services:
+  fuseki:
+    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-1.1.2}
+    environment:
+      - JVM_ARGS=${JVM_ARGS:- -Xmx4g}
+      - FUSEKI_PASSWORD=${FUSEKI_PASSWORD:-testing}
+      - KAFKA_ENABLED=${KAFKA_ENABLED:-false}
+    volumes:
+      - fuseki-data:/fuseki
+    ports:
+      - ${FUSEKI_HOST_PORT:-3030}:3030
+
+volumes:
+  fuseki-data:
+    driver: local

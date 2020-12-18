@@ -2,7 +2,7 @@ FROM ucdlib/jena-fuseki-eb:jena-3.15.0
 
 RUN set -eux && \
     apt-get update && \
-    apt-get install -y util-linux rsync perl wait-for-it git && \
+    apt-get install -y util-linux rsync perl wait-for-it git git-lfs && \
     rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p $FUSEKI_HOME/extra

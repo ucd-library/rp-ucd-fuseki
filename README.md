@@ -142,6 +142,30 @@ By default `fuseki-import-graphs` only imports public graphs, however using the
 `--private` flag will import private graphs as well.  This can help decode
 existing conversions from private to public data.
 
+# Test Instance
+
+This project includes a test.yml file that can be used for testing the fuseki
+installation outside of the complete rp-ucd-deployment.  This is also a good way
+to setup a service if you just want to query the data.
+
+One method to manage the test is with an alias as in:
+
+``` bash
+alias fdc="docker-compose -p fuseki-test -f $(pwd)/test.yml"
+```
+Then you can manage the file as in:
+
+``` bash
+fdc up -d #or
+fdc exec fuseki bash
+```
+
+This compose file should have reasonable defaults, but updates to .env (eg
+FUSEKI_VERSION=1.1.1) will update the startup.  An `.env` file is *NOT* required
+however. The fuseki_endpoint for the default is
+`http://admin:testing@fuseki:3030/` with experts and experts-dev databases.
+
+
 # Special Server Initialization
 
 By default, the server is launched like `/jena-fuseki/fuseki-server
