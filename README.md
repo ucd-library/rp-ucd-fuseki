@@ -53,10 +53,12 @@ the others are private.
 ├── oapolicy.universityofcalifornia.edu
 │   └── *.ttl.gz    # These data are VIVO constructed publication data
 │       └── vivo.owl
+├── experts.ucdavis.edu
+│   └── *.ttl.gz    # This goes to the default public database.
 ├── experts.ucdavis.edu%2Foap
-│   └── *.ttl.gz    # This is the raw JSON data from the CDL publication system.
+│   └── *.ttl.gz    # Private data from the CDL publication system.
 └── experts.ucdavis.edu%2Fiam
-    └── *.ttl.gz    # This is raw JSON data from the UCD IAM system.
+    └── *.ttl.gz    # Private data from the UCD IAM system.
 
 ```
 
@@ -119,7 +121,11 @@ docker-compose exec fuseki fuseki-import-graphs /fuseki/import
 In order to utilize the KAFKA stream monitoring, `fuseki-import-graphs`
 requires the fuseki server to be running.
 
-## Github Initializaton
+By default `fuseki-import-graphs` only imports public graphs, however using the
+`--private` flag will import private graphs as well.  This can help decode
+existing conversions from private to public data.
+
+## Github Initialization
 
 Finally, `fuseki-import-graphs` can also clone data from a git repository.  The
 data is cloned into a directory of `/fuseki/import/` which *should* be a docker
@@ -132,7 +138,11 @@ well. The example below shows a typical use for this:
 docker-compose exec fuseki fuseki-import-graphs --clone="https://quinn:${GITLAB_PUSH_TOKEN}@gitlab.dams.library.ucdavis.edu/experts/experts-data.git --single-branch --branch=experts"
 ```
 
-# Special Server initializations
+By default `fuseki-import-graphs` only imports public graphs, however using the
+`--private` flag will import private graphs as well.  This can help decode
+existing conversions from private to public data.
+
+# Special Server Initialization
 
 By default, the server is launched like `/jena-fuseki/fuseki-server
 --jetty-config=/jena-fuseki/jetty-config.xml`  You can modify this in the

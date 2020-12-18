@@ -40,26 +40,13 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         fuseki:operation fuseki:query ;
         fuseki:name "query"
         ] ;
-#    fuseki:endpoint [
-#        fuseki:operation fuseki:update ;
-#        fuseki:name "update"
-#        ] ;
     fuseki:endpoint [
         fuseki:operation fuseki:gsp-r ;
         fuseki:name "get"
         ] ;
-#    fuseki:endpoint [
-#        fuseki:operation fuseki:gsp-rw ;
-#        fuseki:name "data"
-#        ] ;
-#    fuseki:endpoint [
-#        fuseki:operation fuseki:upload ;
-#        fuseki:name "upload"
-#        ] ;
     .
 
 :experts_private a fuseki:Service ;
-#    fuseki:name "experts_private" ;
     fuseki:dataset :dataset_private ;
     fuseki:endpoint [
         fuseki:operation fuseki:query ;
@@ -99,6 +86,7 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     a tdb2:GraphTDB2;
     tdb2:dataset :tdb_public;
     .
+
 
 # These are being planned to remove.
 :graph_public_iam

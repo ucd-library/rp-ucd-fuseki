@@ -2,14 +2,17 @@
 
 # Reads the directories passed on the commmand line, and imports
 
-if ! opts=$(getopt -o c: --long clone: -n fuseki-import-graphs -- "$@"); then
+if ! opts=$(getopt -o pc: --long private,clone: -n fuseki-import-graphs -- "$@"); then
   echo "Bad Command Options." >&2 ; exit 1 ; fi
 
 eval set -- "$opts"
 
+private=
+
 while true; do
 	case $1 in
     -c | --clone) clone="$2"; shift 2;;
+    -p | --private) private=1; shift ;;
 	  *) shift; break;
   esac
 done
@@ -20,9 +23,15 @@ load=http://fuseki:3030/experts_private/data
 graphs=(
   iam.ucdavis.edu
   oapolicy.universityofcalifornia.edu
+  experts.ucdavis.edu
+)
+
+if [[ -n $private ]] ; then
+  graphs+=(
   experts.ucdavis.edu%2Fiam
   experts.ucdavis.edu%2Foap
-)
+  )
+fi
 
 import_dir=/fuseki/import
 
