@@ -19,6 +19,7 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 :experts_private fuseki:name "experts_private" .
 :tdb_public tdb2:location  "/fuseki/databases/experts/public" .
 :tdb_private tdb2:location  "/fuseki/databases/experts/private" .
+:tdb_vocab tdb2:location  "/fuseki/databases/experts/vocab" .
 #:tdb_private tdb2:location  "foo" .
 
 # Everything below is standard to the experts setup, the public and private
@@ -102,6 +103,19 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     tdb2:graphName <http://oapolicy.universityofcalifornia.edu/> ;
     .
 
+# Complete Thesauri, like FAST are saved in their own database
+:tdb_vocab
+    a              tdb2:DatasetTDB2 ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
+    .
+
+# These two graphs are used below
+:graph_vocab_fast
+    a tdb2:GraphTDB2;
+    tdb2:dataset :tdb_vocab ;
+    tdb2:graphName <http://id.worldcat.org/fast/> ;
+    .
+
 # IET and OAPolicy data are private to internal review
 # these are stored in the database below
 :tdb_private
@@ -129,6 +143,10 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 # It might make the most sense to include those here.
 :dataset_private
     a ja:RDFDataset ;
+    ja:namedGraph [
+        ja:graphName <http://id.worldcat.org/fast/> ;
+        ja:graph :graph_vocab_fast ;
+        ] ;
     ja:namedGraph [
         ja:graphName <http://experts.ucdavis.edu/oap/> ;
         ja:graph :graph_private_experts_oap ;
