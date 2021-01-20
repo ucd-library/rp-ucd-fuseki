@@ -15,7 +15,7 @@ The following parameters (and their defaults) affect the actual instance:
 The following parameters (set in .env) are common parameters used in the
 docker-compose initialization file:
 
-- `${FUSEKI_VERSION:-1.1.0}` - fuseki version to use
+- `${FUSEKI_VERSION:-1.1.3}` - fuseki version to use
 - `${FUSEKI_PORT:-3004}` - External Port assignment
 
 
@@ -95,7 +95,7 @@ version: '3.5'
 
 services:
   fuseki:
-    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-1.1.0}
+    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-1.1.3}
 #    command: tail -f /dev/null
     environment:
       - JVM_ARGS=${JVM_ARGS:- -Xmx4g}
@@ -161,7 +161,7 @@ fdc exec fuseki bash
 ```
 
 This compose file should have reasonable defaults, but updates to .env (eg
-FUSEKI_VERSION=1.1.1) will update the startup.  An `.env` file is *NOT* required
+FUSEKI_VERSION=1.1.3) will update the startup.  An `.env` file is *NOT* required
 however. The fuseki_endpoint for the default is
 `http://admin:testing@fuseki:3030/` with experts and experts-dev databases.
 
