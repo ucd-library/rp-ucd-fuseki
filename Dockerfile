@@ -8,6 +8,9 @@ RUN set -eux && \
 RUN mkdir -p $FUSEKI_HOME/extra
 COPY ./lib/jena-kafka-connector-0.0.3-SNAPSHOT.jar ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
 
+COPY --from=msoap/shell2http:latest /app/shell2http /usr/local/bin/shell2http
+
+
 COPY ./jetty-config.xml $FUSEKI_HOME/
 COPY ./config.ttl.tmpl $FUSEKI_HOME/
 COPY ./tdb.cfg.tmpl $FUSEKI_HOME/
@@ -16,6 +19,7 @@ COPY ./configuration $FUSEKI_HOME/configuration/
 COPY ./databases $FUSEKI_HOME/databases/
 COPY ./rp-ucd-fuseki-docker-entrypoint.sh /rp-ucd-fuseki-docker-entrypoint.sh
 COPY ./fuseki-import-graphs /usr/local/bin
+COPY ./fuseki-harvestdb /usr/local/bin
 
 ENTRYPOINT ["/rp-ucd-fuseki-docker-entrypoint.sh"]
 

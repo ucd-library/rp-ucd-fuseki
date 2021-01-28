@@ -71,6 +71,27 @@ for f in $(cd $FUSEKI_HOME; find . -name \*.tmpl); do
   fi
 done
 
+if [[ -z "$FUSEKI_HARVESTDB_ENABLED" ]]; then
+  export FUSEKI_HARVESTDB_ENABLED="true"
+fi
+
+if [[ -z "$FUSEKI_HARVESTDB_AUTH" ]]; then
+  export FUSEKI_HARVESTDB_AUTH="true"
+fi
+
+if [[ "$FUSEKI_HARVESTDB_AUTH" == "true" ]]; then
+  basic_auth="--basic-auth admin:$FUSEKI_PASSWORD"
+else
+  basic_auth=''
+fi
+
+# Startup our https://github.com/msoap/shell2http
+if [[ "$FUSEKI_HARVESTDB_ENABLED" == "true" ]]; then
+  echo   "shell2http --form [[--auth]] --export-vars FUSEKI_PASSWORD POST:/harvestdb 'fuseki-harvestdb --name=$v_name new' DELETE:/harvestdb 'fuseki-harvestdb --name=$v_name rm' GET:/harvestdb 'fuseki-harvestdb list'"
+  shell2http --form ${basic_auth}  --export-vars FUSEKI_PASSWORD POST:/harvestdb 'fuseki-harvestdb --name=$v_name new' DELETE:/harvestdb 'fuseki-harvestdb --name=$v_name rm' GET:/harvestdb 'fuseki-harvestdb list' &
+fi
+
+
 if [[ $KAFKA_ENABLED == "true" ]]; then
   echo "waiting for kafka: ${KAFKA_HOST}:${KAFKA_PORT}"
   wait-for-it -t 0 ${KAFKA_HOST}:${KAFKA_PORT}

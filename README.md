@@ -142,6 +142,35 @@ By default `fuseki-import-graphs` only imports public graphs, however using the
 `--private` flag will import private graphs as well.  This can help decode
 existing conversions from private to public data.
 
+# Fuseki Harvest ADMIN interface
+
+The Fuseki service includes an administrative interface to create new services.
+This service is similar to the [Fuseki Admin
+Interface](https://jena.apache.org/documentation/fuseki2/fuseki-server-protocol.html),
+but with some extensions.  First, the Fuseki Admin interface currently does not
+allow custom assembler definitions.  And secondly, on deletion, the fuseki admin
+interface does not remove any database data.
+
+A second HTTP interface allows for the creation and removal of new services.
+These services are designed to be used as harvest tools, and their service
+definitions link to the experts public data, and create a separate private
+database as well.  The service runs on port 8080, and allows three methods to
+the interface.  To create a new harvest service, POST to the endpoint, for
+example `curl -i --user admin:$FUSEKI_PASSWORD -X POST
+http://fuseki:8080/harvestdb?name=harvest.test`.  This will return the name of
+the new service.  Alternatively, you can set the name of the service as well.
+`curl -i --user admin:$FUSEKI_PASSWORD -X POST
+http://fuseki:8080/harvestdb?name=harvest.test`.  Use the `DELETE` method to
+remove an existing harvest service. `curl -i --user admin:$FUSEKI_PASSWORD -X
+DELETE http://fuseki:8080/harvestdb?name=harvest.test`.  The `GET` method will
+return a list of existing harvest services.  `curl -i --user
+admin:$FUSEKI_PASSWORD -X GET http://fuseki:8080/harvestdb`.
+
+Currently, only simple text messages are returned.  Later, we will add a more
+respectable JSON return.  Also note that due to limitations of the server, all
+valid requests will return `202` even if the function fails.
+
+
 # Test Instance
 
 This project includes a test.yml file that can be used for testing the fuseki

@@ -1,0 +1,70 @@
+#! /bin/bash
+
+function err() {
+  (>&2 echo err: $@)
+  exit 1;
+}
+
+function assembler_file {
+  local config=/jena-fuseki/configuration/harvest.ttl
+  sed -e "s#harvest.XXXX#$1#g" < $config
+}
+
+
+# Reads the directories passed on the commmand line, and imports
+
+
+if ! opts=$(getopt -o n: --long name: -n fuseki-harvestdb -- "$@"); then
+  echo "Bad Command Options." >&2 ; exit 1 ; fi
+
+eval set -- "$opts"
+
+remove=1
+
+while true; do
+	case $1 in
+    -n | --name) name="$2"; shift 2;;
+    --no-remove-database) remove=''; shift ;;
+    --remove-database) remove=1; shift ;;
+	  *) shift; break;
+  esac
+done
+
+auth=admin:${FUSEKI_PASSWORD}
+datasets='http://fuseki:3030/$/datasets'
+template=harvest.XXXX
+post="curl --fail --user "${auth}" -H Content-Type:text/turtle -X POST --data-binary @-"
+harvestdb_dir=/fuseki/databases/harvest
+
+cmd="$1"
+
+case $cmd in
+  rm)
+    [[ -z $name ]] && err "$name not specified"
+    [[ "$name" = "experts" ]] && err "Can't remove $name"
+    curl --user "${auth}" -X DELETE ${datasets}/${name}
+    rm -rf $harvestdb_dir/$name
+    echo $name
+  ;;
+  new)
+    if [[ -n $name ]]; then
+      if [[ -d $db/$name ]]; then
+          err "$name already exists"
+      fi
+    else
+      name=$(basename $(mktemp --directory --tmpdir=$harvestdb_dir ${template}))
+    fi
+    assembler_file $name | $post ${datasets}
+    if [[ $? != 0 ]]; then
+      echo "ERROR"
+      exit 1
+    else
+      echo $name
+    fi
+    ;;
+  list)
+    ls -1 $harvestdb_dir
+    ;;
+  *) err "$cmd: invalid command"
+     ;;
+esac
