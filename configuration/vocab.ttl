@@ -15,19 +15,17 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 # you'd like to run multiple experts setups on a single fuseki instance.
 # Otherwise the defaults will setup a normal instance.
 
-:experts fuseki:name "experts" .
-:tdb_public tdb2:location  "/fuseki/databases/experts" .
-:tdb_vocab tdb2:location  "/fuseki/databases/experts/vocab" .
+:vocab fuseki:name "vocab" .
+:tdb_vocab tdb2:location  "/fuseki/databases/vocab" .
 
-# Everything below is standard to the experts setup, the public and private
-# databases and their relationships
+# Everything below is standard vocabulary setup
 
 # See javadoc for ARQ.queryTimeout for details.
 [] a fuseki:Server ;
     ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "10000,60000" ] ;
     .
 
-:experts a fuseki:Service ;
+:vocab a fuseki:Service ;
     fuseki:dataset :tdb_public ;
     fuseki:endpoint [
         fuseki:operation fuseki:query ;
@@ -43,8 +41,10 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         ] ;
     .
 
-:tdb_public
+
+# Complete Thesauri, like FAST are saved in their own database
+:tdb_vocab
     a              tdb2:DatasetTDB2 ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "5000,60000" ] ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
     tdb2:unionDefaultGraph true ;
     .

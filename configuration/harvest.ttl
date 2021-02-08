@@ -17,8 +17,8 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 
 :harvest fuseki:name "harvest.XXXX" .
 :tdb_harvest tdb2:location  "/fuseki/databases/harvest/harvest.XXXX" .
-:tdb_public tdb2:location  "/fuseki/databases/experts/public" .
-:tdb_vocab tdb2:location  "/fuseki/databases/experts/vocab" .
+:tdb_public tdb2:location  "/fuseki/databases/experts" .
+:tdb_vocab tdb2:location  "/fuseki/databases/vocab" .
 
 # Everything below is standard harvest to the experts setup
 # With the public database, and the harvest data
