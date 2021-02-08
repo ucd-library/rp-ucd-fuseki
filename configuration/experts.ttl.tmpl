@@ -41,7 +41,15 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         fuseki:operation fuseki:gsp-r ;
         fuseki:name "get"
         ] ;
-    .
+    fuseki:endpoint [
+        fuseki:operation fuseki:gsp-rw ;
+        fuseki:name "data"
+        ] ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:upload ;
+        fuseki:name "upload"
+        ] ;
+     .
 
 :tdb_public
     a              tdb2:DatasetTDB2 ;
