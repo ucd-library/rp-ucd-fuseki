@@ -1,8 +1,7 @@
 #! /bin/bash
 
 # manually setting this... for now :(
-# TAG_NAME=jena-3.15.0-c-0.0.3
-TAG_NAME=1.1.4
+TAG_NAME=1.2.0
 
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $ROOT_DIR/..

@@ -24,7 +24,7 @@ version: '3.5'
 
 services:
   fuseki:
-    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-1.1.4}
+    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-1.2.0}
     environment:
       - JVM_ARGS=${JVM_ARGS:- -Xmx4g}
       - FUSEKI_PASSWORD=${FUSEKI_PASSWORD:-testing}

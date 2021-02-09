@@ -33,62 +33,53 @@ Defaults shown
 
 # Fuseki Initialization
 
-By default, `rp-ucd-fuseki` sets up a public and private set of databases.  The
-public database default `experts` is the only database that is needed in the
-Aggie Experts deployment.  Even without initialization, the experts system
-should at least come up, albiet with no data.
+`rp-ucd-fuseki` sets up the default `experts` service, the only service needed
+in the Aggie Experts deployment.  Even without initialization, the experts
+system should at least come up, albiet with no data.
 
 The quickest method for testing the system is to directly import public graphs
 into the system.  Using fuseki's `/data` import http endpoint will also trigger
 the kafka stream reader, and should automatically update the Aggie Experts
 search indices as well.
 
-There are some standard graphs that are used in the Aggie experts.
-`iam.ucdavis.edu` and `oapolicy.universityofcalifornia.edu` are public graphs,
-the others are private.
+There are some standard graphs that are used in the Aggie experts, `experts`
+service.  The service also has a default graph, which is the union, and
+typically used for queries.  The graphs really only show provenance of the data.
 
 ``` text
-├── iam.ucdavis.edu
-│   └── *.ttl.gz    # These data are VIVO contructed IAM data
-├── oapolicy.universityofcalifornia.edu
-│   └── *.ttl.gz    # These data are VIVO constructed publication data
-│       └── vivo.owl
 ├── experts.ucdavis.edu
-│   └── *.ttl.gz    # This goes to the default public database.
+│   └── *.ttl.gz    # Constant data
 ├── experts.ucdavis.edu%2Foap
-│   └── *.ttl.gz    # Private data from the CDL publication system.
+│   └── *.ttl.gz    # Public data from the CDL publication system.
 └── experts.ucdavis.edu%2Fiam
-    └── *.ttl.gz    # Private data from the UCD IAM system.
+    └── *.ttl.gz    # Public data from the UCD IAM system.
 
 ```
 
-## Local initialization
+## Github Initialization
 
-After the system is started, if the fuseki port is exposed to your local host,
-you can directly add data from outside the docker instance.  The advantage of
-this is that you don't need to get the test data into your docker instance, the
-disadvantage is that your mileage may vary on the import script.
-
-The preferred way to load data is via the data url for the `experts-private`
-database.  Adding to this database will also add to the public `experts` database.
-
+The container includes a script, `fuseki-import-graphs` can clone data from a
+git repository, and import that data.  The data is cloned into a directory of
+`/fuseki/import/` which *should* be a docker volume, and not affect the
+instance.  For example, the library's gitlab instance requires a token for
+access to private data.  After setting up that token, you can have the script
+pull data from that repository.  You can add `--clone` flags as well. The example
+below shows a typical use for this:
 
 ``` bash
-auth=admin:${FUSEKI_PASSWORD}
-load=http://localhost:${FUSEKI_HOST_PORT:-3004}/experts_private/data
-for f in $(find iam.ucdavis.edu oapolicy.universityofcalifornia.edu -type f -name \*.ttl -o -name \*.ttl.gz ); do
-  g=$(basename $(dirname $f))
-  curl --user "${auth}" -F "file=@$f" "${load}?graph=$(printf 'http://%b/' ${g//%/\\x})"
-done
+docker-compose exec fuseki fuseki-import-graphs
+--clone="https://quinn:${GITLAB_PUSH_TOKEN}@gitlab.dams.library.ucdavis.edu/experts/experts-data.git
+--single-branch --branch=experts-2.0.0"
 ```
 
-## Docker initialization
+## Docker initialization via mounts
 
-Alternatively, you can use a script in the docker instance to import the data.
-The advantage here is that the scripts should work, it's not required to expose
-the fuseki port, and the required variables will be set in the environment.  The
-disadvantage is that you need to make the data available to the docker
-instance.  Below is an example yml file, that shows a local mount into the container.
+Alternatively, you can use the same `fueski-import-graphs` command in the docker
+instance to import the data.  The advantage here is that the scripts should
+work, it's not required to expose the fuseki port, and the required variables
+will be set in the environment.  The disadvantage is that you need to make the
+data available to the docker instance.  Below is an example yml file, that shows
+a local mount into the container.
 
 ```yaml
 version: '3.5'
@@ -121,26 +112,22 @@ docker-compose exec fuseki fuseki-import-graphs /fuseki/import
 In order to utilize the KAFKA stream monitoring, `fuseki-import-graphs`
 requires the fuseki server to be running.
 
-By default `fuseki-import-graphs` only imports public graphs, however using the
-`--private` flag will import private graphs as well.  This can help decode
-existing conversions from private to public data.
+## Local /data loads
 
-## Github Initialization
-
-Finally, `fuseki-import-graphs` can also clone data from a git repository.  The
-data is cloned into a directory of `/fuseki/import/` which *should* be a docker
-volume, and not affect the instance.  For example, the library's gitlab instance
-requires a token for access to private data.  After setting up that token, you
-can have the script pull data from that repository.  You can add clone flags as
-well. The example below shows a typical use for this:
+After the system is started, if the fuseki port is exposed to your local host,
+you can directly add data from outside the docker instance.  The advantage of
+this is that you don't need to get the test data into your docker instance, the
+disadvantage is that your mileage may vary on the import script.
 
 ``` bash
-docker-compose exec fuseki fuseki-import-graphs --clone="https://quinn:${GITLAB_PUSH_TOKEN}@gitlab.dams.library.ucdavis.edu/experts/experts-data.git --single-branch --branch=experts"
+auth=admin:${FUSEKI_PASSWORD}
+load=http://localhost:${FUSEKI_HOST_PORT:-3004}/experts/data
+for f in $(find experts.ucdavis.edu -type f -name \*.ttl -o -name \*.ttl.gz ); do
+  g=$(basename $(dirname $f))
+  curl --user "${auth}" -F "file=@$f" "${load}?graph=$(printf 'http://%b/' ${g//%/\\x})"
+done
 ```
 
-By default `fuseki-import-graphs` only imports public graphs, however using the
-`--private` flag will import private graphs as well.  This can help decode
-existing conversions from private to public data.
 
 # Fuseki Harvest ADMIN interface
 
