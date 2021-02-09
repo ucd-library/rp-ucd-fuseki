@@ -204,3 +204,8 @@ with something like:
 Then you can execute commands (like a bash interactive script) in the server.
 Not that even if you have started the server, you can always execute commands to
 the instance.
+
+
+# Versions
+
+- (Version 1.2.*)[https://github.com/ucd-library/rp-ucd-fuseki/issues/11]
