@@ -6,6 +6,8 @@ TAG_NAME=1.2.0
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $ROOT_DIR/..
 
+gcloud config set project digital-ucdavis-edu
+
 echo "Submitting build to Google Cloud..."
 gcloud builds submit \
   --config ./cloudbuild.yaml \
