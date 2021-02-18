@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # manually setting this... for now :(
-TAG_NAME=1.2.0
+TAG_NAME=1.2.1
 
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $ROOT_DIR/..
