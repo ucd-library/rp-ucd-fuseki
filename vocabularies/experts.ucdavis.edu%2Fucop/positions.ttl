@@ -1,0 +1,3912 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix position: <http://experts.ucdavis.edu/position/> .
+@prefix ucdrp: <http://experts.ucdavis.edu/schema#> .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix experts: <http://experts.ucdavis.edu/> .
+
+position:003408  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROJ SCI-FY-B/E/E NON REP" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0116  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROFESSOR EMERITUS" ;
+        ucdrp:cto           ucdrp:CTO_016 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002724  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS II-VIII/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000812  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY ADVISOR" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003201  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-LR SCL-FY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001542  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001717  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_317  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSOR OF CLINICAL ______" .
+
+position:002272  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT II NON-GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001044  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY ASST TO CHANC" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0130  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSISTANT PROFESSOR OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002240  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD FLD WK-AY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001984  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-LR SCL-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001731  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN INSTR-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003398  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST PROJ SCIENTIST" ;
+        ucdrp:cto           ucdrp:CTO_583 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001906  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002461  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHER-SPEC PROG-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003611  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST UNIV LIBRARIAN NEX" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003366  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-AY-1/10" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001454  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF OF CLIN-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001201  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_520  a    ucdrp:CTO ;
+        rdfs:label  "ASTRONOMER-TENURE" .
+
+position:003334  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "JR SPECIALIST NEX NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001675  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "EDUCATOR (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002650  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHER-LHS" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003509  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG IV" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003800  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "NON-SENATE ACAD EMERITUS(WOS)" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003380  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-AY-1/10-BEE" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003555  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG I NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003302  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001643  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-AY-1/9-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001145  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002120  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SUPV PE-AY" ;
+        ucdrp:cto           ucdrp:CTO_040 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_211  a    ucdrp:CTO ;
+        rdfs:label  "LECTURER-PSOE-SENATE" .
+
+position:003278  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001587  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT SOE-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002737  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "OTH POST DDS/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003292  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES PROF-MILLER INST-AY" ;
+        ucdrp:cto           ucdrp:CTO_566 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001509  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN__-AY- 1/10 -NON-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_828  a    ucdrp:CTO ;
+        rdfs:label  "UNIVERSITY EXTENSION OTHER" .
+
+position:002285  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHILD DEV DEMO LECT" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003260  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-AY" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_621  a    ucdrp:CTO ;
+        rdfs:label  "LIBRARIAN" .
+
+position:003403  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROJ SCIENTIST-FY NON REP" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002428  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUBSTITUTE TEACHER-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002000  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001997  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-FY-B/E/E NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0111  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROFESSOR OF LAW (NON-TENURE)" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002221  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUPV TEACHER ED-AY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001712  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003379  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003670  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-CAREER NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002442  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "K-12 DAILY SUBSTITUTE/NONREP" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003347  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-AY-1/10-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001688  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003393  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROJ SCIENTIST-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001901  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003315  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001403  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INSTR-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003361  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002852  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIAL READER-UCLA-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_224  a    ucdrp:CTO ;
+        rdfs:label  "ACTING LECTURER-PSOE" .
+
+position:001670  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003084  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST AGRON AES-AY" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003259  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003550  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG IV NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002077  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CLIN INSTR-VOL" ;
+        ucdrp:cto           ucdrp:CTO_346 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003227  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-FY-NON REP" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003273  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSAR-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003020  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST AGRON AES" ;
+        ucdrp:cto           ucdrp:CTO_531 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000852  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD II-AY NEX" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:003494  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROJ SCIENTIST-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:002266  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK CONSULT-FY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001582  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT PSOE-AY" ;
+        ucdrp:cto           ucdrp:CTO_224 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002732  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "OTH POST-MD TRAIN 2-8/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_357  a    ucdrp:CTO ;
+        rdfs:label  "INSTRUCTIONAL ASSISTANT" .
+
+position:003462  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST COOP EXT ADVISOR NEX" ;
+        ucdrp:cto           ucdrp:CTO_728 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0170  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECTURER" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003637  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LAW LIBRARIAN" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001550  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT IN SUMMER SESSION" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001978  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001725  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002280  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT I-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001052  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC COLLEGE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S27 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003605  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN-POTLCAR NONREP" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003185  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-AY-1/9 NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003651  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC CURATOR" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001020  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S21 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001992  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-LR SCL-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001914  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003328  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "JR SPECIALIST (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001669  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_016  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSORIAL-EMERITUS" .
+
+position:003374  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000907  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM DIRECTOR" ;
+        ucdrp:cto           ucdrp:CTO_S34 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003549  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG IV NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001637  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-AY-1/10-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001683  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT PSOE-AY" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_030  a    ucdrp:CTO ;
+        rdfs:label  "CLIN PROF OF DENTISTRY-50% OR MORE-TENURE" .
+
+position:001605  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-AY-PART TIME" ;
+        ucdrp:cto           ucdrp:CTO_221 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003019  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC AGRON AES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003310  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001107  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_426  a    ucdrp:CTO ;
+        rdfs:label  "TEACHING ASSISTANT & EQUIVALENT" .
+
+position:003531  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING EDUCATOR II NEX" ;
+        ucdrp:cto           ucdrp:CTO_825 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:002303  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG FELLOW-NON GSHIP/NONREP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003286  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-TUIT & FEE REM-UCSD-GRP C" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003208  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS RES" ;
+        ucdrp:cto           ucdrp:CTO_543 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003254  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "POSTDOC-PAID DIRECT" ;
+        ucdrp:cto           ucdrp:CTO_575 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003001  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "AGRON AES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001595  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT SOE-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002745  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHIEF RESID PHYS-REP-OV" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003475  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST COOP EXT" ;
+        ucdrp:cto           ucdrp:CTO_729 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003222  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001310  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000801  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ASST TO CHANC" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001065  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR V" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002040  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASST CLIN PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003618  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN-TEMP STATUS" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003198  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST RES NEX" ;
+        ucdrp:cto           ucdrp:CTO_543 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002261  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK CONSULT-AY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003664  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-TEMP STATUS NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001208  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC PROF" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001973  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003387  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003600  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC UNIV LIBRARIAN" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003180  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000966  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR VI NEX" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_541  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSIONAL RESEARCH-REGULAR" .
+
+ucdrp:CTO_S46  a    ucdrp:CTO ;
+        rdfs:label  "ACADEMIC COORDINATOR" .
+
+position:001618  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003323  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_011  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSORIAL-NON-TENURE" .
+
+position:003544  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG VII NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002860  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TUT-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001632  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003299  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS SCHOLAR (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003046  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST AGRON AES-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000878  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ACADEMIC COORD NEX" ;
+        ucdrp:cto           ucdrp:CTO_S44 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001600  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT PSOE-AY-PART TIME" ;
+        ucdrp:cto           ucdrp:CTO_221 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001180  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-AY-LAW" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003014  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST AES" ;
+        ucdrp:cto           ucdrp:CTO_557 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002758  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "OTH POST DDS/REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003060  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "AGRON AES-AY" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003488  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROJ SCIENTIST (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002551  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT INSTR-GRAD STDNT-NON-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0118  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SULLIVAN PROFESSOR OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_012 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002726  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS/SUBSPEC 4-8/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003203  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-LR SCL-AY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001719  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001590  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT SOE-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002740  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "NON-PHYS CLIN TRAIN" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001512  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN __-FY-NON-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:8026  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ACADEMIC DEAN (ACAD)" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001092  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "STIPEND-RESID" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001986  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-LR SCL-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001733  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASSOC CLIN PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001908  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001060  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COLLEGE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S27 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_M10  a    ucdrp:CTO ;
+        rdfs:label  "MANAGERS" .
+
+position:002210  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DEMO TEACHER" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003613  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-POTNTL CAREER STATUS" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003193  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-AY NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001701  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RECALL HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_012 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003368  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-AY-1/10-BEE" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_729  a    ucdrp:CTO ;
+        rdfs:label  "SPECIALIST IN COOPERATIVE EXTENSION" .
+
+position:001203  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003336  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS JR SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001677  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "UCDC EDUCATOR - FY" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003802  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RECALL NON-FACULTY ACAD" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S27  a    ucdrp:CTO ;
+        rdfs:label  "PROVOST" .
+
+position:003382  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003557  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUB PROG NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003304  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST NEX NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001898  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001645  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-FY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000961  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR I NEX" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001691  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001613  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-FY" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003027  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST AGRON AES" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003999  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "MISCELLANEOUS" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001589  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT SR LECT SOE-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002311  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG ASST-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003216  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-SFT" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003262  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-TUIT & FEE REM-UCSD-GRP E" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002287  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "NURSERY SCHOOL ASST-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_623  a    ucdrp:CTO ;
+        rdfs:label  "VISITING LIBRARIAN" .
+
+position:001059  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHAIR-SEN ASMBLY&ACADEMIC CNCL" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002753  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS MOONLTG NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002500  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "READER-NON STDNT" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000841  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD I-FY" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002255  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK SUPV-FY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003230  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD PROG SUPV" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003405  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROJ SCI-FY NON REP" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001027  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM ASSISTANT DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S24 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001999  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-FY-B/E/E NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_346  a    ucdrp:CTO ;
+        rdfs:label  "CLINICAL PROFESSOR - VOLUNTEER" .
+
+position:003451  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC COOP EXT ADVISOR" ;
+        ucdrp:cto           ucdrp:CTO_728 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002223  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUPV TEACHER ED-FY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001714  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003672  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-TEMP STATUS NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001935  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES SCRIPPS-AY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003640  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LAW LIBRARIAN NEX" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001981  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-LR SCL-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_581  a    ucdrp:CTO ;
+        rdfs:label  "PROJECT SERIES" .
+
+position:003395  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROJ SCIENTIST-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001230  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-10 MONTHS" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003363  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003110  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ASTRONOMER" ;
+        ucdrp:cto           ucdrp:CTO_520 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001451  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF OF CLIN-FY" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002854  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "READER-GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003086  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST AGRON AES-B/E/E/-AY" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000910  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC DIRECTOR" ;
+        ucdrp:cto           ucdrp:CTO_S31 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003552  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG III NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001640  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-AY" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003520  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING EDUCATOR I" ;
+        ucdrp:cto           ucdrp:CTO_825 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001317  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001110  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000854  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD III-AY NEX" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003496  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS PROJ SCIENTIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_583 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:001584  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT SOE-FY" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001506  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN __ -AY-1/9-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_825  a    ucdrp:CTO ;
+        rdfs:label  "CONTINUING EDUCATOR - UNIVERSITY EXTENSION" .
+
+position:003211  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-LR SCL-FY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003639  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LAW LIBRARIAN" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001727  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ INSTR-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003607  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-POTLCAR NONREP" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002250  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK SUPV-AY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001994  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-FY-B/E/E-NON REP" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_341  a    ucdrp:CTO ;
+        rdfs:label  "HEALTH SCIENCES CLINICAL PROFESSOR" .
+
+position:001916  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF OF CLIN-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001243  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003621  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-POTNTL CAREER" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003376  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_530  a    ucdrp:CTO ;
+        rdfs:label  "AGRONOMIST-TENURE" .
+
+position:001685  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT PSOE-FY" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003390  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROJ SCIENTIST-FY" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001607  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-AY" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003312  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001653  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING APPT-TEMP AUG-1/9" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002305  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COMM TEACHG FELLOW-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001621  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-EMERITUS (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_216 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_221  a    ucdrp:CTO ;
+        rdfs:label  "LECTURER-PSOE -PART TIME" .
+
+position:003288  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ INSTR-AY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003501  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG VIII" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003256  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INTRM POSTDOC SCHOLAR-EMPLOYEE" ;
+        ucdrp:cto           ucdrp:CTO_575 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:001597  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT SR LECT SOE-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001344  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002747  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "OTH POST-MD TRAIN 2-8/REP-OV" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001099  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADMIN STIPEND" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003477  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST COOP EXT" ;
+        ucdrp:cto           ucdrp:CTO_729 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002715  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INTERN-CLINICAL PSYCHOLOGY" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003270  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-AY" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000803  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC VICE CHANC" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001067  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR VII" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003491  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROJ SCIENTIST-FY-B/E/E NEX" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:003666  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN-CAREER NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002010  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0121  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOCIATE PROF (NON-TENURE)" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001501  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN ____-AY-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001975  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_575  a    ucdrp:CTO ;
+        rdfs:label  "POSTDOCTORAL SCHOLAR" .
+
+position:003389  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003602  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-CAREER NON REP" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_543  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSIONAL RESEARCH-VISITING" .
+
+position:003104  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST AES NEX" ;
+        ucdrp:cto           ucdrp:CTO_557 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001911  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN INSTR-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:9400  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "BAR PREPARATION INSTRUCTORS" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003325  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003371  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003546  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG VI NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002862  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TUT-GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001634  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-FY" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001680  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-AY" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001602  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT PSOE-AY-1/9-PART TIME" ;
+        ucdrp:cto           ucdrp:CTO_221 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003269  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001182  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-AY-LAW" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003560  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC COORD PUBLIC PROG" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001104  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "UNIV PROF" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003062  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "AGRON AES-B/E/E-AY" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003237  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY FELLOW RES-AY" ;
+        ucdrp:cto           ucdrp:CTO_577 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002300  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG FELLOW-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002728  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PGY I PHARMACY RESID/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003283  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-FULL TUIT&PARTIAL FEE REM" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003205  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-LR SCL-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002521  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TUT-NON STDNT/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003251  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-FY" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001592  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT SR LECT SOE-AY-LAW" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_114  a    ucdrp:CTO ;
+        rdfs:label  "ACTING PROFESSOR-SENATE" .
+
+position:001094  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DEPARTMENT VICE CHAIR" ;
+        ucdrp:cto           ucdrp:CTO_S61 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0180  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CLINICAL PROFESSOR OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001988  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_335  a    ucdrp:CTO ;
+        rdfs:label  "ADJUNCT PROFESSOR" .
+
+position:002290  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT II-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001062  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR II" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003615  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS LIBRARIAN" ;
+        ucdrp:cto           ucdrp:CTO_623 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003195  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-AY-1/9 NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001030  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DIVISIONAL DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S26 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001679  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001970  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LUDWIG INVESTIGATOR" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003384  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000917  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM ASSOC DIRECTOR" ;
+        ucdrp:cto           ucdrp:CTO_S34 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003559  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC COORD PUB PROG NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003306  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001647  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-AY-1/10-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000963  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR III NEX" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003352  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001693  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-AY-LAW" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_040  a    ucdrp:CTO ;
+        rdfs:label  "SUPERVISOR OF P.E.-TENURE" .
+
+position:001615  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-FY-PART TIME" ;
+        ucdrp:cto           ucdrp:CTO_221 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003029  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST AGRON AES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003320  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001117  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_436  a    ucdrp:CTO ;
+        rdfs:label  "GRADUATE STUDENT RESEARCHER" .
+
+position:003541  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG VIII NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002313  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG ASST-NON GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003296  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES FELLOW (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_566 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003218  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC RES" ;
+        ucdrp:cto           ucdrp:CTO_543 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002709  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS I/REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002289  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT II-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003264  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-TUIT & FEE REM-UCSD-GRP G" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003011  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC AGRON AES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003730  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VISITOR-GRADUATE (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000843  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD II-FY" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003407  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROJ SCI-FY NON REP" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0115  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VISITING PROFESSOR OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002723  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS II-VIII/REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002050  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASST CLIN PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003200  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-FY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001969  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HHMI INVESTIGATOR" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_316  a    ucdrp:CTO ;
+        rdfs:label  "________ - SENATE - EMERITUS" .
+
+position:002271  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT I-GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003176  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-SFT NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001937  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES SCRIPPS-AY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001011  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC DEAN-AY" ;
+        ucdrp:cto           ucdrp:CTO_S21 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001983  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-LR SCL-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_583  a    ucdrp:CTO ;
+        rdfs:label  "PROJECT SERIES-VISITING" .
+
+position:001730  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003397  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC PROJ SCIENTIST" ;
+        ucdrp:cto           ucdrp:CTO_583 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001905  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002460  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHER-SPEC PROG" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003610  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST UNIV LIBRARIAN" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003190  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_551  a    ucdrp:CTO ;
+        rdfs:label  "SPECIALIST" .
+
+position:003365  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-AY-1/10" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001453  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF OF CLIN-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001200  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S56  a    ucdrp:CTO ;
+        rdfs:label  "ACADEMIC-ADMINISTRATOR" .
+
+position:003333  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "JR SPECIALIST NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S24  a    ucdrp:CTO ;
+        rdfs:label  "ACTING DEAN/PROVOST" .
+
+position:003554  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG II NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003301  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001895  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INSTR-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001642  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001144  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003522  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING EDUCATOR III" ;
+        ucdrp:cto           ucdrp:CTO_825 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001610  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT PSOE-FY-PART TIME" ;
+        ucdrp:cto           ucdrp:CTO_221 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_210  a    ucdrp:CTO ;
+        rdfs:label  "LECTURER-SECURITY OF EMPLOYMENT" .
+
+position:003024  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST AES" ;
+        ucdrp:cto           ucdrp:CTO_557 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003070  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC AGRON AES-AY" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003498  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST PROJ SCIENTIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_583 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:002017  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CLIN PROF-VOL" ;
+        ucdrp:cto           ucdrp:CTO_346 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001586  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT SR LECT SOE-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002736  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS/SUBSPEC 4-8/REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003291  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES PROF-MILLER INST-FY" ;
+        ucdrp:cto           ucdrp:CTO_566 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001508  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN __ -AY-1/10-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003213  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-LR SCL-AY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001301  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001729  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002284  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHILD DEV DEMO LECT-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002750  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS/SUBSPEC/T32/REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003900  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY ADMIN TRANSITION LV-AY" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003480  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST COOP EXT NEX" ;
+        ucdrp:cto           ucdrp:CTO_729 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002427  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUBSTITUTE TEACHER" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0110  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROFESSOR OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001070  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DIRECTOR-EAP STUDY CENTER" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001245  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002220  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUPV TEACHER ED-AY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003378  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_311  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSOR IN RESIDENCE" .
+
+position:002441  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "K-12 INSTRUCTOR-AY-1/10" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003346  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-AY-1/10-BEE" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001687  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003812  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RECALL NON-FACULTY ACAD NEX" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003392  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROJ SCIENTIST-FY" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001900  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_928  a    ucdrp:CTO ;
+        rdfs:label  "MISCELLANEOUS TITLES-SINGLE TITLES" .
+
+position:003314  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST NEX NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002851  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "READER-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003581  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COURSE AUTHOR-UNEX NEX" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002100  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUPV PE-AY" ;
+        ucdrp:cto           ucdrp:CTO_040 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003503  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG VII" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003258  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001599  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT PSOE-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_224 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002321  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG ASST-1/10-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002749  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS/SUBSPEC/T32/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003479  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST COOP EXT" ;
+        ucdrp:cto           ucdrp:CTO_729 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003226  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-SFT" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001069  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC VICE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S27 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002510  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TUT-NON STDNT" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000851  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD I-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003493  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROJ SCNTST-FY-B/E/E NEX" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:003668  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN-TEMP NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002265  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK CONSULT-FY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001581  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT SOE-AY" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001037  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM DIVISIONAL DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S24 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003461  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST COOP EXT ADVISOR" ;
+        ucdrp:cto           ucdrp:CTO_728 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003636  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LAW LIBRARIAN NEX" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001977  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_577  a    ucdrp:CTO ;
+        rdfs:label  "POST-GRADUATE RESEARCH NON-STUDENT" .
+
+position:001724  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001051  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST COLLEGE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S27 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003604  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN-CAREER NON REP" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:9434  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LAW LIBRARIAN" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003650  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CURATOR" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001991  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-LR SCL-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001913  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASSOC CLIN PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001668  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003373  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003548  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG V NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S64  a    ucdrp:CTO ;
+        rdfs:label  "ACTING DEPARTMENT CHAIRPERSON" .
+
+position:001636  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-AY-1/10" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001682  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-FY" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001604  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000920  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST DIRECTOR" ;
+        ucdrp:cto           ucdrp:CTO_S31 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003562  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST COORD PUBLIC PROG" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001650  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-MISCELLANEOUS/PART TIME" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003064  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT AGRON AES-AY" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003530  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING EDUCATOR I NEX" ;
+        ucdrp:cto           ucdrp:CTO_825 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:002302  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG FELLOW-GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003285  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-TUIT & FEE REM-UCSD-GRP B" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002057  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST CLIN PROF-VOL" ;
+        ucdrp:cto           ucdrp:CTO_346 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003207  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-FY-NON REP" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003253  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "POSTDOC-FELLOW" ;
+        ucdrp:cto           ucdrp:CTO_575 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003000  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "AGRON AES" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001594  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT SR LECT SOE-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002744  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS II-VIII/REP-OV" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001096  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DEPARTMENT CHAIR" ;
+        ucdrp:cto           ucdrp:CTO_S61 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002246  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD FLD WK-FY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003221  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-LR SCL-FY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000800  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ASST TO VICE CHANC" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001064  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR IV" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003442  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COOP EXT ADVISOR NEX" ;
+        ucdrp:cto           ucdrp:CTO_728 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0150  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJUNCT PROFESSOR" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003617  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN-POTNTL CAREER" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001958  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REGENTS' PROF" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002260  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK CONSULT-AY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003663  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-POTNTL CAREER NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001032  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC DIVISIONAL DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S26 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001207  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001000  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S21 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001972  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003386  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000965  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR V NEX" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001617  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-FY" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003575  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPEAKER-UNEX" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003322  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_010  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSORIAL-TENURE" .
+
+position:003543  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG VII NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001631  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-AY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003298  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES ASSOC(WOS)" ;
+        ucdrp:cto           ucdrp:CTO_566 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003045  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC AGRON AES-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003511  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG III" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001308  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST PROF" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000877  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ACADEMIC COORD" ;
+        ucdrp:cto           ucdrp:CTO_S44 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003266  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-NO REM" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_627  a    ucdrp:CTO ;
+        rdfs:label  "ASSOCIATE AND ASSISTANT UNIVERSITY LIBRARIAN" .
+
+position:003013  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC AGRON AES-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002757  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "POST DDS I-VI/REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001101  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000845  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD III-FY" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003487  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROJ SCIENTIST (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003234  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC FLD PROG SUPV" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002550  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT INSTR-GRAD STDNT-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0117  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RECALLED PROFESSOR OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_012 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003700  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY CONSULTANT" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002725  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHIEF RESID PHYS-NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001077  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM VICE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S24 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003202  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002273  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT II-GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002020  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASSOC CLIN PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001045  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY ASST TO VICE CHANC" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0131  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSISTANT PROF LAW (NON-TEN)" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:8025  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ACADEMIC DEAN (STAFF)" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001511  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN __- FY-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003178  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS RES NEX" ;
+        ucdrp:cto           ucdrp:CTO_543 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002241  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD FLD WK-AY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001985  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-LR SCL-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001732  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASST CLIN PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003612  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-CAREER STATUS" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_553  a    ucdrp:CTO ;
+        rdfs:label  "SPECIALIST - VISITING" .
+
+position:001700  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RECALL TEACHING" ;
+        ucdrp:cto           ucdrp:CTO_012 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003367  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-AY-1/10" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_728  a    ucdrp:CTO ;
+        rdfs:label  "COOPERATIVE EXTENSION ADVISOR" .
+
+position:003114  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST AES NEX" ;
+        ucdrp:cto           ucdrp:CTO_557 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001455  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF OF CLIN-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003335  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS JR SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001676  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "UCDC EDUCATOR - AY" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002651  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHER-LHS-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S26  a    ucdrp:CTO ;
+        rdfs:label  "DIVISIONAL DEAN" .
+
+position:003381  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003556  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG I NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003303  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001897  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001644  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-FY" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001690  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003279  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003570  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHER-UNEX-CONTRACT YR" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003998  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SALARY SUPPLEMENTATION" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003072  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC AGRON AES-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001588  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT PSOE-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_224 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002310  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG ASST-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002738  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHIEF RESID PHYS-REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003293  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES PROF-MILLER INST-FY" ;
+        ucdrp:cto           ucdrp:CTO_566 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003215  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-LR SCL-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001303  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003261  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-FY" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002286  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "NURSERY SCHOOL ASST-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_124  a    ucdrp:CTO ;
+        rdfs:label  "ACTING PROFESSOR-NON-SENATE" .
+
+position:000840  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD I-AY" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0190  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003404  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROJ SCI-FY-B/E/E NON REP" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001998  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-FY-B/E/E NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002222  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUPV TEACHER ED-FY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_566  a    ucdrp:CTO ;
+        rdfs:label  "OTHER RESEARCH" .
+
+position:001713  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003671  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-POTNTL CAR NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001040  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DEAN-EXTENDED LEARNING" ;
+        ucdrp:cto           ucdrp:CTO_S21 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003173  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-AY NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_534  a    ucdrp:CTO ;
+        rdfs:label  "AGRONOMIST-ACTING" .
+
+position:001689  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003394  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROJ SCIENTIST-FY" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000927  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM ASST DIRECTOR" ;
+        ucdrp:cto           ucdrp:CTO_S34 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001902  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003316  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003362  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001450  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF OF CLIN-FY" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002853  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIAL READER-UCLA-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002600  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "MILITARY/AIR SCI&TACTICS ASST" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_225  a    ucdrp:CTO ;
+        rdfs:label  "LECTURER" .
+
+position:003330  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "JR SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003505  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG VI" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_446  a    ucdrp:CTO ;
+        rdfs:label  "INTERN OR RESIDENT" .
+
+ucdrp:CTO_S21  a    ucdrp:CTO ;
+        rdfs:label  "DEAN" .
+
+position:003551  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG III NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003007  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT AGRON AES" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003228  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST RES" ;
+        ucdrp:cto           ucdrp:CTO_543 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003274  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSAR-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003021  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST AGRON AES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_531 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003993  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY RECRUITMENT ALLOW" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000853  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD II-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003495  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROJ SCNTST-FY-B/E/E NEX" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:001583  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT SR LECT SOE-FY" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0125  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VISITING ASSOCIATE PROF OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001330  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-10-MONTHS" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002733  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "OTH POST-MD TRAIN 2-8/REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002060  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN INSTR-AY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003210  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-FY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003638  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LAW LIBRARIAN NEX" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001007  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S24 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001979  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001726  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003606  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-CAREER NON REP" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003186  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-SFT NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003652  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST CURATOR" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001993  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-FY-B/E/E-NON REP" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001915  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF OF CLIN-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003329  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "JR SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003620  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-CAREER STATUS" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003375  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001210  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001684  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT PSOE-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S34  a    ucdrp:CTO ;
+        rdfs:label  "ACTING DIRECTOR" .
+
+position:001606  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-AY-1/9-PART TIME" ;
+        ucdrp:cto           ucdrp:CTO_221 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003311  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001652  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING APPT-TEMP AUG" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001108  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS PROF" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003066  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT AGRON AES-B/E/E-AY" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002382  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "K-12 ASST-NON GSHIP/NONREP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003532  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING EDUCATOR III NEX" ;
+        ucdrp:cto           ucdrp:CTO_825 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:001620  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-EMERITUS(WOS)" ;
+        ucdrp:cto           ucdrp:CTO_216 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003287  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-TUIT & FEE REM-UCSD-GRP D" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003080  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST AGRON AES-AY" ;
+        ucdrp:cto           ucdrp:CTO_531 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003255  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "POSTDOC-EMPLOYEE NEX" ;
+        ucdrp:cto           ucdrp:CTO_575 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:001596  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT PSOE-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_224 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001343  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002746  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS/SUBSPEC 4-8/REP-OV" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001098  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SUMMER DIFFERENTIAL" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003476  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST COOP EXT NEX" ;
+        ucdrp:cto           ucdrp:CTO_729 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003223  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-LR SCL-AY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001564  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000880  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "OMBUDSMAN-ACAD" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002714  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INTERN-VET MED/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000802  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST VICE CHANC" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001066  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR VI" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003910  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY ADMIN TRANSITION LV-FY" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003490  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROJ SCIENTIST-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:003665  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS LIBRARIAN NEX" ;
+        ucdrp:cto           ucdrp:CTO_623 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0120  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOCIATE PROFESSOR OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001974  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001721  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003388  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003601  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC UNIV LIBRARIAN NEX" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000967  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR VII NEX" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001619  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001910  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003324  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST NEX NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_012  a    ucdrp:CTO ;
+        rdfs:label  "PROFESSORIAL-RECALL" .
+
+position:003545  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG VI NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002861  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TUT-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S61  a    ucdrp:CTO ;
+        rdfs:label  "DEPARTMENT CHAIRPERSON" .
+
+position:001633  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-AY-1/9-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003513  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG II" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003268  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001181  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-AY-1/9-LAW" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003015  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST AGRON AES-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_531 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001103  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003489  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROJ SCIENTIST (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002727  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "POST DDS I-VI/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003282  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-FULL FEE REM" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002520  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "READER-NON STDNT/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003250  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-AY" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001591  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT PSOE-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_224 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001047  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM COLLEGE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S24 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002741  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "NON-PHYS CLIN TRAIN-GENL CAMP" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001987  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001734  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001909  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001061  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR I" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002211  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DEMO TEACHER-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003614  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-TEMP STATUS" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001702  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RECALL FACULTY" ;
+        ucdrp:cto           ucdrp:CTO_012 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003369  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC ADJ PROF-AY-1/10-BEE" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003383  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003558  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001899  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003305  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001646  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-AY-1/10" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000962  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR II NEX" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003351  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_467  a    ucdrp:CTO ;
+        rdfs:label  "ASSOCIATE-STUDENT" .
+
+ucdrp:CTO_214  a    ucdrp:CTO ;
+        rdfs:label  "ACTING LECTURER-SOE" .
+
+position:003572  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST TEACHER-UNEX" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003074  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC AGRON AES-AY" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003249  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SENATE EMERITUS (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_316 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003540  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROG COORD" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002312  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG ASST-GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003217  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-FY-NON REP" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001130  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-10 MONTHS" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002708  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS I/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002288  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT I-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003263  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-TUIT & FEE REM-UCSD-GRP F" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003010  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC AGRON AES" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002754  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS MOONLTG REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000842  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD II-AY" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002081  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CLIN ASSOCIATE-FY" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002256  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK SUPV-FY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003406  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROJ SCI-FY-B/E/E NONREP" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000810  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GRADUATE ADVISOR" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003452  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC COOP EXT ADVISOR NEX" ;
+        ucdrp:cto           ucdrp:CTO_728 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001540  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001968  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REGENTS' LECT" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001715  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INSTR-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002270  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "REMD TUT I-NON GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001217  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003175  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-AY-1/9 NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001936  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES SCRIPPS-AY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001010  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S21 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001982  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-LR SCL-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003396  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS PROJ SCIENTIST" ;
+        ucdrp:cto           ucdrp:CTO_583 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001904  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003539  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROGRAM COORDINATOR NEX" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001452  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF OF CLIN-FY" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002855  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "READER-NON GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003507  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG V" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003553  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG II NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003009  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT AGRON AES-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003300  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001641  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT-AY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001143  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003521  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING EDUCATOR II" ;
+        ucdrp:cto           ucdrp:CTO_825 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003276  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-PARTIAL FEE REM" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003995  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "EAP-TEMP FACULTY HOUSING ALLOW" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000855  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD III-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003497  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC PROJ SCIENTIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_583 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:001585  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT PSOE-FY" ;
+        ucdrp:cto           ucdrp:CTO_224 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002735  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "STIPEND-OTH POST-MD TRAIN" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001507  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN__-AY- 1/9 -NON-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003290  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES PROF-MILLER INST-AY" ;
+        ucdrp:cto           ucdrp:CTO_566 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001087  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM ASSOC VICE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S24 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003212  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001300  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001728  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001055  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY ASST TO PROVOST/DEAN" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002030  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASSOC CLIN PROF-FY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:8035  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHANCELLOR AND DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S21 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003188  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASSOC RES NEX" ;
+        ucdrp:cto           ucdrp:CTO_543 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002251  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FLD WK SUPV-AY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001995  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-FY-B/E/E-NON REP" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001917  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF OF CLIN-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_317 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001244  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003622  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST LIBRARIAN-TEMP STATUS" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003377  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003124  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST AES NEX" ;
+        ucdrp:cto           ucdrp:CTO_557 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002440  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "K-12 INSTRUCTOR-AY" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003170  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_531  a    ucdrp:CTO ;
+        rdfs:label  "AGRONOMIST-NON-TENURE" .
+
+position:003345  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-AY-1/10-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001686  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003391  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROJ SCIENTIST-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001608  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT SOE-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_927  a    ucdrp:CTO ;
+        rdfs:label  "MISCELLANEOUS TITLES-SERIES" .
+
+position:003313  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST NON REP" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001654  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CONTINUING APPT-TEMP-AUG-1/10" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:6256  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSISTANT DEAN (ACAD)" ;
+        ucdrp:cto           ucdrp:CTO_M10 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002850  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "READER-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002306  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COMM TEACHG FELLOW-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003289  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADJ INSTR-FY" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003580  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COURSE AUTHOR-UNEX" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003082  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST AGRON AES-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_531 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003004  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SPECIALIST AES" ;
+        ucdrp:cto           ucdrp:CTO_557 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001598  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT SOE-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002320  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG ASST-1/10-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001345  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_011 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003478  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC SPECIALIST COOP EXT NEX" ;
+        ucdrp:cto           ucdrp:CTO_729 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003225  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-LR SCL-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002716  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INTERN-CLIN PSYCH-GENL CAMP" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003271  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST PROF IN RES-FY" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000804  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM ASSOC VICE CHANC" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001068  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VICE PROVOST" ;
+        ucdrp:cto           ucdrp:CTO_S27 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003990  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ADDL COMP-HGH&OLIVE VIEW MCS" ;
+        ucdrp:cto           ucdrp:CTO_999 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000850  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD I-AY NEX" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:003492  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROJ SCIENTIST-FY NEX" ;
+        ucdrp:cto           ucdrp:CTO_581 ;
+        ucdrp:system_local  ucdrp:Local .
+
+position:003667  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN-POTNTL CAR NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001580  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT SR LECT SOE-AY" ;
+        ucdrp:cto           ucdrp:CTO_214 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002011  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CLIN PROF-DENT-50%/+-FY" ;
+        ucdrp:cto           ucdrp:CTO_030 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002730  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID-VET MED/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001502  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC IN __-AY-NON-GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_467 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003635  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LAW LIBRARIAN" ;
+        ucdrp:cto           ucdrp:CTO_627 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001976  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001723  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "INSTR IN RES-HCOMP" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_323  a    ucdrp:CTO ;
+        rdfs:label  "VISITING PROFESSOR" .
+
+position:003603  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-POTNTLCAREER NON REP" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:8030  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S21 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003183  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC RES-AY NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:9433  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LW&R INTRUCTOR I" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001699  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RECALL TEACHING NON-SENATE" ;
+        ucdrp:cto           ucdrp:CTO_012 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001990  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-LR SCL-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001912  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS ASST CLIN PROF-SFT-VM" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003326  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VIS ASST SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_553 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003372  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST ADJ PROF-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_335 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003547  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD OF PUBLIC PROG V NEX" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002863  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TUT-NON GSHIP/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_456 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001635  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-FY-CONTINUING" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001681  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003515  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG I" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_456  a    ucdrp:CTO ;
+        rdfs:label  "OTHER STUDENT TITLES" .
+
+ucdrp:CTO_S31  a    ucdrp:CTO ;
+        rdfs:label  "DIRECTOR" .
+
+position:001603  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "SR LECT SOE-AY" ;
+        ucdrp:cto           ucdrp:CTO_210 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003561  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST COORD PUB PROG NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001183  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-AY-1/9-LAW" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003017  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC AGRON AES" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003238  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "FACULTY FELLOW RES-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_577 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002301  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHG FELLOW-NON GSHIP" ;
+        ucdrp:cto           ucdrp:CTO_426 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002729  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PGY II PHARMACY RESID/NON REP" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003284  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "GSR-TUIT & FEE REM" ;
+        ucdrp:cto           ucdrp:CTO_436 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003206  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RES-SFT" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003252  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "POSTDOC-EMPLOYEE" ;
+        ucdrp:cto           ucdrp:CTO_575 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001593  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT LECT PSOE-AY-LAW" ;
+        ucdrp:cto           ucdrp:CTO_224 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:0135  a            ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VISITING ASSISTANT PROF OF LAW" ;
+        ucdrp:cto           ucdrp:CTO_323 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002743  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "RESID PHYS I/REP-OV" ;
+        ucdrp:cto           ucdrp:CTO_446 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001095  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM DEPARTMENT CHAIR" ;
+        ucdrp:cto           ucdrp:CTO_S64 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002070  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "HS CLIN INSTR-FY" ;
+        ucdrp:cto           ucdrp:CTO_341 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003220  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-FY" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002245  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD FLD WK-FY" ;
+        ucdrp:cto           ucdrp:CTO_357 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001017  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT/INTERIM ASSOC DEAN" ;
+        ucdrp:cto           ucdrp:CTO_S24 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001989  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001063  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR III" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003441  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COOP EXT ADVISOR" ;
+        ucdrp:cto           ucdrp:CTO_728 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003616  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC LIBRARIAN -CAREER STATUS" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003196  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST RES-SFT NEX" ;
+        ucdrp:cto           ucdrp:CTO_541 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_557  a    ucdrp:CTO ;
+        rdfs:label  "SPECIALIST IN AGRICULTURE EXPERIMENT STATION" .
+
+position:003662  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LIBRARIAN-CAREER STATUS NEX" ;
+        ucdrp:cto           ucdrp:CTO_621 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001971  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT PROF-AY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_114 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_999  a    ucdrp:CTO ;
+        rdfs:label  "SUPPLEMENTAL PAY CODES" .
+
+position:003385  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC PROF IN RES-FY-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000964  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC ADMINISTRATOR IV NEX" ;
+        ucdrp:cto           ucdrp:CTO_S56 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003353  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF IN RES-AY-1/9" ;
+        ucdrp:cto           ucdrp:CTO_311 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003100  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASTRONOMER" ;
+        ucdrp:cto           ucdrp:CTO_520 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001694  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT PSOE-AY-LAW" ;
+        ucdrp:cto           ucdrp:CTO_211 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+ucdrp:CTO_S44  a    ucdrp:CTO ;
+        rdfs:label  "ACTING ACADEMIC COORDINATOR" .
+
+ucdrp:CTO_216  a    ucdrp:CTO ;
+        rdfs:label  "LECTURER-SECURITY OF EMPLOYMENT-EMERITUS" .
+
+position:003574  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "TEACHER-UNEX" ;
+        ucdrp:cto           ucdrp:CTO_828 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003321  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASST SPECIALIST NEX" ;
+        ucdrp:cto           ucdrp:CTO_551 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003076  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASSOC AGRON AES-B/E/E-AY" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000900  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "DIRECTOR" ;
+        ucdrp:cto           ucdrp:CTO_S31 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003542  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "COORD PUBLIC PROG VIII NON REP" ;
+        ucdrp:cto           ucdrp:CTO_927 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001630  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "LECT-AY" ;
+        ucdrp:cto           ucdrp:CTO_225 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003297  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "CHI GREEN SCHOLAR-UCSD" ;
+        ucdrp:cto           ucdrp:CTO_566 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003044  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT AGRON AES-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_534 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001132  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF EMERITUS(WOS)" ;
+        ucdrp:cto           ucdrp:CTO_016 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001307  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACT ASST PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_124 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:002037  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ASSOC CLIN PROF-VOL" ;
+        ucdrp:cto           ucdrp:CTO_346 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003012  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "AGRON AES-B/E/E" ;
+        ucdrp:cto           ucdrp:CTO_530 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:003731  a          ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "VISITOR-UNDERGRADUATE (WOS)" ;
+        ucdrp:cto           ucdrp:CTO_928 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:001100  a          ucdrp:Senate , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "PROF-AY" ;
+        ucdrp:cto           ucdrp:CTO_010 ;
+        ucdrp:system_local  ucdrp:Systemwide .
+
+position:000844  a          ucdrp:Federation , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label          "ACADEMIC COORD III-AY" ;
+        ucdrp:cto           ucdrp:CTO_S46 ;
+        ucdrp:system_local  ucdrp:Systemwide .

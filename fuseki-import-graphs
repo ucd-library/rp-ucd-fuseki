@@ -2,18 +2,19 @@
 
 # Reads the directories passed on the commmand line, and imports
 
-if ! opts=$(getopt -o pc:v: --long private,clone:,version: -n fuseki-import-graphs -- "$@"); then
+if ! opts=$(getopt -o g:c:v: --long graph:,clone:,version: -n fuseki-import-graphs -- "$@"); then
   echo "Bad Command Options." >&2 ; exit 1 ; fi
 
 eval set -- "$opts"
 
-private=
+graphs=()
 
 while true; do
 	case $1 in
     -c | --clone) clone="$2"; shift 2;;
     -v | --version) version="$2"; shift 2;;
     -p | --private) private=1; shift ;;
+    -g | --graph) graphs+=($2); shift ;;
 	  *) shift; break;
   esac
 done
@@ -21,15 +22,12 @@ done
 auth=admin:${FUSEKI_PASSWORD}
 
 load=http://fuseki:3030/experts/data
-graphs=(
-  experts.ucdavis.edu
-  experts.ucdavis.edu%2Fiam
-  experts.ucdavis.edu%2Foap
-)
 
-if [[ -n $private ]] ; then
-  graphs+=(
-    id.worldcat.org%2Ffast
+if (( ${#graphs[@]} == 0 )); then
+  graphs=(
+    experts.ucdavis.edu
+    experts.ucdavis.edu%2Fiam
+    experts.ucdavis.edu%2Foap
   )
 fi
 
@@ -57,8 +55,3 @@ for root in "$@"; do
     done
   done
 done
-
-#if [[ -d $clone_dir ]]; then
-#  echo "fuseki-import-graphs - rm $clone_dir"
-#  rm -rf $clone_dir
-#fi

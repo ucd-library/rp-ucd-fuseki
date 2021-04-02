@@ -85,6 +85,24 @@ else
   basic_auth=''
 fi
 
+: <<< ${FUSEKI_DEFAULT_VOCABULARIES:="true"}
+: <<< ${FUSEKI_PUBLIC_VOCABULARY:="true"}
+
+# Install default vocabularies
+if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
+  if [[ ! -d $FUSEKI_BASE/databases/experts/vocab/ ]]; then
+    for dir in $FUSEKI_HOME/vocabularies; do
+      for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
+        graph=$(basename $(dirname $fn))
+        tdb2.tdbloader --tdb=$FUSEKI_HOME/configuration/vocabularies.ttl --graph="$(printf 'http://%b/' ${graph//%/\\x})" $fn
+      done
+    done
+  fi
+fi
+if [[ $FUSEKI_PUBLIC_VOCABULARY=="true" ]]; then
+  cp $FUSEKI_HOME/configuration/vocabularies.ttl $FUSEKI_BASE/configuration;
+fi
+
 # Startup our https://github.com/msoap/shell2http
 if [[ "$FUSEKI_HARVESTDB_ENABLED" == "true" ]]; then
   echo   "shell2http --form [[--auth]] --export-vars FUSEKI_PASSWORD POST:/harvestdb 'fuseki-harvestdb --name=$v_name new' DELETE:/harvestdb 'fuseki-harvestdb --name=$v_name rm' GET:/harvestdb 'fuseki-harvestdb list'"

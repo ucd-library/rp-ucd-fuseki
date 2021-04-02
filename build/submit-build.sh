@@ -1,13 +1,17 @@
 #! /bin/bash
 
-# manually setting this... for now :(
-TAG_NAME=1.2.0
+repo=$(basename -s .git $(git config --get remote.origin.url))
+branch=$(git rev-parse --abbrev-ref HEAD)
+tag=$(git tag --points-at HEAD)
+base=$(git rev-parse --show-toplevel)
 
-ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-cd $ROOT_DIR/..
-
-echo "Submitting build to Google Cloud..."
+if [[ -n $tag ]]; then
+  t_tag="-t ucdlib/${repo}:$tag"
+  echo "Submitting build to Google Cloud..."
 gcloud builds submit \
-  --config ./cloudbuild.yaml \
-  --substitutions=REPO_NAME=rp-ucd-fuseki,TAG_NAME=$TAG_NAME,BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD),SHORT_SHA=$(git log -1 --pretty=%h) \
-  .
+  --config $base/cloudbuild.yaml \
+  --substitutions=REPO_NAME=${repo},TAG_NAME=$tag,BRANCH_NAME=$branch,SHORT_SHA=$(git log -1 --pretty=%h) \
+  $base
+else
+  echo "There is no tag on the current HEAD. Do you really want to cloud build?"
+fi
