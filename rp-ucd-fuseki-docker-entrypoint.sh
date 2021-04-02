@@ -71,6 +71,9 @@ for f in $(cd $FUSEKI_HOME; find . -name \*.tmpl); do
   fi
 done
 
+# Copy extra jarfiles used by fuseki.  Do this on every startup
+cp -r $FUSEKI_HOME/extra $FUSEKI_BASE
+
 if [[ -z "$FUSEKI_HARVESTDB_ENABLED" ]]; then
   export FUSEKI_HARVESTDB_ENABLED="true"
 fi
