@@ -71,6 +71,9 @@ for f in $(cd $FUSEKI_HOME; find . -name \*.tmpl); do
   fi
 done
 
+# Copy extra jarfiles used by fuseki.  Do this on every startup
+cp -r $FUSEKI_HOME/extra $FUSEKI_BASE
+
 if [[ -z "$FUSEKI_HARVESTDB_ENABLED" ]]; then
   export FUSEKI_HARVESTDB_ENABLED="true"
 fi
@@ -83,6 +86,24 @@ if [[ "$FUSEKI_HARVESTDB_AUTH" == "true" ]]; then
   basic_auth="--basic-auth admin:$FUSEKI_PASSWORD"
 else
   basic_auth=''
+fi
+
+: <<< ${FUSEKI_DEFAULT_VOCABULARIES:="true"}
+: <<< ${FUSEKI_PUBLIC_VOCABULARY:="true"}
+
+# Install default vocabularies
+if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
+  if [[ ! -d $FUSEKI_BASE/databases/experts/vocab/ ]]; then
+    for dir in $FUSEKI_HOME/vocabularies; do
+      for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
+        graph=$(basename $(dirname $fn))
+        tdb2.tdbloader --tdb=$FUSEKI_HOME/configuration/vocabularies.ttl --graph="$(printf 'http://%b/' ${graph//%/\\x})" $fn
+      done
+    done
+  fi
+fi
+if [[ $FUSEKI_PUBLIC_VOCABULARY=="true" ]]; then
+  cp $FUSEKI_HOME/configuration/vocabularies.ttl $FUSEKI_BASE/configuration;
 fi
 
 # Startup our https://github.com/msoap/shell2http

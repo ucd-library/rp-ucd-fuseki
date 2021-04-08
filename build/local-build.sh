@@ -1,12 +1,16 @@
 #! /bin/bash
 
-TAG_NAME=1.2.0
+repo=$(basename -s .git $(git config --get remote.origin.url))
+branch=$(git rev-parse --abbrev-ref HEAD)
 
-ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-cd $ROOT_DIR/..
+tag=$(git tag --points-at HEAD)
+
+if [[ -n $tag ]]; then
+  t_tag="-t ucdlib/${repo}:$tag"
+fi
 
 export DOCKER_BUILDKIT=1
 docker build \
   --build-arg BUILDKIT_INLINE_CACHE=1 \
-  -t ucdlib/rp-ucd-fuseki:$TAG_NAME \
-  .
+  -t ucdlib/${repo}:$branch ${t_tag}\
+  $(git rev-parse --show-toplevel)

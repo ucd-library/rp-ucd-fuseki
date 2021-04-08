@@ -70,7 +70,6 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     tdb2:graphName <http://experts.ucdavis.edu/> ;
     .
 
-
 # These are being planned to remove.
 :graph_public_iam
     a tdb2:GraphTDB2;
@@ -88,13 +87,14 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 :tdb_vocab
     a              tdb2:DatasetTDB2 ;
     ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
+    tdb2:unionDefaultGraph true ;
     .
 
-# These two graphs are used below
-:graph_vocab_fast
+# These graphs are used below
+:graph_vocab_union
     a tdb2:GraphTDB2;
     tdb2:dataset :tdb_vocab ;
-    tdb2:graphName <http://id.worldcat.org/fast/> ;
+#    tdb2:graphName <urn:x-arq:DefaultGraph>;
     .
 
 # IET and OAPolicy data are harvest to internal review
@@ -117,7 +117,6 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     tdb2:graphName <http://iam.ucdavis.edu/> ;
     .
 
-# This harvest dataset currently only has four graphs.
 # Other graphs will go to a emphemeral memory database, (I think)
 # Mentions of the public graphs are defined in the public configuration file.
 # Importantly, we have not decided where the inference graphs should go.
@@ -125,8 +124,8 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 :dataset_harvest
     a ja:RDFDataset ;
     ja:namedGraph [
-        ja:graphName <http://id.worldcat.org/fast/> ;
-        ja:graph :graph_vocab_fast ;
+        ja:graphName <http://experts.ucdavis.edu/vocab/> ;
+        ja:graph :graph_vocab_union ;
         ] ;
     ja:namedGraph [
         ja:graphName <http://oapolicy.universityofcalifornia.edu/> ;

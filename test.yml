@@ -24,7 +24,7 @@ version: '3.5'
 
 services:
   fuseki:
-    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-1.2.0}
+    image: ucdlib/rp-ucd-fuseki:${FUSEKI_VERSION:-graphs}
     environment:
       - JVM_ARGS=${JVM_ARGS:- -Xmx4g}
       - FUSEKI_PASSWORD=${FUSEKI_PASSWORD:-testing}
@@ -33,7 +33,6 @@ services:
       - KAFKA_ENABLED=${KAFKA_ENABLED:-false}
     volumes:
       - fuseki-data:/fuseki
-#      - ~/experts-data/experts:/fuseki/import
     ports:
       - ${FUSEKI_HOST_PORT:-3030}:3030
 
