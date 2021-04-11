@@ -1,0 +1,30 @@
+* FAST
+:PROPERTIES:
+:header-args:http: :host localhost:3030
+:header-args:sparqlx: :url http://sparql.org/sparql :format text/csv
+:header-args:sparql: :url http://localhost:3030/vocabularies/sparql :format text/csv
+:END:
+
+** Broader Terms
+
+If we are only interested in the broader terms, for example for import into CDL,
+then this query finds those terms.
+
+#+BEGIN_SRC sparql :format text/csv :file broader.csv
+prefix fast: <http://id.worldcat.org/fast/>
+prefix ont: <http://id.worldcat.org/fast/ontology/1.0/#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+select (?l as ?Label_Value) (?id as ?Code)  WHERE {
+  graph fast: {?s a skos:Concept;
+                  skos:prefLabel ?l;
+                  .
+    filter EXISTS { ?b skos:broader ?s. }
+    bind(replace(str(?s),str(fast:),"") as ?id)
+  }
+}924092
+
+#+END_SRC
+
+#+RESULTS:
+[[file:broader.csv]]
