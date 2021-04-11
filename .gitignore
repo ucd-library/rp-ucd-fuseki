@@ -1,2 +1,6 @@
 #EMACS
 *~
+
+# Other files
+vocabularies/*/*.nt
+vocabularies/*/*.zip

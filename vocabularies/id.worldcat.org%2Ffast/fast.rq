@@ -1,0 +1,14 @@
+prefix fast: <http://id.worldcat.org/fast/>
+prefix ont: <http://id.worldcat.org/fast/ontology/1.0/#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  ?s a skos:Concept;
+     skos:inScheme ont:facet-Topical;
+     ?p ?o;
+     .
+
+} WHERE {
+  values ?p { skos:altLabel skos:prefLabel skos:broader }
+  ?s ?p ?o.
+}
