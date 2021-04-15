@@ -11,6 +11,7 @@ steps:
       - 'BRANCH_NAME=$BRANCH_NAME'
       - 'SHORT_SHA=$SHORT_SHA'
       - 'TAG_NAME=$TAG_NAME'
+      - '_UCD_LIB_INITIATOR=$_UCD_LIB_INITIATOR'
 
   - name: gcr.io/cloud-builders/docker
     entrypoint: "sh"
