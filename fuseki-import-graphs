@@ -7,14 +7,16 @@ if ! opts=$(getopt -o g:c:v: --long graph:,clone:,version: -n fuseki-import-grap
 
 eval set -- "$opts"
 
-graphs=()
+local graphs=()
+local no_graphs=()
 
 while true; do
 	case $1 in
     -c | --clone) clone="$2"; shift 2;;
     -v | --version) version="$2"; shift 2;;
     -p | --private) private=1; shift ;;
-    -g | --graph) graphs+=($2); shift ;;
+    -g | --graph) graphs+=($2); shift 2;;
+    -n | --no-graph) no_graphs+=($2); shift 2;;
 	  *) shift; break;
   esac
 done
@@ -31,6 +33,12 @@ if (( ${#graphs[@]} == 0 )); then
     experts.ucdavis.edu%2Ffis
   )
 fi
+
+local del
+for del in "${no_graph[@]}"
+do
+   graphs=("${graphs[@]/$del}") #Quotes when working with strings
+done
 
 import_dir=/fuseki/import
 
