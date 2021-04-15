@@ -28,6 +28,7 @@ if (( ${#graphs[@]} == 0 )); then
     experts.ucdavis.edu
     experts.ucdavis.edu%2Fiam
     experts.ucdavis.edu%2Foap
+    experts.ucdavis.edu%2Ffis
   )
 fi
 

@@ -3,11 +3,11 @@
 repo=$(basename -s .git $(git config --get remote.origin.url))
 branch=$(git rev-parse --abbrev-ref HEAD)
 
-tag=$(git tag --points-at HEAD)
+#tag=$(git tag --points-at HEAD | tail -1)
 
-if [[ -n $tag ]]; then
-  t_tag="-t ucdlib/${repo}:$tag"
-fi
+#if [[ -n $tag ]]; then
+#  t_tag="-t ucdlib/${repo}:$tag"
+#fi
 
 export DOCKER_BUILDKIT=1
 docker build \

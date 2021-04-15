@@ -22,7 +22,7 @@ select (?l as ?Label_Value) (?id as ?Code)  WHERE {
     filter EXISTS { ?b skos:broader ?s. }
     bind(replace(str(?s),str(fast:),"") as ?id)
   }
-}924092
+}
 
 #+END_SRC
 
