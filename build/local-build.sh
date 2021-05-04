@@ -12,5 +12,5 @@ branch=$(git rev-parse --abbrev-ref HEAD)
 export DOCKER_BUILDKIT=1
 docker build \
   --build-arg BUILDKIT_INLINE_CACHE=1 \
-  -t ucdlib/${repo}:$branch ${t_tag}\
+  -t gcr.io/ucdlib-pubreg/${repo}:$branch ${t_tag}\
   $(git rev-parse --show-toplevel)

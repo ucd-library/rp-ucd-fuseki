@@ -1,4 +1,4 @@
-FROM ucdlib/jena-fuseki-eb:jena-3.15.0
+FROM gcr.io/ucdlib-pubreg/jena-fuseki-eb:jena-3.17.0
 
 RUN set -eux && \
     apt-get update && \

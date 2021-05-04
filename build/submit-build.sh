@@ -2,14 +2,14 @@
 
 repo=$(basename -s .git $(git config --get remote.origin.url))
 branch=$(git rev-parse --abbrev-ref HEAD)
-tag=$(git tag --points-at HEAD)
+# tag=$(git tag --points-at HEAD)
+tag=1.3.3
 base=$(git rev-parse --show-toplevel)
 
 gcloud config set project digital-ucdavis-edu
 USER=$(gcloud auth list --filter="-status:ACTIVE"  --format="value(account)")
 
 if [[ -n $tag ]]; then
-  t_tag="-t ucdlib/${repo}:$tag"
   echo "Submitting build to Google Cloud..."
 
   gcloud builds submit \
