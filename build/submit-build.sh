@@ -2,8 +2,7 @@
 
 repo=$(basename -s .git $(git config --get remote.origin.url))
 branch=$(git rev-parse --abbrev-ref HEAD)
-# tag=$(git tag --points-at HEAD)
-tag=1.3.3
+tag=$(git tag --points-at HEAD)
 base=$(git rev-parse --show-toplevel)
 
 gcloud config set project digital-ucdavis-edu
