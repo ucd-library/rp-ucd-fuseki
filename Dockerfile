@@ -6,7 +6,7 @@ RUN set -eux && \
     rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p $FUSEKI_HOME/extra
-COPY ./lib/jena-kafka-connector-0.0.3-SNAPSHOT.jar ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
+COPY ./lib/jena-kafka-connector-0.1.0.jar ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
 
 COPY --from=msoap/shell2http:latest /app/shell2http /usr/local/bin/shell2http
 
