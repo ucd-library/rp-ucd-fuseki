@@ -91,6 +91,16 @@ fi
 : <<< ${FUSEKI_DEFAULT_VOCABULARIES:="true"}
 : <<< ${FUSEKI_PUBLIC_VOCABULARY:="true"}
 
+# Install default experts data
+if [[ ! -d $FUSEKI_BASE/databases/experts/ ]]; then
+  for dir in $FUSEKI_HOME/experts; do
+    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
+      graph=$(basename $(dirname $fn))
+      tdb2.tdbloader --tdb=$FUSEKI_BASE/configuration/experts.ttl --graph="$(printf 'http://%b/' ${graph//%/\\x})" $fn
+    done
+  done
+fi
+
 # Install default vocabularies
 if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
   if [[ ! -d $FUSEKI_BASE/databases/experts/vocab/ ]]; then

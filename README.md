@@ -15,7 +15,7 @@ The following parameters (and their defaults) affect the actual instance:
 The following parameters (set in .env) are common parameters used in the
 docker-compose initialization file:
 
-- `${FUSEKI_VERSION:-1.1.3}` - fuseki version to use
+- `${FUSEKI_VERSION:-1.3.3}` - fuseki version to use
 - `${FUSEKI_PORT:-3004}` - External Port assignment
 
 
@@ -30,12 +30,40 @@ Defaults shown
 - `${KAFKA_USERNAME}`
 - `${KAFKA_PASSWORD}`
 
+# Startup / Entrypoint
 
-# Fuseki Initialization
+On startup, the default entrypoint for `rp-ucd-fuseki` is the
+`rp-ucd-fuseki-entrypoint.sh` file.  This script attempts to do both first-time
+installations, and restart updates.
+
+## Expert Service
 
 `rp-ucd-fuseki` sets up the default `experts` service, the only service needed
-in the Aggie Experts deployment.  Even without initialization, the experts
-system should at least come up, albiet with no data.
+in the Aggie Experts deployment.  On every startup, the script checks, and will
+not overwrite an existing database.  If no database exists, then some initial
+data will be loaded into the experts database.
+
+
+## Vocabularies Service
+
+`rp-ucd-fuseki` will also setup a `vocabularies` service.  This service is not
+explicitly required for Aggie Experts deployment, especially for development
+testing.  On every startup, the script checks for the vocabularies databases and
+will not overwrite an existing database.  If no database exists, then initial
+data will be loaded.  Vocabularies can be large and take a long time to load (~2
+minutes).  You can skip loading the vocabulary service with the following
+environment varirable
+
+`${FUSEKI_DEFAULT_VOCABULARIES:-true}` = Set to 'false' to skip loading defaults vocabularies.
+
+The vocabulary data is used by the harvester to synchronize experts data,
+like theme keywords.  They can also be made available as a public service.  This
+is provided with the following environment variable.
+
+`${FUSEKI_PUBLIC_VOCABULARY:-true}` = set to false to not create a public service
+
+
+# User Data Initialization
 
 The quickest method for testing the system is to directly import public graphs
 into the system.  Using fuseki's `/data` import http endpoint will also trigger
@@ -55,6 +83,7 @@ typically used for queries.  The graphs really only show provenance of the data.
     └── *.ttl.gz    # Public data from the UCD IAM system.
 
 ```
+
 
 ## Github Initialization
 
