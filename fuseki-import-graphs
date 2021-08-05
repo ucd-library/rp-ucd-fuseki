@@ -7,8 +7,8 @@ if ! opts=$(getopt -o g:c:v: --long graph:,clone:,version: -n fuseki-import-grap
 
 eval set -- "$opts"
 
-local graphs=()
-local no_graphs=()
+graphs=()
+no_graphs=()
 
 while true; do
 	case $1 in
@@ -34,8 +34,7 @@ if (( ${#graphs[@]} == 0 )); then
   )
 fi
 
-local del
-for del in "${no_graph[@]}"
+ for del in "${no_graph[@]}"
 do
    graphs=("${graphs[@]/$del}") #Quotes when working with strings
 done
