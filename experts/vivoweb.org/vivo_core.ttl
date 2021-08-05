@@ -1,0 +1,5 @@
+@prefix vivo:      <http://vivoweb.org/ontology/core#> .
+
+vivo:yearPrecision a vivo:DateTimePrecision.
+vivo:yearMonthPrecision a vivo:DateTimePrecision.
+vivo:yearDayPrecision a vivo:DateTimePrecision.

@@ -6,7 +6,7 @@ RUN set -eux && \
     rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p $FUSEKI_HOME/extra
-COPY ./lib/jena-kafka-connector-0.0.3-SNAPSHOT.jar ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
+COPY ./lib/jena-kafka-connector-0.1.0.jar ./lib/kafka-clients-2.5.0.jar $FUSEKI_HOME/extra/
 
 COPY --from=msoap/shell2http:latest /app/shell2http /usr/local/bin/shell2http
 
@@ -16,6 +16,7 @@ COPY ./tdb.cfg.tmpl $FUSEKI_HOME/
 COPY ./shiro.ini.tmpl $FUSEKI_HOME/
 COPY ./configuration $FUSEKI_HOME/configuration/
 COPY ./databases $FUSEKI_HOME/databases/
+COPY ./experts $FUSEKI_HOME/experts/
 COPY ./vocabularies $FUSEKI_HOME/vocabularies/
 COPY ./rp-ucd-fuseki-docker-entrypoint.sh /rp-ucd-fuseki-docker-entrypoint.sh
 COPY ./fuseki-import-graphs /usr/local/bin

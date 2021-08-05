@@ -8,6 +8,7 @@ if ! opts=$(getopt -o g:c:v: --long graph:,clone:,version: -n fuseki-import-grap
 eval set -- "$opts"
 
 graphs=()
+no_graphs=()
 
 while true; do
 	case $1 in
@@ -31,6 +32,11 @@ if (( ${#graphs[@]} == 0 )); then
     experts.ucdavis.edu%2Ffis
   )
 fi
+
+for del in "${no_graph[@]}"
+do
+   graphs=("${graphs[@]/$del}") #Quotes when working with strings
+done
 
 import_dir=/fuseki/import
 
