@@ -90,6 +90,7 @@ fi
 
 : <<< ${FUSEKI_DEFAULT_VOCABULARIES:="true"}
 : <<< ${FUSEKI_PUBLIC_VOCABULARY:="true"}
+: <<< ${FUSEKI_PUBLIC_PRIVATE:="true"}
 
 # Install default experts data
 if [[ ! -d $FUSEKI_BASE/databases/experts/ ]]; then
@@ -100,6 +101,22 @@ if [[ ! -d $FUSEKI_BASE/databases/experts/ ]]; then
     done
   done
 fi
+
+# Install private database
+if [[ ! -d $FUSEKI_BASE/databases/experts/private/ ]]; then
+  for dir in $FUSEKI_HOME/experts/private; do
+    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
+      graph=$(basename $(dirname $fn))
+      tdb2.tdbloader --tdb=$FUSEKI_BASE/configuration/experts.ttl --graph="$(printf 'http://%b/' ${graph//%/\\x})" $fn
+    done
+  done
+fi
+if [[ $FUSEKI_PUBLIC_PRIVATE=="true" ]]; then
+  cp $FUSEKI_HOME/configuration/private.ttl $FUSEKI_BASE/configuration;
+else
+  rm -f $FUSEKI_BASE/configuration/private.ttl
+fi
+
 
 # Install default vocabularies
 if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
@@ -114,7 +131,12 @@ if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
 fi
 if [[ $FUSEKI_PUBLIC_VOCABULARY=="true" ]]; then
   cp $FUSEKI_HOME/configuration/vocabularies.ttl $FUSEKI_BASE/configuration;
+else
+  rm -f $FUSEKI_BASE/configuration/vocabularies.ttl
 fi
+
+
+
 
 # Startup our https://github.com/msoap/shell2http
 if [[ "$FUSEKI_HARVESTDB_ENABLED" == "true" ]]; then

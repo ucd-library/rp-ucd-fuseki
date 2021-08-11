@@ -11,22 +11,15 @@ ja:MemoryDataset  rdfs:subClassOf  ja:RDFDataset .
 tdb2:GraphTDB2  rdfs:subClassOf  ja:Model .
 tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 
-# There are some configurations that you might want to change, if for example
-# you'd like to run multiple experts setups on a single fuseki instance.
-# Otherwise the defaults will setup a normal instance.
 
-:vocab fuseki:name "vocab_writer" .
-:tdb_vocab tdb2:location  "/fuseki/databases/experts/vocab" .
+# The private service carries additional private data that is accessed by the experts system.
+# These are not available to the experts users directly, but are used by the harvester.
+:private fuseki:name "private" .
+:tdb_private tdb2:location  "/fuseki/databases/experts/private" .
 
-# Everything below is standard vocabulary setup
 
-# See javadoc for ARQ.queryTimeout for details.
-[] a fuseki:Server ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "10000,60000" ] ;
-    .
-
-:vocab a fuseki:Service ;
-    fuseki:dataset :tdb_vocab ;
+:private a fuseki:Service ;
+    fuseki:dataset :tdb_private ;
     fuseki:endpoint [
         fuseki:operation fuseki:query ;
         fuseki:name "sparql"
@@ -53,8 +46,9 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         ] ;
     .
 
+
 # Complete Thesauri, like FAST are saved in their own database
-:tdb_vocab
+:tdb_private
     a              tdb2:DatasetTDB2 ;
     ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
     tdb2:unionDefaultGraph true ;

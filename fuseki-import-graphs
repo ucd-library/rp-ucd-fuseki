@@ -1,6 +1,24 @@
 #! /bin/bash
 
-# Reads the directories passed on the commmand line, and imports
+function import_to_database () {
+  local root="$1"
+  local database="$2"
+  local -n graphs="$3"
+
+  local names="${graphs[@]/#/ -o -name }"
+  local names=${names#*-o}
+
+  local load=http://fuseki:3000/$database/data
+
+  for dir in $(find $root -type d $names); do
+    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz -o name \*.jsonld ); do
+      graph=$(basename $(dirname $fn))
+      echo "fuseki-import-graphs - import $graph into ${database}"
+      echo curl --user "${auth}" -F "file=@$fn" "${load}?graph=$(printf 'http://%b/' ${graph//%/\\x})"
+    done
+  done
+
+}
 
 if ! opts=$(getopt -o g:c:v: --long graph:,clone:,version: -n fuseki-import-graphs -- "$@"); then
   echo "Bad Command Options." >&2 ; exit 1 ; fi
@@ -9,6 +27,8 @@ eval set -- "$opts"
 
 graphs=()
 no_graphs=()
+private_graphs=()
+private_no_graphs=()
 
 while true; do
 	case $1 in
@@ -22,8 +42,6 @@ done
 
 auth=admin:${FUSEKI_PASSWORD}
 
-load=http://fuseki:3030/experts/data
-
 if (( ${#graphs[@]} == 0 )); then
   graphs=(
     experts.ucdavis.edu
@@ -33,9 +51,22 @@ if (( ${#graphs[@]} == 0 )); then
   )
 fi
 
+if (( ${#private_graphs[@]} == 0 )); then
+  private_graphs=(
+    experts.ucdavis.edu
+    experts.ucdavis.edu%2Fgrant
+    experts.ucdavis.edu%2Ffis
+  )
+fi
+
 for del in "${no_graph[@]}"
 do
    graphs=("${graphs[@]/$del}") #Quotes when working with strings
+done
+
+for del in "${private_no_graph[@]}"
+do
+   private_graphs=("${private_graphs[@]/$del}") #Quotes when working with strings
 done
 
 import_dir=/fuseki/import
@@ -50,15 +81,7 @@ if [[ -n $clone ]]; then
   set -- "$@" $clone_dir
 fi
 
-names="${graphs[@]/#/ -o -name }"
-names=${names#*-o}
-
-for root in "$@"; do
-  for dir in $(find $root -type d $names); do
-    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
-      graph=$(basename $(dirname $fn))
-      echo "fuseki-import-graphs - import $graph"
-      curl --user "${auth}" -F "file=@$fn" "${load}?graph=$(printf 'http://%b/' ${graph//%/\\x})"
-    done
-  done
+for d in "$@"; do
+  import_to_database "experts" "$d/experts" graphs
+  import_to_database "private" "$d/private" private_graphs
 done
