@@ -35,6 +35,14 @@ position:002724  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "RESID PHYS II-VIII/NON REP" .
 
+position:000812  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
+        rdfs:label        "FACULTY ADVISOR" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO928 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "FACULTY ADVISOR" .
+
 position:003201  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "RES-LR SCL-FY" ;
         ucdrp:cto         position:CTO541 ;
@@ -66,6 +74,14 @@ position:002272  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:
         skos:broader      position:CTO456 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "REMD TUT II NON-GSHIP/NON REP" .
+
+position:001044  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "FACULTY ASST TO CHANC" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO928 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "FACULTY ASST TO CHANC" .
 
 position:0130  a          vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
         rdfs:label        "ASSISTANT PROFESSOR OF LAW" ;
@@ -147,6 +163,14 @@ position:001454  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROF OF CLIN-HCOMP" .
 
+position:001201  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ACT ASSOC PROF-AY-1/9" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO114 , position:Senate , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT ASSOC PROF-AY-1/9" .
+
 position:003334  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "JR SPECIALIST NEX NON REP" ;
         ucdrp:cto         position:CTO551 ;
@@ -218,6 +242,14 @@ position:001643  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos
         skos:broader      position:CTO225 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT-AY-1/9-CONTINUING" .
+
+position:001145  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
+        rdfs:label        "PROF-AY-1/9-B/E/E" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO010 , position:Senate , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-AY-1/9-B/E/E" .
 
 position:002120  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ASSOC SUPV PE-AY" ;
@@ -300,6 +332,14 @@ position:CTO  a         ucdrp:CTO , skos:Concept ;
         skos:inScheme   position: ;
         skos:prefLabel  "Class Title Outline" .
 
+position:003403  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "PROJ SCIENTIST-FY NON REP" ;
+        ucdrp:cto         position:CTO581 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO581 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROJ SCIENTIST-FY NON REP" .
+
 position:002428  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
         rdfs:label        "SUBSTITUTE TEACHER-CONTINUING" ;
         ucdrp:cto         position:CTO928 ;
@@ -315,14 +355,6 @@ position:002000  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos
         skos:broader      position:Federation , position:CTO341 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "HS CLIN PROF-AY" .
-
-position:003403  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
-        rdfs:label        "PROJ SCIENTIST-FY NON REP" ;
-        ucdrp:cto         position:CTO581 ;
-        ucdrp:identifier  ucdrp:Systemwide ;
-        skos:broader      position:Academic , position:CTO581 ;
-        skos:inScheme     position: ;
-        skos:prefLabel    "PROJ SCIENTIST-FY NON REP" .
 
 position:001997  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:Position ;
         rdfs:label        "RES-FY-B/E/E NEX" ;
@@ -508,6 +540,14 @@ position:003020  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "ASST AGRON AES" .
 
+position:000852  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
+        rdfs:label        "ACADEMIC COORD II-AY NEX" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Local ;
+        skos:broader      position:Federation , position:Academic , position:CTOS46 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD II-AY NEX" .
+
 position:003494  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
         rdfs:label        "ASST PROJ SCIENTIST-FY NEX" ;
         ucdrp:cto         position:CTO581 ;
@@ -596,6 +636,14 @@ position:002280  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos
         skos:inScheme     position: ;
         skos:prefLabel    "REMD TUT I-NON GSHIP" .
 
+position:001052  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
+        rdfs:label        "ASSOC COLLEGE PROVOST" ;
+        ucdrp:cto         position:CTOS27 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS27 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC COLLEGE PROVOST" .
+
 position:003605  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "ASSOC LIBRARIAN-POTLCAR NONREP" ;
         ucdrp:cto         position:CTO621 ;
@@ -619,6 +667,14 @@ position:003651  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:
         skos:broader      position:Academic , position:CTO927 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC CURATOR" .
+
+position:001020  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
+        rdfs:label        "ASST DEAN" ;
+        ucdrp:cto         position:CTOS21 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS21 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASST DEAN" .
 
 position:001992  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "ASST RES-LR SCL-FY-B/E/E" ;
@@ -659,6 +715,14 @@ position:003374  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:broader      position:Academic , position:Federation , position:CTO335 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC ADJ PROF-AY-B/E/E" .
+
+position:000907  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:Academic ;
+        rdfs:label        "ACT/INTERIM DIRECTOR" ;
+        ucdrp:cto         position:CTOS34 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS34 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM DIRECTOR" .
 
 position:003549  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "COORD OF PUBLIC PROG IV NEX" ;
@@ -713,6 +777,14 @@ position:003310  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:
         skos:broader      position:Federation , position:Academic , position:CTO551 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC SPECIALIST" .
+
+position:001107  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "ACT PROF-AY" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Senate , position:CTO114 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT PROF-AY" .
 
 position:003531  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
         rdfs:label        "CONTINUING EDUCATOR II NEX" ;
@@ -808,6 +880,22 @@ position:001310  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROF-FY" .
 
+position:000801  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
+        rdfs:label        "ACADEMIC ASST TO CHANC" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO928 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ASST TO CHANC" .
+
+position:001065  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR V" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:Academic , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR V" .
+
 position:002040  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "HS ASST CLIN PROF-AY" ;
         ucdrp:cto         position:CTO341 ;
@@ -848,6 +936,14 @@ position:003664  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "LIBRARIAN-TEMP STATUS NEX" .
 
+position:001208  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "VIS ASSOC PROF" ;
+        ucdrp:cto         position:CTO323 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO323 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "VIS ASSOC PROF" .
+
 position:001973  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:position ;
         rdfs:label        "ACT PROF-AY-1/9-B/E/E" ;
         ucdrp:cto         position:CTO114 ;
@@ -879,6 +975,14 @@ position:003180  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:
         skos:broader      position:Academic , position:CTO541 , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC RES-FY NEX" .
+
+position:000966  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR VI NEX" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:Academic , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR VI NEX" .
 
 position:CTO323  a      skos:Concept ;
         rdfs:label      "VISITING PROFESSOR" ;
@@ -942,6 +1046,14 @@ position:003046  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "ACT ASST AGRON AES-B/E/E" .
 
+position:000878  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ACT ACADEMIC COORD NEX" ;
+        ucdrp:cto         position:CTOS44 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS44 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT ACADEMIC COORD NEX" .
+
 position:001600  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "SR LECT PSOE-AY-PART TIME" ;
         ucdrp:cto         position:CTO221 ;
@@ -949,6 +1061,14 @@ position:001600  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:
         skos:broader      position:Academic , position:CTO221 ;
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT PSOE-AY-PART TIME" .
+
+position:001180  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "PROF-AY-LAW" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Senate , position:Academic , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-AY-LAW" .
 
 position:003014  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
         rdfs:label        "ASSOC SPECIALIST AES" ;
@@ -973,6 +1093,12 @@ position:003488  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:broader      position:Federation , position:Academic , position:CTO581 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROJ SCIENTIST (WOS)" .
+
+position:CTOS31  a      skos:Concept ;
+        rdfs:label      "DIRECTOR" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "DIRECTOR" .
 
 position:003060  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "AGRON AES-AY" ;
@@ -1060,6 +1186,14 @@ position:8026  a          ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC ACADEMIC DEAN (ACAD)" .
 
+position:001092  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
+        rdfs:label        "STIPEND-RESID" ;
+        ucdrp:cto         position:CTO999 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO999 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "STIPEND-RESID" .
+
 position:001986  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ASST RES-LR SCL-AY-1/9-B/E/E" ;
         ucdrp:cto         position:CTO541 ;
@@ -1083,6 +1217,14 @@ position:001908  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:
         skos:broader      position:Federation , position:Academic , position:CTO335 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST ADJ PROF-SFT-VM" .
+
+position:001060  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "COLLEGE PROVOST" ;
+        ucdrp:cto         position:CTOS27 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS27 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "COLLEGE PROVOST" .
 
 position:002210  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "DEMO TEACHER" ;
@@ -1123,6 +1265,14 @@ position:003368  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:
         skos:broader      position:CTO335 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST ADJ PROF-AY-1/10-BEE" .
+
+position:001203  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ASSOC PROF-AY-1/9" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO010 , position:Academic , position:Senate ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC PROF-AY-1/9" .
 
 position:CTO557  a      skos:Concept ;
         rdfs:label      "SPECIALIST IN AGRICULTURE EXPERIMENT STATION" ;
@@ -1194,6 +1344,14 @@ position:001645  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT-FY-CONTINUING" .
 
+position:000961  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR I NEX" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS56 , position:Academic , position:Federation ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR I NEX" .
+
 position:CTO999  a      skos:Concept ;
         rdfs:label      "SUPPLEMENTAL PAY CODES" ;
         skos:broader    position:Academic , position:CTO ;
@@ -1231,6 +1389,12 @@ position:003999  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:
         skos:broader      position:Academic , position:CTO928 ;
         skos:inScheme     position: ;
         skos:prefLabel    "MISCELLANEOUS" .
+
+position:CTOS44  a      skos:Concept ;
+        rdfs:label      "ACTING ACADEMIC COORDINATOR" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "ACTING ACADEMIC COORDINATOR" .
 
 position:CTO216  a      skos:Concept ;
         rdfs:label      "LECTURER-SECURITY OF EMPLOYMENT-EMERITUS" ;
@@ -1278,6 +1442,14 @@ position:002287  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "NURSERY SCHOOL ASST-NON GSHIP" .
 
+position:001059  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:position ;
+        rdfs:label        "CHAIR-SEN ASMBLY&ACADEMIC CNCL" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO928 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "CHAIR-SEN ASMBLY&ACADEMIC CNCL" .
+
 position:002753  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:position ;
         rdfs:label        "RESID PHYS MOONLTG NON REP" ;
         ucdrp:cto         position:CTO446 ;
@@ -1293,6 +1465,14 @@ position:002500  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:broader      position:CTO928 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "READER-NON STDNT" .
+
+position:000841  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ACADEMIC COORD I-FY" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:CTOS46 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD I-FY" .
 
 position:002255  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "FLD WK SUPV-FY" ;
@@ -1317,6 +1497,14 @@ position:003405  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:
         skos:broader      position:Academic , position:CTO581 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROJ SCI-FY NON REP" .
+
+position:001027  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
+        rdfs:label        "ACT/INTERIM ASSISTANT DEAN" ;
+        ucdrp:cto         position:CTOS24 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS24 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM ASSISTANT DEAN" .
 
 position:001999  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
         rdfs:label        "ASST RES-FY-B/E/E NEX" ;
@@ -1396,6 +1584,14 @@ position:003395  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROJ SCIENTIST-FY-B/E/E" .
 
+position:001230  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
+        rdfs:label        "ASSOC PROF-10 MONTHS" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO010 , position:Senate ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC PROF-10 MONTHS" .
+
 position:003363  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "ADJ PROF-AY-1/9" ;
         ucdrp:cto         position:CTO335 ;
@@ -1444,6 +1640,14 @@ position:003552  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "COORD PUBLIC PROG III NON REP" .
 
+position:000910  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ASSOC DIRECTOR" ;
+        ucdrp:cto         position:CTOS31 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS31 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC DIRECTOR" .
+
 position:CTO520  a      skos:Concept ;
         rdfs:label      "ASTRONOMER-TENURE" ;
         skos:broader    position:Academic , position:CTO ;
@@ -1473,6 +1677,22 @@ position:001317  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:
         skos:broader      position:CTO124 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ACT ASST PROF-FY" .
+
+position:001110  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:Academic ;
+        rdfs:label        "PROF-FY" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Senate , position:Academic , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-FY" .
+
+position:000854  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "ACADEMIC COORD III-AY NEX" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:CTOS46 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD III-AY NEX" .
 
 position:003496  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:Academic ;
         rdfs:label        "VIS PROJ SCIENTIST NEX" ;
@@ -1572,6 +1792,14 @@ position:001916  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROF OF CLIN-SFT-VM" .
 
+position:001243  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
+        rdfs:label        "ASSOC PROF-AY-B/E/E" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO010 , position:Senate , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC PROF-AY-B/E/E" .
+
 position:003621  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
         rdfs:label        "ASST LIBRARIAN-POTNTL CAREER" ;
         ucdrp:cto         position:CTO621 ;
@@ -1596,14 +1824,6 @@ position:001685  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT PSOE-FY" .
 
-position:001607  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
-        rdfs:label        "LECT SOE-AY" ;
-        ucdrp:cto         position:CTO210 ;
-        ucdrp:identifier  ucdrp:Systemwide ;
-        skos:broader      position:CTO210 , position:Academic , position:Senate ;
-        skos:inScheme     position: ;
-        skos:prefLabel    "LECT SOE-AY" .
-
 position:003390  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
         rdfs:label        "PROJ SCIENTIST-FY" ;
         ucdrp:cto         position:CTO581 ;
@@ -1611,6 +1831,14 @@ position:003390  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:
         skos:broader      position:Federation , position:CTO581 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "PROJ SCIENTIST-FY" .
+
+position:001607  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "LECT SOE-AY" ;
+        ucdrp:cto         position:CTO210 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO210 , position:Academic , position:Senate ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "LECT SOE-AY" .
 
 position:003312  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
         rdfs:label        "ASSOC SPECIALIST (WOS)" ;
@@ -1701,6 +1929,14 @@ position:002747  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "OTH POST-MD TRAIN 2-8/REP-OV" .
 
+position:001099  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
+        rdfs:label        "ADMIN STIPEND" ;
+        ucdrp:cto         position:CTO999 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO999 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ADMIN STIPEND" .
+
 position:003477  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ASSOC SPECIALIST COOP EXT" ;
         ucdrp:cto         position:CTO729 ;
@@ -1724,6 +1960,22 @@ position:003270  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:
         skos:broader      position:CTO311 , position:Senate , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROF IN RES-AY" .
+
+position:000803  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ASSOC VICE CHANC" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO928 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC VICE CHANC" .
+
+position:001067  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR VII" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS56 , position:Academic , position:Federation ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR VII" .
 
 position:003491  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
         rdfs:label        "PROJ SCIENTIST-FY-B/E/E NEX" ;
@@ -1773,12 +2025,6 @@ position:001975  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ACT ASSOC PROF-FY-B/E/E" .
 
-position:CTO357  a      skos:Concept ;
-        rdfs:label      "INSTRUCTIONAL ASSISTANT" ;
-        skos:broader    position:Academic , position:CTO ;
-        skos:inScheme   position: ;
-        skos:prefLabel  "INSTRUCTIONAL ASSISTANT" .
-
 position:003389  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:Position ;
         rdfs:label        "ASST PROF IN RES-AY-1/9-B/E/E" ;
         ucdrp:cto         position:CTO311 ;
@@ -1786,6 +2032,12 @@ position:003389  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:
         skos:broader      position:Academic , position:CTO311 , position:Senate ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROF IN RES-AY-1/9-B/E/E" .
+
+position:CTO357  a      skos:Concept ;
+        rdfs:label      "INSTRUCTIONAL ASSISTANT" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "INSTRUCTIONAL ASSISTANT" .
 
 position:003602  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:position ;
         rdfs:label        "LIBRARIAN-CAREER NON REP" ;
@@ -1889,6 +2141,14 @@ position:003269  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC ADJ PROF-FY" .
 
+position:001182  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:Position ;
+        rdfs:label        "ACT PROF-AY-LAW" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO114 , position:Senate , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT PROF-AY-LAW" .
+
 position:003560  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
         rdfs:label        "ASSOC COORD PUBLIC PROG" ;
         ucdrp:cto         position:CTO927 ;
@@ -1896,6 +2156,14 @@ position:003560  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos
         skos:broader      position:CTO927 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC COORD PUBLIC PROG" .
+
+position:001104  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "UNIV PROF" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO010 , position:Senate ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "UNIV PROF" .
 
 position:003062  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "AGRON AES-B/E/E-AY" ;
@@ -1991,6 +2259,14 @@ position:001592  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
 position:AcademicClass
         a       skos:Concept .
 
+position:001094  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "DEPARTMENT VICE CHAIR" ;
+        ucdrp:cto         position:CTOS61 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS61 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "DEPARTMENT VICE CHAIR" .
+
 position:0180  a          ucdrp:Academic , ucdrp:position , skos:Concept , vivo:Position ;
         rdfs:label        "CLINICAL PROFESSOR OF LAW" ;
         ucdrp:cto         position:CTO010 ;
@@ -2015,6 +2291,14 @@ position:002290  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "REMD TUT II-NON GSHIP" .
 
+position:001062  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR II" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:CTOS56 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR II" .
+
 position:003615  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "VIS LIBRARIAN" ;
         ucdrp:cto         position:CTO623 ;
@@ -2030,6 +2314,14 @@ position:003195  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:
         skos:broader      position:CTO541 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST RES-AY-1/9 NEX" .
+
+position:001030  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "DIVISIONAL DEAN" ;
+        ucdrp:cto         position:CTOS26 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS26 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "DIVISIONAL DEAN" .
 
 position:001679  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
         rdfs:label        "LECT PSOE-HCOMP" ;
@@ -2055,6 +2347,14 @@ position:003384  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROF IN RES-AY-B/E/E" .
 
+position:000917  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ACT/INTERIM ASSOC DIRECTOR" ;
+        ucdrp:cto         position:CTOS34 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS34 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM ASSOC DIRECTOR" .
+
 position:003559  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "ASSOC COORD PUB PROG NON REP" ;
         ucdrp:cto         position:CTO927 ;
@@ -2078,6 +2378,14 @@ position:001647  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:
         skos:broader      position:CTO225 , position:Federation , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT-AY-1/10-CONTINUING" .
+
+position:000963  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR III NEX" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR III NEX" .
 
 position:003352  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "ASSOC PROF IN RES-AY-1/9" ;
@@ -2124,6 +2432,20 @@ position:003320  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos
         skos:broader      position:Academic , position:CTO551 , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST SPECIALIST" .
+
+position:001117  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "ACT PROF-FY" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO114 , position:Senate , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT PROF-FY" .
+
+position:CTOS46  a      skos:Concept ;
+        rdfs:label      "ACADEMIC COORDINATOR" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "ACADEMIC COORDINATOR" .
 
 position:003541  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
         rdfs:label        "COORD OF PUBLIC PROG VIII NEX" ;
@@ -2204,6 +2526,14 @@ position:003730  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos
         skos:broader      position:CTO928 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "VISITOR-GRADUATE (WOS)" .
+
+position:000843  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ACADEMIC COORD II-FY" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS46 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD II-FY" .
 
 position:003407  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
         rdfs:label        "ASST PROJ SCI-FY NON REP" ;
@@ -2289,6 +2619,14 @@ position:001937  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASST RES SCRIPPS-AY" .
 
+position:001011  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label        "ASSOC DEAN-AY" ;
+        ucdrp:cto         position:CTOS21 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS21 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC DEAN-AY" .
+
 position:001983  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:Position ;
         rdfs:label        "ASSOC RES-LR SCL-AY-B/E/E" ;
         ucdrp:cto         position:CTO541 ;
@@ -2361,6 +2699,14 @@ position:001453  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos
         skos:inScheme     position: ;
         skos:prefLabel    "PROF OF CLIN-HCOMP" .
 
+position:001200  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
+        rdfs:label        "ASSOC PROF-AY" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Senate , position:Academic , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC PROF-AY" .
+
 position:CTOM10  a      skos:Concept ;
         rdfs:label      "MANAGERS" ;
         skos:broader    position:Academic , position:CTO ;
@@ -2417,6 +2763,20 @@ position:001642  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos
         skos:broader      position:CTO225 , position:Federation , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT-AY-1/9" .
+
+position:CTOS27  a      skos:Concept ;
+        rdfs:label      "PROVOST" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "PROVOST" .
+
+position:001144  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:position ;
+        rdfs:label        "PROF-FY-B/E/E" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Senate , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-FY-B/E/E" .
 
 position:003522  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
         rdfs:label        "CONTINUING EDUCATOR III" ;
@@ -2576,6 +2936,14 @@ position:0110  a          skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "PROFESSOR OF LAW" .
 
+position:001070  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "DIRECTOR-EAP STUDY CENTER" ;
+        ucdrp:cto         position:CTO927 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO927 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "DIRECTOR-EAP STUDY CENTER" .
+
 position:001245  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
         rdfs:label        "ASSOC PROF-AY-1/9-B/E/E" ;
         ucdrp:cto         position:CTO010 ;
@@ -2592,12 +2960,6 @@ position:002220  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "SUPV TEACHER ED-AY" .
 
-position:CTO346  a      skos:Concept ;
-        rdfs:label      "CLINICAL PROFESSOR - VOLUNTEER" ;
-        skos:broader    position:Academic , position:CTO ;
-        skos:inScheme   position: ;
-        skos:prefLabel  "CLINICAL PROFESSOR - VOLUNTEER" .
-
 position:003378  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
         rdfs:label        "ADJ PROF-FY-B/E/E" ;
         ucdrp:cto         position:CTO335 ;
@@ -2605,6 +2967,12 @@ position:003378  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:
         skos:broader      position:CTO335 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ADJ PROF-FY-B/E/E" .
+
+position:CTO346  a      skos:Concept ;
+        rdfs:label      "CLINICAL PROFESSOR - VOLUNTEER" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "CLINICAL PROFESSOR - VOLUNTEER" .
 
 position:002441  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "K-12 INSTRUCTOR-AY-1/10" ;
@@ -2748,6 +3116,14 @@ position:003226  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos
         skos:inScheme     position: ;
         skos:prefLabel    "ASST RES-SFT" .
 
+position:001069  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ASSOC VICE PROVOST" ;
+        ucdrp:cto         position:CTOS27 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS27 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC VICE PROVOST" .
+
 position:002510  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
         rdfs:label        "TUT-NON STDNT" ;
         ucdrp:cto         position:CTO928 ;
@@ -2755,6 +3131,14 @@ position:002510  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:
         skos:broader      position:CTO928 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "TUT-NON STDNT" .
+
+position:000851  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
+        rdfs:label        "ACADEMIC COORD I-FY NEX" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:Academic , position:CTOS46 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD I-FY NEX" .
 
 position:003493  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:Academic ;
         rdfs:label        "ASSOC PROJ SCNTST-FY-B/E/E NEX" ;
@@ -2764,14 +3148,6 @@ position:003493  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROJ SCNTST-FY-B/E/E NEX" .
 
-position:002265  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos:Concept ;
-        rdfs:label        "FLD WK CONSULT-FY" ;
-        ucdrp:cto         position:CTO357 ;
-        ucdrp:identifier  ucdrp:Systemwide ;
-        skos:broader      position:Academic , position:CTO357 ;
-        skos:inScheme     position: ;
-        skos:prefLabel    "FLD WK CONSULT-FY" .
-
 position:003668  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "ASSOC LIBRARIAN-TEMP NEX" ;
         ucdrp:cto         position:CTO621 ;
@@ -2780,6 +3156,14 @@ position:003668  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC LIBRARIAN-TEMP NEX" .
 
+position:002265  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos:Concept ;
+        rdfs:label        "FLD WK CONSULT-FY" ;
+        ucdrp:cto         position:CTO357 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO357 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "FLD WK CONSULT-FY" .
+
 position:001581  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:position ;
         rdfs:label        "ACT LECT SOE-AY" ;
         ucdrp:cto         position:CTO214 ;
@@ -2787,6 +3171,14 @@ position:001581  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:
         skos:broader      position:CTO214 , position:Academic , position:Senate ;
         skos:inScheme     position: ;
         skos:prefLabel    "ACT LECT SOE-AY" .
+
+position:001037  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ACT/INTERIM DIVISIONAL DEAN" ;
+        ucdrp:cto         position:CTOS24 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS24 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM DIVISIONAL DEAN" .
 
 position:AcademicSenate
         a               skos:Concept ;
@@ -2826,6 +3218,14 @@ position:001724  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:
         skos:broader      position:Senate , position:CTO311 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROF IN RES-HCOMP" .
+
+position:001051  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ASST COLLEGE PROVOST" ;
+        ucdrp:cto         position:CTOS27 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS27 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASST COLLEGE PROVOST" .
 
 position:CTO825  a      skos:Concept ;
         rdfs:label      "CONTINUING EDUCATOR - UNIVERSITY EXTENSION" ;
@@ -2881,12 +3281,6 @@ position:001668  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT SOE-SFT-VM" .
 
-position:CTO341  a      skos:Concept ;
-        rdfs:label      "HEALTH SCIENCES CLINICAL PROFESSOR" ;
-        skos:broader    position:Academic , position:CTO ;
-        skos:inScheme   position: ;
-        skos:prefLabel  "HEALTH SCIENCES CLINICAL PROFESSOR" .
-
 position:003373  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:Position ;
         rdfs:label        "ASST ADJ PROF-AY-1/9-B/E/E" ;
         ucdrp:cto         position:CTO335 ;
@@ -2894,6 +3288,12 @@ position:003373  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:
         skos:broader      position:CTO335 , position:Federation , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST ADJ PROF-AY-1/9-B/E/E" .
+
+position:CTO341  a      skos:Concept ;
+        rdfs:label      "HEALTH SCIENCES CLINICAL PROFESSOR" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "HEALTH SCIENCES CLINICAL PROFESSOR" .
 
 position:003548  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:position ;
         rdfs:label        "COORD PUBLIC PROG V NON REP" ;
@@ -2934,6 +3334,14 @@ position:003562  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos
         skos:broader      position:CTO927 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST COORD PUBLIC PROG" .
+
+position:000920  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "ASST DIRECTOR" ;
+        ucdrp:cto         position:CTOS31 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS31 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASST DIRECTOR" .
 
 position:CTO530  a      skos:Concept ;
         rdfs:label      "AGRONOMIST-TENURE" ;
@@ -3035,6 +3443,14 @@ position:002744  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "RESID PHYS II-VIII/REP-OV" .
 
+position:001096  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label        "DEPARTMENT CHAIR" ;
+        ucdrp:cto         position:CTOS61 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS61 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "DEPARTMENT CHAIR" .
+
 position:002246  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
         rdfs:label        "COORD FLD WK-FY-CONTINUING" ;
         ucdrp:cto         position:CTO357 ;
@@ -3050,6 +3466,22 @@ position:003221  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos
         skos:broader      position:Federation , position:CTO541 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST RES-LR SCL-FY" .
+
+position:000800  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ACADEMIC ASST TO VICE CHANC" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO928 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ASST TO VICE CHANC" .
+
+position:001064  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR IV" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR IV" .
 
 position:003442  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "COOP EXT ADVISOR NEX" ;
@@ -3099,6 +3531,30 @@ position:003663  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "LIBRARIAN-POTNTL CAREER NEX" .
 
+position:001032  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ASSOC DIVISIONAL DEAN" ;
+        ucdrp:cto         position:CTOS26 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS26 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC DIVISIONAL DEAN" .
+
+position:001207  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ACT ASSOC PROF-AY" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Senate , position:Academic , position:CTO114 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT ASSOC PROF-AY" .
+
+position:001000  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "DEAN" ;
+        ucdrp:cto         position:CTOS21 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS21 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "DEAN" .
+
 position:001972  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
         rdfs:label        "ACT PROF-FY-B/E/E" ;
         ucdrp:cto         position:CTO114 ;
@@ -3114,6 +3570,14 @@ position:003386  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:
         skos:broader      position:Academic , position:CTO311 , position:Senate ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROF IN RES-AY-1/9-B/E/E" .
+
+position:000965  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR V NEX" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR V NEX" .
 
 position:CTO575  a      skos:Concept ;
         rdfs:label      "POSTDOCTORAL SCHOLAR" ;
@@ -3199,6 +3663,14 @@ position:001308  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "VIS ASST PROF" .
 
+position:000877  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
+        rdfs:label        "ACT ACADEMIC COORD" ;
+        ucdrp:cto         position:CTOS44 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS44 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT ACADEMIC COORD" .
+
 position:003266  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:position ;
         rdfs:label        "GSR-NO REM" ;
         ucdrp:cto         position:CTO436 ;
@@ -3222,6 +3694,22 @@ position:002757  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos
         skos:broader      position:Academic , position:CTO446 ;
         skos:inScheme     position: ;
         skos:prefLabel    "POST DDS I-VI/REP" .
+
+position:001101  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:Academic ;
+        rdfs:label        "ACT PROF-AY-1/9" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Senate , position:Academic , position:CTO114 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT PROF-AY-1/9" .
+
+position:000845  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:Position ;
+        rdfs:label        "ACADEMIC COORD III-FY" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS46 , position:Federation , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD III-FY" .
 
 position:003487  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
         rdfs:label        "PROJ SCIENTIST (WOS)" ;
@@ -3271,6 +3759,14 @@ position:002725  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "CHIEF RESID PHYS-NON REP" .
 
+position:001077  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:Position ;
+        rdfs:label        "ACT/INTERIM VICE PROVOST" ;
+        ucdrp:cto         position:CTOS24 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS24 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM VICE PROVOST" .
+
 position:003202  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "RES (WOS)" ;
         ucdrp:cto         position:CTO541 ;
@@ -3294,6 +3790,14 @@ position:002020  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:
         skos:broader      position:Federation , position:CTO341 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "HS ASSOC CLIN PROF-AY" .
+
+position:001045  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:position ;
+        rdfs:label        "FACULTY ASST TO VICE CHANC" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO928 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "FACULTY ASST TO VICE CHANC" .
 
 position:0131  a          skos:Concept , ucdrp:Academic , ucdrp:position , vivo:Position ;
         rdfs:label        "ASSISTANT PROF LAW (NON-TEN)" ;
@@ -3365,11 +3869,13 @@ position:003612  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "LIBRARIAN-CAREER STATUS" .
 
-position:CTO335  a      skos:Concept ;
-        rdfs:label      "ADJUNCT PROFESSOR" ;
-        skos:broader    position:Academic , position:CTO ;
-        skos:inScheme   position: ;
-        skos:prefLabel  "ADJUNCT PROFESSOR" .
+position:003367  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
+        rdfs:label        "ADJ PROF-AY-1/10" ;
+        ucdrp:cto         position:CTO335 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTO335 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ADJ PROF-AY-1/10" .
 
 position:001700  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
         rdfs:label        "RECALL TEACHING" ;
@@ -3379,13 +3885,11 @@ position:001700  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "RECALL TEACHING" .
 
-position:003367  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
-        rdfs:label        "ADJ PROF-AY-1/10" ;
-        ucdrp:cto         position:CTO335 ;
-        ucdrp:identifier  ucdrp:Systemwide ;
-        skos:broader      position:Academic , position:Federation , position:CTO335 ;
-        skos:inScheme     position: ;
-        skos:prefLabel    "ADJ PROF-AY-1/10" .
+position:CTO335  a      skos:Concept ;
+        rdfs:label      "ADJUNCT PROFESSOR" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "ADJUNCT PROFESSOR" .
 
 position:003114  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:Position ;
         rdfs:label        "ASSOC SPECIALIST AES NEX" ;
@@ -3583,6 +4087,14 @@ position:002286  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "NURSERY SCHOOL ASST-GSHIP" .
 
+position:000840  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "ACADEMIC COORD I-AY" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS46 , position:Federation ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD I-AY" .
+
 position:0190  a          ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
         rdfs:label        "ACADEMIC ADMINISTRATOR" ;
         ucdrp:cto         position:CTOS56 ;
@@ -3631,6 +4143,14 @@ position:003671  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASST LIBRARIAN-POTNTL CAR NEX" .
 
+position:001040  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos:Concept ;
+        rdfs:label        "DEAN-EXTENDED LEARNING" ;
+        ucdrp:cto         position:CTOS21 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS21 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "DEAN-EXTENDED LEARNING" .
+
 position:003173  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
         rdfs:label        "RES-AY NEX" ;
         ucdrp:cto         position:CTO541 ;
@@ -3660,6 +4180,14 @@ position:003394  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:
         skos:broader      position:CTO581 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROJ SCIENTIST-FY" .
+
+position:000927  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos:Concept ;
+        rdfs:label        "ACT/INTERIM ASST DIRECTOR" ;
+        ucdrp:cto         position:CTOS34 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS34 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM ASST DIRECTOR" .
 
 position:001902  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ACT PROF-SFT-VM" ;
@@ -3759,6 +4287,12 @@ position:003007  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "ACT AGRON AES" .
 
+position:CTOS24  a      skos:Concept ;
+        rdfs:label      "ACTING DEAN/PROVOST" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "ACTING DEAN/PROVOST" .
+
 position:003228  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
         rdfs:label        "VIS ASST RES" ;
         ucdrp:cto         position:CTO543 ;
@@ -3790,6 +4324,14 @@ position:003993  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos
         skos:broader      position:CTO999 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "FACULTY RECRUITMENT ALLOW" .
+
+position:000853  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
+        rdfs:label        "ACADEMIC COORD II-FY NEX" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS46 , position:Academic , position:Federation ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD II-FY NEX" .
 
 position:003495  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "ASST PROJ SCNTST-FY-B/E/E NEX" ;
@@ -3860,6 +4402,14 @@ position:003638  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:
         skos:broader      position:Federation , position:Academic , position:CTO627 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST LAW LIBRARIAN NEX" .
+
+position:001007  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ACT/INTERIM DEAN" ;
+        ucdrp:cto         position:CTOS24 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS24 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM DEAN" .
 
 position:001979  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "ACT ASST PROF-AY-1/9-B/E/E" ;
@@ -3941,6 +4491,14 @@ position:003375  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC ADJ PROF-FY-B/E/E" .
 
+position:001210  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ASSOC PROF-FY" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Senate , position:Academic , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC PROF-FY" .
+
 position:CTO311  a      skos:Concept ;
         rdfs:label      "PROFESSOR IN RESIDENCE" ;
         skos:broader    position:Academic , position:CTO ;
@@ -3978,6 +4536,14 @@ position:001652  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:broader      position:Academic , position:CTO225 , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "CONTINUING APPT-TEMP AUG" .
+
+position:001108  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:position ;
+        rdfs:label        "VIS PROF" ;
+        ucdrp:cto         position:CTO323 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO323 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "VIS PROF" .
 
 position:003066  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:position ;
         rdfs:label        "ACT AGRON AES-B/E/E-AY" ;
@@ -4065,6 +4631,14 @@ position:002746  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "RESID PHYS/SUBSPEC 4-8/REP-OV" .
 
+position:001098  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label        "SUMMER DIFFERENTIAL" ;
+        ucdrp:cto         position:CTO999 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO999 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "SUMMER DIFFERENTIAL" .
+
 position:003476  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "ASST SPECIALIST COOP EXT NEX" ;
         ucdrp:cto         position:CTO729 ;
@@ -4089,6 +4663,14 @@ position:001564  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ACT ASST PROF-HCOMP" .
 
+position:000880  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
+        rdfs:label        "OMBUDSMAN-ACAD" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO928 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "OMBUDSMAN-ACAD" .
+
 position:002714  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:position ;
         rdfs:label        "INTERN-VET MED/NON REP" ;
         ucdrp:cto         position:CTO446 ;
@@ -4096,6 +4678,22 @@ position:002714  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:
         skos:broader      position:CTO446 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "INTERN-VET MED/NON REP" .
+
+position:000802  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos:Concept ;
+        rdfs:label        "ASST VICE CHANC" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO928 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASST VICE CHANC" .
+
+position:001066  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR VI" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:Academic , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR VI" .
 
 position:003910  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
         rdfs:label        "FACULTY ADMIN TRANSITION LV-FY" ;
@@ -4161,6 +4759,14 @@ position:003601  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC UNIV LIBRARIAN NEX" .
 
+position:000967  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR VII NEX" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR VII NEX" .
+
 position:CTO577  a      skos:Concept ;
         rdfs:label      "POST-GRADUATE RESEARCH NON-STUDENT" ;
         skos:broader    position:Academic , position:CTO ;
@@ -4223,6 +4829,12 @@ position:003513  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "COORD PUBLIC PROG II" .
 
+position:CTOS64  a      skos:Concept ;
+        rdfs:label      "ACTING DEPARTMENT CHAIRPERSON" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "ACTING DEPARTMENT CHAIRPERSON" .
+
 position:003268  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
         rdfs:label        "ASSOC ADJ PROF-AY" ;
         ucdrp:cto         position:CTO335 ;
@@ -4231,6 +4843,14 @@ position:003268  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC ADJ PROF-AY" .
 
+position:001181  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "PROF-AY-1/9-LAW" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO010 , position:Senate , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-AY-1/9-LAW" .
+
 position:003015  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:Position ;
         rdfs:label        "ASST AGRON AES-B/E/E" ;
         ucdrp:cto         position:CTO531 ;
@@ -4238,6 +4858,14 @@ position:003015  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
         skos:broader      position:Academic , position:Federation , position:CTO531 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST AGRON AES-B/E/E" .
+
+position:001103  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "PROF-AY-1/9" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Senate , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-AY-1/9" .
 
 position:Class  a  skos:Concept .
 
@@ -4289,6 +4917,14 @@ position:001591  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos
         skos:inScheme     position: ;
         skos:prefLabel    "ACT LECT PSOE-FY-B/E/E" .
 
+position:001047  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos:Concept ;
+        rdfs:label        "ACT/INTERIM COLLEGE PROVOST" ;
+        ucdrp:cto         position:CTOS24 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS24 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM COLLEGE PROVOST" .
+
 position:002741  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:Position ;
         rdfs:label        "NON-PHYS CLIN TRAIN-GENL CAMP" ;
         ucdrp:cto         position:CTO928 ;
@@ -4320,6 +4956,14 @@ position:001909  a        ucdrp:Academic , ucdrp:position , vivo:Position , skos
         skos:broader      position:CTO335 , position:Federation , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC ADJ PROF-SFT-VM" .
+
+position:001061  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR I" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR I" .
 
 position:002211  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:Position ;
         rdfs:label        "DEMO TEACHER-CONTINUING" ;
@@ -4393,6 +5037,14 @@ position:001646  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT-AY-1/10" .
 
+position:000962  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR II NEX" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR II NEX" .
+
 position:003351  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
         rdfs:label        "ASST PROF IN RES-AY-1/9" ;
         ucdrp:cto         position:CTO311 ;
@@ -4455,6 +5107,14 @@ position:003217  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC RES-FY-NON REP" .
 
+position:001130  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "PROF-10 MONTHS" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO010 , position:Academic , position:Senate ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-10 MONTHS" .
+
 position:002708  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:Position ;
         rdfs:label        "RESID PHYS I/NON REP" ;
         ucdrp:cto         position:CTO446 ;
@@ -4495,6 +5155,14 @@ position:002754  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "RESID PHYS MOONLTG REP" .
 
+position:000842  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
+        rdfs:label        "ACADEMIC COORD II-AY" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:CTOS46 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD II-AY" .
+
 position:002081  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
         rdfs:label        "CLIN ASSOCIATE-FY" ;
         ucdrp:cto         position:CTO928 ;
@@ -4524,6 +5192,14 @@ position:003406  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:broader      position:Academic , position:CTO581 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROJ SCI-FY-B/E/E NONREP" .
+
+position:000810  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "GRADUATE ADVISOR" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO928 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "GRADUATE ADVISOR" .
 
 position:003452  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ASSOC COOP EXT ADVISOR NEX" ;
@@ -4565,6 +5241,14 @@ position:002270  a        ucdrp:Academic , skos:Concept , ucdrp:position , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "REMD TUT I-NON GSHIP/NON REP" .
 
+position:001217  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:Position ;
+        rdfs:label        "ACT ASSOC PROF-FY" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Senate , position:Academic , position:CTO114 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT ASSOC PROF-FY" .
+
 position:003175  a        ucdrp:Academic , vivo:Position , ucdrp:position , skos:Concept ;
         rdfs:label        "RES-AY-1/9 NEX" ;
         ucdrp:cto         position:CTO541 ;
@@ -4580,6 +5264,14 @@ position:001936  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
         skos:broader      position:Academic , position:Federation , position:CTO541 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC RES SCRIPPS-AY" .
+
+position:001010  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ASSOC DEAN" ;
+        ucdrp:cto         position:CTOS21 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS21 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC DEAN" .
 
 position:001982  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:position ;
         rdfs:label        "RES-LR SCL-AY-1/9-B/E/E" ;
@@ -4681,6 +5373,20 @@ position:001641  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT-AY-CONTINUING" .
 
+position:CTOS26  a      skos:Concept ;
+        rdfs:label      "DIVISIONAL DEAN" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "DIVISIONAL DEAN" .
+
+position:001143  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "PROF-AY-B/E/E" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Senate , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-AY-B/E/E" .
+
 position:003521  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:position ;
         rdfs:label        "CONTINUING EDUCATOR II" ;
         ucdrp:cto         position:CTO825 ;
@@ -4704,6 +5410,14 @@ position:003995  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:
         skos:broader      position:CTO999 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "EAP-TEMP FACULTY HOUSING ALLOW" .
+
+position:000855  a        vivo:Position , skos:Concept , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ACADEMIC COORD III-FY NEX" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS46 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD III-FY NEX" .
 
 position:003497  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "VIS ASSOC PROJ SCIENTIST NEX" ;
@@ -4745,6 +5459,14 @@ position:003290  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "RES PROF-MILLER INST-AY" .
 
+position:001087  a        ucdrp:position , vivo:Position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "ACT/INTERIM ASSOC VICE PROVOST" ;
+        ucdrp:cto         position:CTOS24 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS24 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM ASSOC VICE PROVOST" .
+
 position:003212  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
         rdfs:label        "ASSOC RES (WOS)" ;
         ucdrp:cto         position:CTO541 ;
@@ -4768,6 +5490,14 @@ position:001728  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos
         skos:broader      position:CTO335 , position:Federation , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST ADJ PROF-HCOMP" .
+
+position:001055  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:Academic ;
+        rdfs:label        "FACULTY ASST TO PROVOST/DEAN" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO928 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "FACULTY ASST TO PROVOST/DEAN" .
 
 position:002030  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
         rdfs:label        "HS ASSOC CLIN PROF-FY" ;
@@ -4822,6 +5552,14 @@ position:CTO124  a      skos:Concept ;
         skos:broader    position:Academic , position:CTO ;
         skos:inScheme   position: ;
         skos:prefLabel  "ACTING PROFESSOR-NON-SENATE" .
+
+position:001244  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
+        rdfs:label        "ASSOC PROF-FY-B/E/E" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Senate , position:CTO010 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ASSOC PROF-FY-B/E/E" .
 
 position:003622  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
         rdfs:label        "ASST LIBRARIAN-TEMP STATUS" ;
@@ -4885,14 +5623,6 @@ position:001686  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "SR LECT SOE-AY-B/E/E" .
 
-position:001608  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:Position ;
-        rdfs:label        "LECT SOE-AY-1/9" ;
-        ucdrp:cto         position:CTO210 ;
-        ucdrp:identifier  ucdrp:Systemwide ;
-        skos:broader      position:CTO210 , position:Senate , position:Academic ;
-        skos:inScheme     position: ;
-        skos:prefLabel    "LECT SOE-AY-1/9" .
-
 position:003391  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "PROJ SCIENTIST-FY-B/E/E" ;
         ucdrp:cto         position:CTO581 ;
@@ -4900,6 +5630,14 @@ position:003391  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos
         skos:broader      position:Federation , position:Academic , position:CTO581 ;
         skos:inScheme     position: ;
         skos:prefLabel    "PROJ SCIENTIST-FY-B/E/E" .
+
+position:001608  a        ucdrp:Academic , ucdrp:position , skos:Concept , vivo:Position ;
+        rdfs:label        "LECT SOE-AY-1/9" ;
+        ucdrp:cto         position:CTO210 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO210 , position:Senate , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "LECT SOE-AY-1/9" .
 
 position:CTO534  a      skos:Concept ;
         rdfs:label      "AGRONOMIST-ACTING" ;
@@ -5009,12 +5747,6 @@ position:001345  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROF-AY-1/9-B/E/E" .
 
-position:CTOS21  a      skos:Concept ;
-        rdfs:label      "DEAN" ;
-        skos:broader    position:Academic , position:CTO ;
-        skos:inScheme   position: ;
-        skos:prefLabel  "DEAN" .
-
 position:003478  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ASSOC SPECIALIST COOP EXT NEX" ;
         ucdrp:cto         position:CTO729 ;
@@ -5022,6 +5754,12 @@ position:003478  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:
         skos:broader      position:CTO729 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC SPECIALIST COOP EXT NEX" .
+
+position:CTOS21  a      skos:Concept ;
+        rdfs:label      "DEAN" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "DEAN" .
 
 position:CTO446  a      skos:Concept ;
         rdfs:label      "INTERN OR RESIDENT" ;
@@ -5053,6 +5791,22 @@ position:003271  a        vivo:Position , ucdrp:position , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ASST PROF IN RES-FY" .
 
+position:000804  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
+        rdfs:label        "ACT/INTERIM ASSOC VICE CHANC" ;
+        ucdrp:cto         position:CTO928 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO928 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM ASSOC VICE CHANC" .
+
+position:001068  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
+        rdfs:label        "VICE PROVOST" ;
+        ucdrp:cto         position:CTOS27 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS27 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "VICE PROVOST" .
+
 position:003990  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:Position ;
         rdfs:label        "ADDL COMP-HGH&OLIVE VIEW MCS" ;
         ucdrp:cto         position:CTO999 ;
@@ -5060,6 +5814,14 @@ position:003990  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
         skos:broader      position:Academic , position:CTO999 ;
         skos:inScheme     position: ;
         skos:prefLabel    "ADDL COMP-HGH&OLIVE VIEW MCS" .
+
+position:000850  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
+        rdfs:label        "ACADEMIC COORD I-AY NEX" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Local ;
+        skos:broader      position:Academic , position:CTOS46 , position:Federation ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD I-AY NEX" .
 
 position:003492  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
         rdfs:label        "ASSOC PROJ SCIENTIST-FY NEX" ;
@@ -5261,6 +6023,14 @@ position:003561  a        skos:Concept , ucdrp:Academic , ucdrp:position , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "ASST COORD PUB PROG NON REP" .
 
+position:001183  a        skos:Concept , ucdrp:position , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "ACT PROF-AY-1/9-LAW" ;
+        ucdrp:cto         position:CTO114 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTO114 , position:Senate ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT PROF-AY-1/9-LAW" .
+
 position:003017  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ACT ASSOC AGRON AES" ;
         ucdrp:cto         position:CTO534 ;
@@ -5268,6 +6038,12 @@ position:003017  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:
         skos:broader      position:CTO534 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ACT ASSOC AGRON AES" .
+
+position:CTOS34  a      skos:Concept ;
+        rdfs:label      "ACTING DIRECTOR" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "ACTING DIRECTOR" .
 
 position:003238  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
         rdfs:label        "FACULTY FELLOW RES-AY-1/9" ;
@@ -5341,6 +6117,14 @@ position:002743  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "RESID PHYS I/REP-OV" .
 
+position:001095  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:Position ;
+        rdfs:label        "ACT/INTERIM DEPARTMENT CHAIR" ;
+        ucdrp:cto         position:CTOS64 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS64 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM DEPARTMENT CHAIR" .
+
 position:002070  a        vivo:Position , ucdrp:position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "HS CLIN INSTR-FY" ;
         ucdrp:cto         position:CTO341 ;
@@ -5365,6 +6149,14 @@ position:002245  a        ucdrp:position , skos:Concept , vivo:Position , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "COORD FLD WK-FY" .
 
+position:001017  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
+        rdfs:label        "ACT/INTERIM ASSOC DEAN" ;
+        ucdrp:cto         position:CTOS24 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS24 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACT/INTERIM ASSOC DEAN" .
+
 position:001989  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:Academic ;
         rdfs:label        "ASST RES-FY-B/E/E" ;
         ucdrp:cto         position:CTO541 ;
@@ -5372,6 +6164,14 @@ position:001989  a        skos:Concept , ucdrp:position , vivo:Position , ucdrp:
         skos:broader      position:CTO541 , position:Academic , position:Federation ;
         skos:inScheme     position: ;
         skos:prefLabel    "ASST RES-FY-B/E/E" .
+
+position:001063  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:position ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR III" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Federation , position:Academic , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR III" .
 
 position:003441  a        skos:Concept , vivo:Position , ucdrp:Academic , ucdrp:position ;
         rdfs:label        "COOP EXT ADVISOR" ;
@@ -5421,6 +6221,14 @@ position:003385  a        ucdrp:position , ucdrp:Academic , skos:Concept , vivo:
         skos:inScheme     position: ;
         skos:prefLabel    "ASSOC PROF IN RES-FY-B/E/E" .
 
+position:000964  a        ucdrp:position , ucdrp:Academic , vivo:Position , skos:Concept ;
+        rdfs:label        "ACADEMIC ADMINISTRATOR IV NEX" ;
+        ucdrp:cto         position:CTOS56 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:Federation , position:CTOS56 ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC ADMINISTRATOR IV NEX" .
+
 position:003353  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:position ;
         rdfs:label        "PROF IN RES-AY-1/9" ;
         ucdrp:cto         position:CTO311 ;
@@ -5469,6 +6277,14 @@ position:003076  a        vivo:Position , ucdrp:Academic , skos:Concept , ucdrp:
         skos:inScheme     position: ;
         skos:prefLabel    "ACT ASSOC AGRON AES-B/E/E-AY" .
 
+position:000900  a        ucdrp:Academic , skos:Concept , vivo:Position , ucdrp:position ;
+        rdfs:label        "DIRECTOR" ;
+        ucdrp:cto         position:CTOS31 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTOS31 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "DIRECTOR" .
+
 position:003542  a        ucdrp:Academic , vivo:Position , skos:Concept , ucdrp:position ;
         rdfs:label        "COORD PUBLIC PROG VIII NON REP" ;
         ucdrp:cto         position:CTO927 ;
@@ -5507,6 +6323,14 @@ position:CTO012  a      skos:Concept ;
         skos:inScheme   position: ;
         skos:prefLabel  "PROFESSORIAL-RECALL" .
 
+position:001132  a        ucdrp:position , skos:Concept , ucdrp:Academic , vivo:Position ;
+        rdfs:label        "PROF EMERITUS(WOS)" ;
+        ucdrp:cto         position:CTO016 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO016 , position:Academic ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF EMERITUS(WOS)" .
+
 position:001307  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:Academic ;
         rdfs:label        "ACT ASST PROF-AY" ;
         ucdrp:cto         position:CTO124 ;
@@ -5514,6 +6338,12 @@ position:001307  a        skos:Concept , vivo:Position , ucdrp:position , ucdrp:
         skos:broader      position:CTO124 , position:Academic ;
         skos:inScheme     position: ;
         skos:prefLabel    "ACT ASST PROF-AY" .
+
+position:CTOS61  a      skos:Concept ;
+        rdfs:label      "DEPARTMENT CHAIRPERSON" ;
+        skos:broader    position:Academic , position:CTO ;
+        skos:inScheme   position: ;
+        skos:prefLabel  "DEPARTMENT CHAIRPERSON" .
 
 position:002037  a        ucdrp:position , vivo:Position , ucdrp:Academic , skos:Concept ;
         rdfs:label        "ASSOC CLIN PROF-VOL" ;
@@ -5538,3 +6368,19 @@ position:003731  a        vivo:Position , skos:Concept , ucdrp:position , ucdrp:
         skos:broader      position:Academic , position:CTO928 ;
         skos:inScheme     position: ;
         skos:prefLabel    "VISITOR-UNDERGRADUATE (WOS)" .
+
+position:001100  a        skos:Concept , ucdrp:Academic , vivo:Position , ucdrp:position ;
+        rdfs:label        "PROF-AY" ;
+        ucdrp:cto         position:CTO010 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:CTO010 , position:Academic , position:Senate ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "PROF-AY" .
+
+position:000844  a        vivo:Position , ucdrp:Academic , ucdrp:position , skos:Concept ;
+        rdfs:label        "ACADEMIC COORD III-AY" ;
+        ucdrp:cto         position:CTOS46 ;
+        ucdrp:identifier  ucdrp:Systemwide ;
+        skos:broader      position:Academic , position:CTOS46 , position:Federation ;
+        skos:inScheme     position: ;
+        skos:prefLabel    "ACADEMIC COORD III-AY" .
