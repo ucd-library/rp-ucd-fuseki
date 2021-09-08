@@ -52,11 +52,10 @@ fi
 : <<< ${FUSEKI_PASSWORD:=$ADMIN_PASSWORD}
 
 # Server Configuration -- Don't overwrite
-for f in $(cd $FUSEKI_HOME; find databases -type f); do
-  n=$(dirname $f)/$(basename $f .tmpl)
+for f in $(cd $FUSEKI_HOME; find databases configuration -type f); do
   if [[ ! -f $FUSEKI_BASE/$n ]] ; then
-    mkdir -p $(dirname ${FUSEKI_BASE}/$n)
-    cp ${FUSEKI_HOME}/$f ${FUSEKI_BASE}/$n
+    mkdir -p $(dirname ${FUSEKI_BASE}/$f)
+    cp ${FUSEKI_HOME}/$f ${FUSEKI_BASE}/$f
   fi
 done
 
@@ -111,7 +110,7 @@ if [[ ! -d $FUSEKI_BASE/databases/experts/private/ ]]; then
     done
   done
 fi
-if [[ $FUSEKI_PUBLIC_PRIVATE=="true" ]]; then
+if [[ $FUSEKI_PUBLIC_PRIVATE == "true" ]]; then
   cp $FUSEKI_HOME/configuration/private.ttl $FUSEKI_BASE/configuration;
 else
   rm -f $FUSEKI_BASE/configuration/private.ttl
@@ -119,7 +118,7 @@ fi
 
 
 # Install default vocabularies
-if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
+if [[ $FUSEKI_DEFAULT_VOCABULARIES == "true" ]]; then
   if [[ ! -d $FUSEKI_BASE/databases/experts/vocab/ ]]; then
     for dir in $FUSEKI_HOME/vocabularies; do
       for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
@@ -129,7 +128,7 @@ if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
     done
   fi
 fi
-if [[ $FUSEKI_PUBLIC_VOCABULARY=="true" ]]; then
+if [[ $FUSEKI_PUBLIC_VOCABULARY == "true" ]]; then
   cp $FUSEKI_HOME/configuration/vocabularies.ttl $FUSEKI_BASE/configuration;
 else
   rm -f $FUSEKI_BASE/configuration/vocabularies.ttl

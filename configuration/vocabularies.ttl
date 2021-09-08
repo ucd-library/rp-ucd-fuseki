@@ -1,4 +1,5 @@
-@prefix :      <#> .
+@prefix :      <http://experts.ucdavis.edu/configuration#> .
+#@prefix :      <#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tdb2:  <http://jena.apache.org/2016/tdb#> .
 @prefix ja:    <http://jena.hpl.hp.com/2005/11/Assembler#> .
@@ -16,7 +17,7 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 # These are not available to the experts users directly, though they could be
 # in a seperate service (see the harvester)
 :vocab fuseki:name "vocabularies" .
-:tdb_vocab tdb2:location  "/fuseki/databases/experts/vocab" .
+:tdb_vocab tdb2:location  "/fuseki/databases/vocab" .
 
 # Everything below is standard to the experts setup, the public and private
 # databases and their relationships

@@ -9,7 +9,7 @@
 All of the queries throughout this document use these standard prefixes.  The
 ~oap~ and the ~api~ are from the API calls, the rest are used in new creations.
 
-#+name: prefixes
+#+name: local-prefixes
 #+BEGIN_SRC sparql :no-tangle
 PREFIX bibo:  <http://purl.org/ontology/bibo/>
 PREFIX cito:  <http://purl.org/spar/cito/>
@@ -48,7 +48,7 @@ representation for the thesaurus, AFAIK, so we are creating that.
 
 #+name: FoR
 #+BEGIN_SRC sparql :noweb yes :no-tangle :format raw :file FoR.ttl :wrapx "SRC ttl :tangle FoR.ttl"
-<<prefixes>>
+<<local-prefixes>>
 construct {
   FoR: a skos:ConceptScheme;
       rdfs:label "2008 ANZSRC Fields of Research (FoR) classification"@en;
@@ -1508,7 +1508,7 @@ WHERE {
   bind(replace(?for,"[0-9]+ ","") as ?name)
   bind(URI(concat(str(FoR:),replace(?num,"(.*)..","$1"))) as ?parent)
   bind(URI(concat(str(FoR:),?num)) as ?id)
-}
+} order by ?num
 #+END_SRC
 
 #+RESULTS: FoR

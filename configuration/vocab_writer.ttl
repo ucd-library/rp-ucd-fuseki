@@ -16,7 +16,7 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 # Otherwise the defaults will setup a normal instance.
 
 :vocab fuseki:name "vocab_writer" .
-:tdb_vocab tdb2:location  "/fuseki/databases/experts/vocab" .
+:tdb_vocab tdb2:location  "/fuseki/databases/vocab" .
 
 # Everything below is standard vocabulary setup
 

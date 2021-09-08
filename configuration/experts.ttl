@@ -1,4 +1,5 @@
-@prefix :      <#> .
+@prefix :      <http://experts.ucdavis.edu/configuration#> .
+#@prefix :      <#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tdb2:  <http://jena.apache.org/2016/tdb#> .
 @prefix ja:    <http://jena.hpl.hp.com/2005/11/Assembler#> .
@@ -34,6 +35,10 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         fuseki:name "query"
         ] ;
     fuseki:endpoint [
+        fuseki:operation fuseki:update ;
+        fuseki:name "update"
+        ] ;
+    fuseki:endpoint [
         fuseki:operation fuseki:gsp-r ;
         fuseki:name "get"
         ] ;
@@ -44,7 +49,6 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
      .
 
 :tdb_public
-    a              tdb2:DatasetTDB2 ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "5000,60000" ] ;
+    a              tdb2:DatasetTDB2 ; :context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "5000,60000" ] ;
     tdb2:unionDefaultGraph true ;
     .

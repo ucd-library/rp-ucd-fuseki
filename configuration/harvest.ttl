@@ -1,4 +1,4 @@
-@prefix :      <#> .
+@prefix :      <http://experts.ucdavis.edu/configuration#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tdb2:  <http://jena.apache.org/2016/tdb#> .
 @prefix ja:    <http://jena.hpl.hp.com/2005/11/Assembler#> .
@@ -17,8 +17,6 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 
 :harvest fuseki:name "harvest.XXXX" .
 :tdb_harvest tdb2:location  "/fuseki/databases/harvest/harvest.XXXX" .
-:tdb_public tdb2:location  "/fuseki/databases/experts" .
-:tdb_vocab tdb2:location  "/fuseki/databases/vocab" .
 
 # Everything below is standard harvest to the experts setup
 # With the public database, and the harvest data
@@ -56,47 +54,6 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         ] ;
     .
 
-:tdb_public
-    a              tdb2:DatasetTDB2 ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "5000,60000" ] ;
-    tdb2:unionDefaultGraph true ;
-    .
-
-# These are the official graphs for the Public database
-# The public database is one unnamed graph, at least for now
-:graph_public
-    a tdb2:GraphTDB2;
-    tdb2:dataset :tdb_public;
-    tdb2:graphName <http://experts.ucdavis.edu/> ;
-    .
-
-# These are being planned to remove.
-:graph_public_iam
-    a tdb2:GraphTDB2;
-    tdb2:dataset :tdb_public;
-    tdb2:graphName <http://experts.ucdavis.edu/iam/> ;
-    .
-
-:graph_public_oap
-    a tdb2:GraphTDB2;
-    tdb2:dataset :tdb_public;
-    tdb2:graphName <http://experts.ucdavis.edu/oap/> ;
-    .
-
-# Complete Thesauri, like FAST are saved in their own database
-:tdb_vocab
-    a              tdb2:DatasetTDB2 ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
-    tdb2:unionDefaultGraph true ;
-    .
-
-# These graphs are used below
-:graph_vocab_union
-    a tdb2:GraphTDB2;
-    tdb2:dataset :tdb_vocab ;
-#    tdb2:graphName <urn:x-arq:DefaultGraph>;
-    .
-
 # IET and OAPolicy data are harvest to internal review
 # these are stored in the database below
 :tdb_harvest
@@ -117,12 +74,57 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     tdb2:graphName <http://iam.ucdavis.edu/> ;
     .
 
+:tdb_private tdb2:location  "/fuseki/databases/private" .
+:tdb_private
+    a              tdb2:DatasetTDB2 ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
+    tdb2:unionDefaultGraph true ;
+    .
+
+:graph_private_union
+    a tdb2:GraphTDB2;
+    tdb2:dataset :tdb_private ;
+#    tdb2:graphName <urn:x-arq:DefaultGraph>;
+    .
+
+
+:tdb_vocab tdb2:location  "/fuseki/databases/vocab" .
+:tdb_vocab
+    a              tdb2:DatasetTDB2 ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
+    tdb2:unionDefaultGraph true ;
+    .
+
+:graph_vocab_union
+    a tdb2:GraphTDB2;
+    tdb2:dataset :tdb_vocab ;
+#    tdb2:graphName <urn:x-arq:DefaultGraph>;
+    .
+
+:tdb_public tdb2:location  "/fuseki/databases/experts" .
+:tdb_public
+    a              tdb2:DatasetTDB2 ;
+    :context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "5000,60000" ] ;
+    tdb2:unionDefaultGraph true ;
+    .
+
+:graph_public
+    a tdb2:GraphTDB2;
+    tdb2:dataset :tdb_public ;
+#    tdb2:graphName <urn:x-arq:DefaultGraph>;
+    .
+
+
 # Other graphs will go to a emphemeral memory database, (I think)
 # Mentions of the public graphs are defined in the public configuration file.
 # Importantly, we have not decided where the inference graphs should go.
 # It might make the most sense to include those here.
 :dataset_harvest
     a ja:RDFDataset ;
+    ja:namedGraph [
+        ja:graphName <http://experts.ucdavis.edu/private/> ;
+        ja:graph :graph_private_union ;
+        ] ;
     ja:namedGraph [
         ja:graphName <http://experts.ucdavis.edu/vocab/> ;
         ja:graph :graph_vocab_union ;
@@ -138,13 +140,5 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     ja:namedGraph [
         ja:graphName <http://experts.ucdavis.edu/> ;
         ja:graph :graph_public ;
-        ] ;
-    ja:namedGraph [
-        ja:graphName <http://experts.ucdavis.edu/iam/> ;
-        ja:graph :graph_public_iam ;
-        ] ;
-    ja:namedGraph [
-        ja:graphName <http://experts.ucdavis.edu/oap/> ;
-        ja:graph :graph_public_oap ;
         ] ;
     .
