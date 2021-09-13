@@ -1,5 +1,5 @@
-@prefix :      <http://experts.ucdavis.edu/configuration#> .
-#@prefix :      <#> .
+#@prefix :      <http://experts.ucdavis.edu/configuration#> .
+@prefix :      <#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tdb2:  <http://jena.apache.org/2016/tdb#> .
 @prefix ja:    <http://jena.hpl.hp.com/2005/11/Assembler#> .
@@ -47,7 +47,9 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     .
 
 
-# Complete Thesauri, like FAST are saved in their own database
+# We use the graph to identify the source of the private data.  All input data
+# should have a graph source, but we should be able to query w/out that.
+# Setting unionDefaultGraph to true hides the normal (no-graph) data inputs.
 :tdb_private
     a              tdb2:DatasetTDB2 ;
     ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;

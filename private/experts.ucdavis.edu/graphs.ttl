@@ -1,0 +1,10 @@
+@prefix ucdrp:      <http://experts.ucdavis.edu/schema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<http://experts.ucdavis.edu/private/grants/> a ucdrp:graph, ucdrp:private_graph;
+    rdfs:comment 'VIVO defined grants for the whole UCD system' ;
+    .
+
+<http://experts.ucdavis.edu/private/person/> a ucdrp:graph, ucdrp:private_graph;
+    rdfs:comment 'VIVO defined persons,  all staff and faculty' ;
+    .

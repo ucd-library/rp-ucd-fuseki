@@ -15,6 +15,4 @@ UCD.  This is the IAM information only.
 The private service is defined w/ a union graph and should work fine for that as
 well.
 
-Currently, there is no information that is installed into this service.
-
 ## Adding / Updating data

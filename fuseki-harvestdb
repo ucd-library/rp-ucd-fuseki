@@ -34,7 +34,7 @@ auth=admin:${FUSEKI_PASSWORD}
 datasets='http://fuseki:3030/$/datasets'
 template=harvest.XXXX
 post="curl --fail --user "${auth}" -H Content-Type:text/turtle -X POST --data-binary @-"
-harvestdb_dir=/fuseki/databases/harvest
+harvestdb_dir=/fuseki/databases
 
 cmd="$1"
 
