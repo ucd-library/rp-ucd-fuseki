@@ -64,34 +64,38 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 :graph_public
     a tdb2:GraphTDB2;
     tdb2:dataset :tdb_public ;
-#    tdb2:graphName <urn:x-arq:DefaultGraph>;
     tdb2:graphName <http://experts.ucdavis.edu/>;
     .
 
-#:tdb_private tdb2:location  "/fuseki/databases/private" .
-#:tdb_private
-#    a              tdb2:DatasetTDB2 ;
-#    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
-#    tdb2:unionDefaultGraph true ;
-#    .
+:graph_xxx
+    a tdb2:GraphTDB2;
+    tdb2:dataset :tdb_public ;
+    tdb2:graphName <http://foo.com/xxx/>;
+    .
 
-#:graph_private_union
-#    a tdb2:GraphTDB2;
-#    tdb2:dataset :tdb_private ;
-#    .
+:tdb_private tdb2:location  "/fuseki/databases/private" .
+:tdb_private
+    a              tdb2:DatasetTDB2 ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
+    tdb2:unionDefaultGraph true ;
+    .
 
+:graph_private_union
+    a tdb2:GraphTDB2;
+    tdb2:dataset :tdb_private ;
+    .
 
-#:tdb_vocab tdb2:location  "/fuseki/databases/vocabularies" .
-#:tdb_vocab
-#    a              tdb2:DatasetTDB2 ;
-#    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
-#    tdb2:unionDefaultGraph true ;
-#    .
+:tdb_vocab tdb2:location  "/fuseki/databases/vocabularies" .
+:tdb_vocab
+    a              tdb2:DatasetTDB2 ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
+    tdb2:unionDefaultGraph true ;
+    .
 
-#:graph_vocab_union
-#    a tdb2:GraphTDB2;
-#    tdb2:dataset :tdb_vocab ;
-#    .
+:graph_vocab_union
+    a tdb2:GraphTDB2;
+    tdb2:dataset :tdb_vocab ;
+    .
 
 
 
@@ -122,14 +126,14 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 # It might make the most sense to include those here.
 :dataset_harvest
     a ja:RDFDataset ;
-#    ja:namedGraph [
-#        ja:graphName <http://experts.ucdavis.edu/private/> ;
-#        ja:graph :graph_private_union ;
-#        ] ;
-#    ja:namedGraph [
-#        ja:graphName <http://experts.ucdavis.edu/vocab/> ;
-#        ja:graph :graph_vocab_union ;
-#        ] ;
+    ja:namedGraph [
+        ja:graphName <http://experts.ucdavis.edu/private/> ;
+        ja:graph :graph_private_union ;
+        ] ;
+    ja:namedGraph [
+        ja:graphName <http://experts.ucdavis.edu/vocab/> ;
+        ja:graph :graph_vocab_union ;
+        ] ;
     ja:namedGraph [
         ja:graphName <http://oapolicy.universityofcalifornia.edu/> ;
         ja:graph :graph_harvest_experts_oap ;
@@ -137,6 +141,10 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
     ja:namedGraph [
         ja:graphName <http://iam.ucdavis.edu/> ;
         ja:graph :graph_harvest_experts_iam ;
+        ] ;
+    ja:namedGraph [
+        ja:graphName <http://foo.com/xxx/> ;
+        ja:graph :graph_xxx ;
         ] ;
     ja:namedGraph [
         ja:graphName <http://experts.ucdavis.edu/> ;

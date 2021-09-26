@@ -72,9 +72,9 @@ import_dir=/fuseki/import
 
 if [[ -n $clone ]]; then
   [[ -d ${import_dir} ]] || mkdir ${import_dir}
-  clone_dir=$(mktemp -d --tmpdir=$import_dir)
-  echo "fuseki-import-graphs - git clone $clone $clone_dir"
-  git clone $clone $clone_dir;
+  d=$(mktemp -d --tmpdir=$import_dir)
+  echo "fuseki-import-graphs - git clone $clone $d"
+  git clone $clone $d;
 
   import_to_database "$d/experts" "$d/experts" graphs
   import_to_database "$d/private" "$d/private" private_graphs
