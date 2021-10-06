@@ -1,6 +1,23 @@
 #! /bin/bash
 
-# Reads the directories passed on the commmand line, and imports
+function import_to_database () {
+  local database="$1"
+  local root="$2"
+  local -n graphz="$3"
+
+  local names="${graphz[@]/#/ -o -name }"
+  local names=${names#*-o}
+
+  local load=http://fuseki:3030/$database/data
+
+  for dir in $(find $root -type d $names); do
+    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz -o -name \*.jsonld ); do
+      graph=$(basename $(dirname $fn))
+      echo "fuseki-import-graphs - import $fn into ${database} graph ${graph}"
+      curl --user "${auth}" -F "file=@$fn" "${load}?graph=$(printf 'http://%b/' ${graph//%/\\x})"
+    done
+  done
+}
 
 if ! opts=$(getopt -o g:c:v: --long graph:,clone:,version: -n fuseki-import-graphs -- "$@"); then
   echo "Bad Command Options." >&2 ; exit 1 ; fi
@@ -9,20 +26,20 @@ eval set -- "$opts"
 
 graphs=()
 no_graphs=()
+private_graphs=()
+private_no_graphs=()
 
 while true; do
 	case $1 in
     -c | --clone) clone="$2"; shift 2;;
     -v | --version) version="$2"; shift 2;;
     -p | --private) private=1; shift ;;
-    -g | --graph) graphs+=($2); shift ;;
+    -g | --graph) graphs+=($2); private_graphs+=($2); shift 2;;
 	  *) shift; break;
   esac
 done
 
 auth=admin:${FUSEKI_PASSWORD}
-
-load=http://fuseki:3030/experts/data
 
 if (( ${#graphs[@]} == 0 )); then
   graphs=(
@@ -33,32 +50,41 @@ if (( ${#graphs[@]} == 0 )); then
   )
 fi
 
+if (( ${#private_graphs[@]} == 0 )); then
+  private_graphs=(
+    experts.ucdavis.edu
+    experts.ucdavis.edu%2Fgrant
+    experts.ucdavis.edu%2Ffis
+  )
+fi
+
 for del in "${no_graph[@]}"
 do
    graphs=("${graphs[@]/$del}") #Quotes when working with strings
+done
+
+for del in "${private_no_graph[@]}"
+do
+   private_graphs=("${private_graphs[@]/$del}") #Quotes when working with strings
 done
 
 import_dir=/fuseki/import
 
 if [[ -n $clone ]]; then
   [[ -d ${import_dir} ]] || mkdir ${import_dir}
-  clone_dir=$(mktemp -d --tmpdir=$import_dir)
-  echo "fuseki-import-graphs - git clone $clone $clone_dir"
-  git clone $clone $clone_dir;
+  d=$(mktemp -d --tmpdir=$import_dir)
+  echo "fuseki-import-graphs - git clone $clone $d"
+  git clone $clone $d;
 
-  # Add to list of diretories
-  set -- "$@" $clone_dir
+  import_to_database "experts" "$d/experts" graphs
+  import_to_database "private" "$d/private" private_graphs
+
+  rm -rf $clone_dir
 fi
 
-names="${graphs[@]/#/ -o -name }"
-names=${names#*-o}
+#Now Local directories
 
-for root in "$@"; do
-  for dir in $(find $root -type d $names); do
-    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
-      graph=$(basename $(dirname $fn))
-      echo "fuseki-import-graphs - import $graph"
-      curl --user "${auth}" -F "file=@$fn" "${load}?graph=$(printf 'http://%b/' ${graph//%/\\x})"
-    done
-  done
+for d in "$@"; do
+  echo import_to_database "experts" "$d/experts" graphs
+  echo import_to_database "private" "$d/private" private_graphs
 done

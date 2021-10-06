@@ -51,14 +51,6 @@ fi
 # Used to use ADMIN_PASSWORD
 : <<< ${FUSEKI_PASSWORD:=$ADMIN_PASSWORD}
 
-# Server Configuration -- Don't overwrite
-for f in $(cd $FUSEKI_HOME; find databases -type f); do
-  n=$(dirname $f)/$(basename $f .tmpl)
-  if [[ ! -f $FUSEKI_BASE/$n ]] ; then
-    mkdir -p $(dirname ${FUSEKI_BASE}/$n)
-    cp ${FUSEKI_HOME}/$f ${FUSEKI_BASE}/$n
-  fi
-done
 
 # Since these are affected by configuration parameters, redo on every startup
 for f in $(cd $FUSEKI_HOME; find . -name \*.tmpl); do
@@ -88,33 +80,52 @@ else
   basic_auth=''
 fi
 
-: <<< ${FUSEKI_DEFAULT_VOCABULARIES:="true"}
 : <<< ${FUSEKI_PUBLIC_VOCABULARY:="true"}
+: <<< ${FUSEKI_PUBLIC_PRIVATE:="true"}
 
 # Install default experts data
-if [[ ! -d $FUSEKI_BASE/databases/experts/ ]]; then
-  for dir in $FUSEKI_HOME/experts; do
-    for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
-      graph=$(basename $(dirname $fn))
-      tdb2.tdbloader --tdb=$FUSEKI_BASE/configuration/experts.ttl --graph="$(printf 'http://%b/' ${graph//%/\\x})" $fn
-    done
-  done
-fi
+# Server Database Configuration -- Don't overwrite
 
-# Install default vocabularies
-if [[ $FUSEKI_DEFAULT_VOCABULARIES=="true" ]]; then
-  if [[ ! -d $FUSEKI_BASE/databases/experts/vocab/ ]]; then
-    for dir in $FUSEKI_HOME/vocabularies; do
-      for fn in $(find ${dir} -type f -name \*.ttl -o -name \*.ttl.gz ); do
+function install_db() {
+  local db=$1;
+
+  for f in configuration/${db}.ttl; do
+    if [[ ! -f $FUSEKI_BASE/$f ]] ; then
+      mkdir -p $(dirname ${FUSEKI_BASE}/$f)
+      cp ${FUSEKI_HOME}/$f ${FUSEKI_BASE}/$f
+    fi
+  done
+
+  if [[ ! -d $FUSEKI_BASE/databases/${db}/ ]]; then
+    local dir=$FUSEKI_HOME/${db};
+    # triples (no graph)
+    for fn in $(find ${dir} -maxdepth 1 -name \*.ttl -o -name \*.ttl.gz); do
+        tdb2.tdbloader --tdb=$FUSEKI_BASE/configuration/${db}.ttl $fn
+    done
+    # Now named graphs
+    for fn in $(find ${dir}/*/* -type f -name \*.ttl -o -name \*.ttl.gz ); do
         graph=$(basename $(dirname $fn))
-        tdb2.tdbloader --tdb=$FUSEKI_HOME/configuration/vocabularies.ttl --graph="$(printf 'http://%b/' ${graph//%/\\x})" $fn
-      done
+        tdb2.tdbloader --tdb=$FUSEKI_BASE/configuration/${db}.ttl --graph="$(printf 'http://%b/' ${graph//%/\\x})" $fn
     done
   fi
+}
+
+# Always install experts
+install_db experts
+
+if [[ $FUSEKI_PUBLIC_PRIVATE == "true" ]]; then
+  install_db private
+else
+  rm -f $FUSEKI_BASE/configuration/private.ttl
+#  rm -r -f $FUSEKI_BASE/databases/private
 fi
-if [[ $FUSEKI_PUBLIC_VOCABULARY=="true" ]]; then
-  cp $FUSEKI_HOME/configuration/vocabularies.ttl $FUSEKI_BASE/configuration;
+
+if [[ $FUSEKI_PUBLIC_VOCABULARY == "true" ]]; then
+  install_db vocabularies
+else
+  rm -f $FUSEKI_BASE/configuration/vocabularies.ttl
 fi
+
 
 # Startup our https://github.com/msoap/shell2http
 if [[ "$FUSEKI_HARVESTDB_ENABLED" == "true" ]]; then
