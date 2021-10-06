@@ -16,7 +16,7 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 # These are not available to the experts users directly, though they could be
 # in a seperate service (see the harvester)
 :vocab fuseki:name "vocabularies" .
-:tdb_vocab tdb2:location  "/fuseki/databases/experts/vocab" .
+:tdb_vocab tdb2:location  "/fuseki/databases/vocabularies" .
 
 # Everything below is standard to the experts setup, the public and private
 # databases and their relationships

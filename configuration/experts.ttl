@@ -11,22 +11,20 @@ ja:MemoryDataset  rdfs:subClassOf  ja:RDFDataset .
 tdb2:GraphTDB2  rdfs:subClassOf  ja:Model .
 tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 
-# There are some configurations that you might want to change, if for example
-# you'd like to run multiple experts setups on a single fuseki instance.
-# Otherwise the defaults will setup a normal instance.
 
-:vocab fuseki:name "vocab_writer" .
-:tdb_vocab tdb2:location  "/fuseki/databases/vocab" .
+:experts fuseki:name "experts" .
+:tdb_public tdb2:location  "/fuseki/databases/experts" .
 
-# Everything below is standard vocabulary setup
+# Everything below is standard to the experts setup, the public and private
+# databases and their relationships
 
 # See javadoc for ARQ.queryTimeout for details.
 [] a fuseki:Server ;
     ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "10000,60000" ] ;
     .
 
-:vocab a fuseki:Service ;
-    fuseki:dataset :tdb_vocab ;
+:experts a fuseki:Service ;
+    fuseki:dataset :tdb_public ;
     fuseki:endpoint [
         fuseki:operation fuseki:query ;
         fuseki:name "sparql"
@@ -47,15 +45,12 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         fuseki:operation fuseki:gsp-rw ;
         fuseki:name "data"
         ] ;
-    fuseki:endpoint [
-        fuseki:operation fuseki:upload ;
-        fuseki:name "upload"
-        ] ;
-    .
+     .
 
-# Complete Thesauri, like FAST are saved in their own database
-:tdb_vocab
+# By default, we plan for the experts data to have a default graph only,
+# and we do NOT union graphs, which does result in the default graph being hidden
+:tdb_public
     a              tdb2:DatasetTDB2 ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "15000,60000" ] ;
     tdb2:unionDefaultGraph true ;
     .

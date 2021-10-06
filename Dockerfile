@@ -18,6 +18,7 @@ COPY ./configuration $FUSEKI_HOME/configuration/
 COPY ./databases $FUSEKI_HOME/databases/
 COPY ./experts $FUSEKI_HOME/experts/
 COPY ./vocabularies $FUSEKI_HOME/vocabularies/
+COPY ./private $FUSEKI_HOME/private/
 COPY ./rp-ucd-fuseki-docker-entrypoint.sh /rp-ucd-fuseki-docker-entrypoint.sh
 COPY ./fuseki-import-graphs /usr/local/bin
 COPY ./fuseki-harvestdb /usr/local/bin

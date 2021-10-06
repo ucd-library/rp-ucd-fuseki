@@ -12,19 +12,13 @@ tdb2:GraphTDB2  rdfs:subClassOf  ja:Model .
 tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 
 
-:experts fuseki:name "experts" .
-:tdb_public tdb2:location  "/fuseki/databases/experts" .
+# The private service carries additional private data that is accessed by the experts system.
+# These are not available to the experts users directly, but are used by the harvester.
+:private fuseki:name "private" .
+:tdb_private tdb2:location  "/fuseki/databases/private" .
 
-# Everything below is standard to the experts setup, the public and private
-# databases and their relationships
-
-# See javadoc for ARQ.queryTimeout for details.
-[] a fuseki:Server ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "10000,60000" ] ;
-    .
-
-:experts a fuseki:Service ;
-    fuseki:dataset :tdb_public ;
+:private a fuseki:Service ;
+    fuseki:dataset :tdb_private ;
     fuseki:endpoint [
         fuseki:operation fuseki:query ;
         fuseki:name "sparql"
@@ -34,6 +28,10 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         fuseki:name "query"
         ] ;
     fuseki:endpoint [
+        fuseki:operation fuseki:update ;
+        fuseki:name "update"
+        ] ;
+    fuseki:endpoint [
         fuseki:operation fuseki:gsp-r ;
         fuseki:name "get"
         ] ;
@@ -41,10 +39,18 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         fuseki:operation fuseki:gsp-rw ;
         fuseki:name "data"
         ] ;
-     .
+    fuseki:endpoint [
+        fuseki:operation fuseki:upload ;
+        fuseki:name "upload"
+        ] ;
+    .
 
-:tdb_public
+
+# We use the graph to identify the source of the private data.  All input data
+# should have a graph source, but we should be able to query w/out that.
+# Setting unionDefaultGraph to true hides the normal (no-graph) data inputs.
+:tdb_private
     a              tdb2:DatasetTDB2 ;
-    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "5000,60000" ] ;
+    ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
     tdb2:unionDefaultGraph true ;
     .
