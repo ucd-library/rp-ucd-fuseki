@@ -83,18 +83,19 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
 :graph_private_union
     a tdb2:GraphTDB2;
     tdb2:dataset :tdb_private ;
+    tdb2:graphName <urn:x-arq:UnionGraph> ;
     .
 
 :tdb_vocab tdb2:location  "/fuseki/databases/vocabularies" .
 :tdb_vocab
     a              tdb2:DatasetTDB2 ;
     ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "60000,360000" ] ;
-    tdb2:unionDefaultGraph true ;
     .
 
-:graph_vocab_union
+:graph_vocabularies
     a tdb2:GraphTDB2;
     tdb2:dataset :tdb_vocab ;
+    tdb2:graphName <urn:x-arq:UnionGraph> ;
     .
 
 
@@ -132,7 +133,7 @@ tdb2:DatasetTDB2  rdfs:subClassOf  ja:RDFDataset .
         ] ;
     ja:namedGraph [
         ja:graphName <http://experts.ucdavis.edu/vocab/> ;
-        ja:graph :graph_vocab_union ;
+        ja:graph :graph_vocabularies ;
         ] ;
     ja:namedGraph [
         ja:graphName <http://oapolicy.universityofcalifornia.edu/> ;

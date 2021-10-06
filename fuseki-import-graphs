@@ -76,8 +76,8 @@ if [[ -n $clone ]]; then
   echo "fuseki-import-graphs - git clone $clone $d"
   git clone $clone $d;
 
-  import_to_database "$d/experts" "$d/experts" graphs
-  import_to_database "$d/private" "$d/private" private_graphs
+  import_to_database "experts" "$d/experts" graphs
+  import_to_database "private" "$d/private" private_graphs
 
   rm -rf $clone_dir
 fi
