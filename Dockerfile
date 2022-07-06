@@ -12,6 +12,7 @@ COPY --from=msoap/shell2http:latest /app/shell2http /usr/local/bin/shell2http
 
 COPY ./jetty-config.xml $FUSEKI_HOME/
 COPY ./config.ttl.tmpl $FUSEKI_HOME/
+COPY ./functions.js.tmpl $FUSEKI_HOME/
 COPY ./tdb.cfg.tmpl $FUSEKI_HOME/
 COPY ./shiro.ini.tmpl $FUSEKI_HOME/
 COPY ./configuration $FUSEKI_HOME/configuration/

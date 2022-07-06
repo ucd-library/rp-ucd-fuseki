@@ -26,6 +26,11 @@
      ja:cxtValue "${FUSEKI_TIMEOUT_FIRST:-30000},${FUSEKI_TIMEOUT_REST:-120000}"
    ] ;
 
+   ja:context [
+     ja:cxtName "arq:js-library" ;
+     ja:cxtValue "/fuseki/functions.js"
+   ] ;
+
    # Add any custom classes you want to load.
    # Must have a "public static void init()" method.
    ja:loadClass "edu.ucdavis.library.FusekiKafkaConnector"
