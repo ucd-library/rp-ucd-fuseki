@@ -47,7 +47,7 @@ data as well as the elements tools themselves.  There is no linked data
 representation for the thesaurus, AFAIK, so we are creating that.
 
 #+name: FoR
-#+BEGIN_SRC sparql :noweb yes :no-tangle :format raw :file FoR.ttl :wrapx "SRC ttl :tangle FoR.ttl"
+#+BEGIN_SRC sparql :noweb yes :no-tangle :formatx raw :results file :file FoR.ttl :wrapx "SRC ttl :tangle FoR.ttl"
 <<local-prefixes>>
 construct {
   FoR: a skos:ConceptScheme;
@@ -75,7 +75,7 @@ FoR:21,FoR:22;
       .
 
   ?id a skos:Concept;
-      rdfs:label ?for;
+    rdfs:label ?for, ?name;
     skos:prefLabel ?name;
     skos:broader ?parent;
     skos:inScheme FoR:;
@@ -1513,6 +1513,14 @@ WHERE {
 
 #+RESULTS: FoR
 [[file:FoR.ttl]]
+
+*** Creating and HDT version
+    If we want to include an HDT version, we can use the FoR.ttl file in order
+    to generate that.  We are currently *not* including this in the repo.
+
+    #+begin_src bash
+       rdf2hdt -index FoR.ttl FoR.hdt
+    #+end_src
 
 *** Adding Terms
 
